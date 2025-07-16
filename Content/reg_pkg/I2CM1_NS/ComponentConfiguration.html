@@ -1,0 +1,1904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Parameters for DW_apb_i2c - 2.03a</title>
+        <link rel="home" href="#idp49463672" title="Parameters for DW_apb_i2c - 2.03a" />
+        <link rel="next" href="#Parameter-Descriptions" title="" />
+    </head>
+    <body>
+        <div class="article">
+            <h1><a name="idp49463672"></a>Parameters for DW_apb_i2c - 2.03a</h1>
+            <div class="sect1">
+                <div class="titlepage">
+                </div>
+                <p>These tables define all of the user configuration options for this component. Entries which are grayed-out are disabled (read-only) in the current configuration.</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li><a  href="#paramtable-TopLevelParameters" title="Table&#160;1.&#160;Top Level Parameters Parameters">Top Level Parameters</a>
+                        </li>
+                        <li><a  href="#paramtable-I2CVersion3.0Features" title="Table&#160;2.&#160;I2C Version 3.0 Features Parameters">I2C Version 3.0 Features</a>
+                        </li>
+                        <li><a  href="#paramtable-SMBusFeatures" title="Table&#160;3.&#160;SMBus Features Parameters">SMBus Features</a>
+                        </li>
+                        <li><a  href="#paramtable-I2CVersion6.0Features" title="Table&#160;4.&#160;I2C Version 6.0 Features Parameters">I2C Version 6.0 Features</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-TopLevelParameters"></a>Top Level Parameters Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-TopLevelParameters"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Top Level Parameters Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Top Level Parameters Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              System Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Register Interface Type</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">APB3</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Select Register Interface type as APB2, APB3 or APB4.
+By default, DW_apb_i2c supports APB2 interface.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>APB2 (0)</li>
+                                                    <li>APB3 (1)</li>
+                                                    <li>APB4 (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: APB2</p>
+                                            <p>Enabled: [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: SLAVE_INTERFACE_TYPE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Slave Error Response Enable</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Enable Slave Error response signaling. The component will refrain
+From signaling an error response if this parameter is disabled.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;0</p>
+                                            <p>Parameter Name: SLVERR_RESP_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">APB data bus width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Width of the APB data bus.</p>
+                                            <p>Values: 8, 16, 32</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: APB_DATA_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Width of Register timeout counter</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Defines the width of Register timeout counter. If set to zero,
+the timeout counter register is disabled, and timeout is triggered
+as soon as the transaction tries to read an empty RX_FIFO or write
+to a full TX_FIFO. As these are the only cases where PREADY signal
+goes low, it ensures that PREADY is tied high throughout. Setting
+values from 4 through 32 for this parameter configures the timeout
+period from 2^4 to 2^8 pclk cycles.</p>
+                                            <p>Values: 0, 4, 5, 6, 7, 8</p>
+                                            <p>DefaultValue: 4</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;0 &amp;&amp; SLVERR_RESP_EN==1</p>
+                                            <p>Parameter Name: REG_TIMEOUT_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hardcode Register timeout counter value</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Checking this parameter makes Register timeout counter a read-only register.
+The register can be programmed by user if the hardcode option is turned off.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;0 &amp;&amp; SLVERR_RESP_EN==1 &amp;&amp; REG_TIMEOUT_WIDTH&gt;0</p>
+                                            <p>Parameter Name: HC_REG_TIMEOUT_VALUE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Register Timeout counter default value</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Defines the reset value of Register timeout counter register. This value can
+be over - ridden by programming the timeout counter register before
+enabling the component, if the HC_REG_TIMEOUT_VALUE is left un-checked</p>
+                                            <p>Values: 1, ..., POW_2_REG_TIMEOUT_WIDTH</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;0 &amp;&amp; SLVERR_RESP_EN==1 &amp;&amp; REG_TIMEOUT_WIDTH&gt;0</p>
+                                            <p>Parameter Name: REG_TIMEOUT_VALUE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Device Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Highest speed I2C mode supported</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Fast Mode or Fast Mode Plus</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Maximum I2C mode supported.
+Controls the reset value of the SPEED bit field [2:1] of the I2C Control Register (IC_CON).
+Count registers are used to generate the outgoing clock SCL on the I2C interface. 
+For speed modes faster than the configured maximum speed mode, the corresponding
+registers are not present in the top-level RTL.</p>
+                                            <p class="BLANK" />
+                                            <p>
+For unsupported speed modes those registers are not present as described below.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If this parameter is set to "Standard Mode" then the IC_FS_SCL_*, IC_HS_MADDR, and IC_HS_SCL_* registers are not present.
+</li>
+                                                    <li>
+If this parameter is set to "Fast Mode" then the IC_HS_MADDR, and IC_HS_SCL_* registers are not present.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Standard Mode (0x1)</li>
+                                                    <li>Fast Mode or Fast Mode Plus (0x2)</li>
+                                                    <li>High Speed Mode (0x3)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: High Speed Mode</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE == 0</p>
+                                            <p>Parameter Name: IC_MAX_SPEED_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has I2C default slave address of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x055</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset Value of DW_apb_i2c Slave Address. 
+Controls the reset value of Register (IC_SAR). 
+The default values cannot be any of the reserved 
+address locations: 0x00 to 0x07 or 0x78 to 0x7f.</p>
+                                            <p>Values: 0x000, ..., 0x3ff</p>
+                                            <p>DefaultValue: 0x055</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_DEFAULT_SLAVE_ADDR</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has I2C default slave address 2 of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x056</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset Value of DW_apb_i2c Slave Address 2. 
+Controls the reset value of Register (IC_SAR2). 
+The default values cannot be any of the reserved 
+address locations: 0x00 to 0x07 or 0x78 to 0x7f.</p>
+                                            <p>Values: 0x000, ..., 0x3ff</p>
+                                            <p>DefaultValue: 0x056</p>
+                                            <p>Enabled: (IC_MULTI_SAR_EN == 1) &amp;&amp; (IC_NUM_SARS &gt;= 2)</p>
+                                            <p>Parameter Name: IC_DEFAULT_SLAVE_ADDR2</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has I2C default slave address 3 of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x057</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset Value of DW_apb_i2c Slave Address 3. 
+Controls the reset value of Register (IC_SAR3). 
+The default values cannot be any of the reserved 
+address locations: 0x00 to 0x07 or 0x78 to 0x7f.</p>
+                                            <p>Values: 0x000, ..., 0x3ff</p>
+                                            <p>DefaultValue: 0x057</p>
+                                            <p>Enabled: (IC_MULTI_SAR_EN == 1) &amp;&amp; (IC_NUM_SARS &gt;= 3)</p>
+                                            <p>Parameter Name: IC_DEFAULT_SLAVE_ADDR3</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has I2C default slave address 4 of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x058</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset Value of DW_apb_i2c Slave Address 4. 
+Controls the reset value of Register (IC_SAR4). 
+The default values cannot be any of the reserved 
+address locations: 0x00 to 0x07 or 0x78 to 0x7f.</p>
+                                            <p>Values: 0x000, ..., 0x3ff</p>
+                                            <p>DefaultValue: 0x058</p>
+                                            <p>Enabled: (IC_MULTI_SAR_EN == 1) &amp;&amp; (IC_NUM_SARS &gt;= 4)</p>
+                                            <p>Parameter Name: IC_DEFAULT_SLAVE_ADDR4</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has I2C default target slave address of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x055</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of DW_apb_i2c target slave address. Controls the reset value 
+of the IC_TAR bit field (9:0) of the I2C Target Address Register (IC_TAR). 
+The default values cannot be any of the reserved address locations:
+0x00 to 0x07 or 0x78 to 0x7f.</p>
+                                            <p>Values: 0x000, ..., 0x3ff</p>
+                                            <p>DefaultValue: 0x055</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_DEFAULT_TAR_SLAVE_ADDR</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has High Speed mode master code of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>High Speed mode master code of the DW_apb_i2c block.
+Controls the reset value of I2C HS Master Mode Code Address Register (IC_HS_MADDR).
+This is a unique code that alerts other masters on the I2C 
+bus that a high-speed mode transfer is going to begin. For more information
+about this code, refer to "Multiple Master Arbitration" section in data
+book.</p>
+                                            <p>Values: 0x0, ..., 0x7</p>
+                                            <p>DefaultValue: 0x1</p>
+                                            <p>Enabled: (IC_MAX_SPEED_MODE == 3) &amp;&amp; (IC_ULTRA_FAST_MODE ==0)</p>
+                                            <p>Parameter Name: IC_HS_MASTER_CODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Is an I2C Master?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c has its master enabled to be a master after reset. 
+This parameter controls the reset value of bit 0 of the I2C Control 
+Register (IC_CON). To enable the component to be a master, you must 
+write a 1 in bit 0 of the IC_CON register. </p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: If this parameter is checked (1), then you must ensure that the 
+parameter IC_SLAVE_DISABLE is checked (1) as well.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_MASTER_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Disable Slave after reset?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c has its slave enabled or disabled after reset.
+If checked, the DW_apb_i2c slave interface is disabled after reset.
+The slave also can be disabled by programming a 1 into IC_CON[6].
+By default the slave is enabled.</p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: If this parameter is unchecked (0), then you must ensure that the
+parameter IC_MASTER_MODE is unchecked (0) as well.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_SLAVE_DISABLE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Supports 10-bit addressing in slave mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c slave supports 7 or 10 bit addressing on the I2C 
+interface after reset when acting as a slave. 
+Controls reset value of part of Register IC_CON. 
+The DW_apb_i2c module will respond to this number of address bits when
+acting as a slave; it can be reprogrammed by software.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_10BITADDR_SLAVE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Supports 10-bit addressing in master mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c supports 7 or 10 bit addressing on the I2C 
+interface after reset when acting as a master. 
+Controls reset value of part of Register IC_CON. 
+Master generated transfers will use this number of address bits. Additionally, it 
+can be reprogrammed by software by writing to the IC_CON register.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_10BITADDR_MASTER</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Depth of transmit buffer is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Depth of transmit buffer. The buffer is 9 bits wide;
+8 bits for the data, and 1 bit for the read or write command.</p>
+                                            <p>Values: 2, ..., 256</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_TX_BUFFER_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Depth of receive buffer is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Depth of receive buffer, the buffer is 8 bits wide.</p>
+                                            <p>Values: 2, ..., 256</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_RX_BUFFER_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Transmit buffer threshold value is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x4</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value for threshold level of transmit buffer.
+This parameter controls the reset value of the I2C 
+Transmit FIFO Threshold Level Register (IC_TX_TL).</p>
+                                            <p>Values: 0x0, ..., IC_TX_BUFFER_DEPTH-1</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_TX_TL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Receive buffer threshold value is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x4</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value for threshold level of receive buffer.
+This parameter controls the reset value of the I2C 
+Receive FIFO Threshold Level Register (IC_RX_TL).</p>
+                                            <p>Values: 0x0, ..., IC_RX_BUFFER_DEPTH-1</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_RX_TL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Allow re-start conditions to be sent when acting as a master?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls the reset value of bit 5 (IC_RESTART_EN) in the
+IC_CON register. By default, this parameter is checked, which allows
+RESTART conditions to be sent when DW_apb_i2c is acting as a master.
+Some older slaves do not support handling RESTART conditions; however,
+RESTART conditions are used in several I2C operations. When the RESTART
+is disabled, the DW_apb_i2c master is incapable of performing the following
+functions:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+Sending a START BYTE
+</li>
+                                                    <li>
+Performing any high-speed mode operation
+</li>
+                                                    <li>
+Performing direction changes in combined format mode
+</li>
+                                                    <li>
+Performing a read operation with a 10-bit address
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_RESTART_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hardware reset value for IC_SDA_SETUP register</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x64</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Determines the reset value for the register IC_SDA_SETUP, which in
+turn controls the time delay - in terms of number of ic_clk clock periods - introduced
+in the rising edge of SCL, relative to SDA changing when a read-request is serviced.
+The relevant I2C requirement is t[su:DAT] as detailed in the I2C Bus Specifications.</p>
+                                            <p>Values: 0x02, ..., 0xff</p>
+                                            <p>DefaultValue: 0x64</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE ==0</p>
+                                            <p>Parameter Name: IC_DEFAULT_SDA_SETUP</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hardware reset value for IC_SDA_HOLD register</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x000001</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Determines the reset value for the register IC_SDA_HOLD, which in
+turn controls the SDA hold time implemented by DW_apb_i2c (when
+transmitting or receiving, as either master or slave)
+as a master/slave transmitter or Master/Slave Receiver).
+The relevant I2C requirement is t[HD:DAT] as detailed in the I2C Bus Specifications.</p>
+                                            <p class="BLANK" />
+                                            <p>
+The programmed SDA hold time as transmitter cannot exceed at any time the
+duration of the low part of scl. Therefore it is recommended that the configured
+default value should not be larger than N_SCL_LOW-2, where N_SCL_LOW is
+the duration of the low part of the scl period measured in ic_clk cycles, for the
+maximum speed mode the component is configured for.</p>
+                                            <p>Values: 0x000001, ..., 0xffffff</p>
+                                            <p>DefaultValue: 0x000001</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_DEFAULT_SDA_HOLD</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IC_ACK_GENERAL_CALL set to acknowledge I2C general calls on reset</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter determines the reset value for the register IC_ACK_GENERAL_CALL, which
+in turn controls whether I2C general call addresses are to be responded or not.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE == 0</p>
+                                            <p>Parameter Name: IC_DEFAULT_ACK_GENERAL_CALL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              External Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include DMA handshaking interface signals?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the inclusion of DMA handshaking interface signals.
+When checked, includes the DMA handshaking interface signals
+at the top-level I/O. For more information about these signals, 
+see "Signal Descriptions" in data book.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_HAS_DMA</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Single Interrupt output port present?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If unchecked, each interrupt source has its own output. If
+checked, all interrupt sources are combined into a single output.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_INTR_IO</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Polarity of Interrupts is active high?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the active level of the output interrupt lines.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_INTR_POL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Internal Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Add Encoded Parameters</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Adding the encoded parameters gives firmware an easy and quick 
+way of identifying the DesignWare component within an I/O memory 
+map. Some critical design-time options determine how a driver 
+should interact with the peripheral. There is a minimal area 
+overhead by including these parameters. Allows a single driver 
+to be developed for each component which will be self-configurable.</p>
+                                            <p class="BLANK" />
+                                            <p>
+When bit 7 of the IC_COMP_PARAM_1 is read and contains a '1' 
+the encoded parameters can be read via software. If this bit 
+is a '0' then the entire register is '0' regardless of the 
+setting of any of the other parameters that are encoded in 
+the register's bits. For details about this register,
+see the IC_COMP_PARAM_1 register.</p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: Unique drivers must be developed for each configuration of the
+DW_apb_i2c. Based on the configuration, the registers in the IP can differ; 
+thus the same driver cannot be used with different configurations of the IP.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_ADD_ENCODED_PARAMS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Specify clock counts directly instead of supplying clock frequency?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Determines whether *CNT values are provided directly or by specifying the ic_clk 
+clock frequency and letting coreConsultant (or coreAssembler) calculate the count values.</p>
+                                            <p class="BLANK" />
+                                            <p>
+When this parameter is checked, the reset values of the *CNT registers are specified by
+the corresponding *COUNT configuration parameters which may be user-defined or derived 
+(see standard, fast, fast mode plus, and high speed mode parameters later in this table). </p>
+                                            <p class="BLANK" />
+                                            <p>
+When unchecked (default setting), the reset values of the *CNT registers are calculated
+from the configuration parameter IC_CLOCK_PERIOD.</p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: For fast mode plus, reprogram the IC_FS_SCL_*CNT register to achieve
+the required data rate when unchecked.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_USE_COUNTS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hard code the count values for each mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>By checking this parameter, the *CNT registers are set to read
+only. Unchecking this parameter (default setting) allows the *CNT registers to
+be writable.</p>
+                                            <p class="BLANK" />
+                                            <p>
+Regardless of the setting, the *CNT registers are always readable and
+have reset values from the corresponding *COUNT configuration parameters, which
+may be user defined or derived (see standard, fast, fast mode plus, or high
+speed mode parameters later in this table).</p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: Since the DW_apb_i2c uses the same high and low count registers for fast mode and fast mode plus operation, 
+if this parameter is checked (1) the IC_FS_SCL_*CNT registers are hard coded to either one of the fast mode and fast mode plus. 
+Consequently, DW_apb_i2c can operate in either fast mode or fast mode plus, but not in both modes simultaneously.</p>
+                                            <p class="BLANK" />
+                                            <p>
+For fast mode plus, it is recommended that this parameter be Unchecked (0).</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_HC_COUNT_VALUES</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">ic_clk has a period of? (ns integers only)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">100</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies the period of incoming ic_clk, used to generate outgoing I2C
+interface SCL clock. (ns integers only)</p>
+                                            <p class="BLANK" />
+                                            <p>
+When the count values are used to generate the IC_CLOCK_PERIOD then
+the IC_MAX_SPEED_MODE setting determines the actual period</p>
+                                            <p class="BLANK" />
+                                            <p>
+  IC_MAX_SPEED_MODE = Standard =&gt; 500ns</p>
+                                            <p class="BLANK" />
+                                            <p>
+  IC_MAX_SPEED_MODE = Fast =&gt; 100ns</p>
+                                            <p class="BLANK" />
+                                            <p>
+  IC_MAX_SPEED_MODE = High =&gt; 10ns</p>
+                                            <p class="BLANK" />
+                                            <p>
+  IC_ULTRA_FAST_MODE = 1 =&gt; 25ns</p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: For fast mode plus, user has to reprogram the IC_FS_SCL_*CNT register to achieve required data rate.</p>
+                                            <p>Values: 2, ..., 2147483647</p>
+                                            <p>DefaultValue: 100</p>
+                                            <p>Enabled: IC_USE_COUNTS == 0</p>
+                                            <p>Parameter Name: IC_CLOCK_PERIOD</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Relationship between pclk and ic_clk is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Asynchronous</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies the relationship between pclk and ic_clk</p>
+                                            <p class="BLANK" />
+                                            <p>
+Identical (0): clocks are identical; no meta-stability flops
+used for data passing between clock domains.</p>
+                                            <p class="BLANK" />
+                                            <p>
+Asynchronous (1): clocks may be completely asynchronous to
+each other, meta-stability flops are required for data passing between clock domains.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Identical (0x0)</li>
+                                                    <li>Asynchronous (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Asynchronous</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_CLK_TYPE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable Async FIFO Mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter controls whether DW_apb_i2c consist of Asynchronous or Synchronous
+FIFO's for the Transmit and Receive Data Buffers.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_CLK_TYPE==ASYNC</p>
+                                            <p>Parameter Name: IC_HAS_ASYNC_FIFO</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Standard Speed Mode Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Std speed SCL high count is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0190</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of Standard Speed I2C Clock SCL High Count
+register (IC_SS_SCL_HCNT). The value must be calculated 
+based on the I2C data rate desired and I2C clock frequency. 
+When parameter IC_USE_COUNTS = 0, this parameter is automatically calculated using the 
+IC_CLOCK_PERIOD parameter. For more information, see the IC_SS_SCL_HCNT register.</p>
+                                            <p>Values: IC_HCNT_LO_LIMIT, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x0190</p>
+                                            <p>Enabled: (IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE ==0)</p>
+                                            <p>Parameter Name: IC_SS_SCL_HIGH_COUNT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Std speed SCL low count is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x01d6</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of Standard Speed I2C Clock SCL Low Count register (IC_SS_SCL_LCNT).
+Value must be calculated based on I2C data rate desired and I2C clock frequency.
+When parameter IC_USE_COUNTS = 0, this parameter is automatically calculated using 
+the IC_CLOCK_PERIOD parameter. For more information, see IC_SS_SCL_LCNT register.</p>
+                                            <p>Values: IC_LCNT_LO_LIMIT, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x01d6</p>
+                                            <p>Enabled: (IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE ==0)</p>
+                                            <p>Parameter Name: IC_SS_SCL_LOW_COUNT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Fast Mode or Fast Mode Plus Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Fast speed SCL high count is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x003c</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of Fast Mode or Fast Mode Plus I2C Clock SCL High Count register (IC_FS_SCL_HCNT).
+The value must be calculated based on I2C data rate desired and I2C clock frequency.
+When parameter IC_USE_COUNTS = 0, this parameter is automatically calculated using 
+the IC_CLOCK_PERIOD parameter. For more information, see IC_FS_SCL_HCNT register.</p>
+                                            <p>Values: IC_HCNT_LO_LIMIT, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x003c</p>
+                                            <p>Enabled: (IC_MAX_SPEED_MODE&gt;=2 &amp;&amp; IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE==0)</p>
+                                            <p>Parameter Name: IC_FS_SCL_HIGH_COUNT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Fast speed SCL low count is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0082</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of Fast Mode or Fast Mode Plus I2C Clock SCL Low Count register (IC_FS_SCL_LCNT).
+The value must be calculated based on I2C data rate desired and I2C clock frequency.
+When parameter IC_USE_COUNTS = 0, this parameter is automatically calculated using 
+the IC_CLOCK_PERIOD parameter. For more information, see the IC_FS_SCL_LCNT register</p>
+                                            <p>Values: IC_LCNT_LO_LIMIT, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x0082</p>
+                                            <p>Enabled: (IC_MAX_SPEED_MODE&gt;=2 &amp;&amp; IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE==0)</p>
+                                            <p>Parameter Name: IC_FS_SCL_LOW_COUNT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              High Speed Mode Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">For high speed mode systems the I2C bus loading is? (pF)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">100</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>For high speed mode, the bus loading affects the high and low
+pulse width of SCL.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>100 (100)</li>
+                                                    <li>400 (400)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 100</p>
+                                            <p>Enabled: (IC_MAX_SPEED_MODE==3) &amp;&amp; (IC_ULTRA_FAST_MODE ==0)</p>
+                                            <p>Parameter Name: IC_CAP_LOADING</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">High speed SCL high count is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0006</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of High Speed I2C Clock SCL High Count register (IC_HS_SCL_HCNT).
+The value must be calculated based on I2C data rate desired and high speed
+I2C clock frequency. When parameter IC_USE_COUNTS = 0, this parameter is 
+automatically calculated using the IC_CLOCK_PERIOD parameter. 
+For more information, see IC_HS_SCL_HCNT register.</p>
+                                            <p>Values: IC_HCNT_LO_LIMIT, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x0006</p>
+                                            <p>Enabled: (IC_MAX_SPEED_MODE==3 &amp;&amp; IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE==0)</p>
+                                            <p>Parameter Name: IC_HS_SCL_HIGH_COUNT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">High speed SCL low count is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0010</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of High Speed I2C Clock SCL Low Count register (IC_HS_SCL_LCNT).
+The value must be calculated based on I2C data rate and I2C clock
+frequency.
+When parameter IC_USE_COUNTS = 0, this parameter is automatically calculated using 
+the IC_CLOCK_PERIOD parameter. For more information, see IC_HS_SCL_LCNT register.</p>
+                                            <p>Values: IC_LCNT_LO_LIMIT, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x0010</p>
+                                            <p>Enabled: (IC_MAX_SPEED_MODE==3 &amp;&amp; IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE==0)</p>
+                                            <p>Parameter Name: IC_HS_SCL_LOW_COUNT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Spike Suppression Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Maximum length (in ic_clk cycles) of suppressed spikes in Standard Mode, Fast Mode, and Fast Mode Plus</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of maximum suppressed spike length register in 
+Standard Mode, Fast Mode, and Fast Mode Plus modes (IC_FS_SPKLEN Register).
+Spike length is expressed in ic_clk cycles and this value is calculated based
+on the value of IC_CLOCK_PERIOD.</p>
+                                            <p>Values: 0x1, ..., 0xff</p>
+                                            <p>DefaultValue: 0x1</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE==0</p>
+                                            <p>Parameter Name: IC_DEFAULT_FS_SPKLEN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Maximum length (in ic_clk cycles) of suppressed spikes in HS mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of maximum suppressed spike length register in HS modes (Register IC_HS_SPKLEN).
+Spike length is expressed in ic_clk cycles and this value is calculated based on the value
+of IC_CLOCK_PERIOD.</p>
+                                            <p>Values: 0x1, ..., 0xff</p>
+                                            <p>DefaultValue: 0x1</p>
+                                            <p>Enabled: (IC_MAX_SPEED_MODE==3) &amp;&amp; (IC_ULTRA_FAST_MODE ==0)</p>
+                                            <p>Parameter Name: IC_DEFAULT_HS_SPKLEN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Additional Features
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Allow dynamic updating of the TAR address?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When checked, allows the IC_TAR register to be updated
+dynamically. Setting this parameter affects the operation 
+of DW_apb_i2c when it is in master mode. For more details, 
+see "Master Mode Operation".</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: I2C_DYNAMIC_TAR_UPDATE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable register to generate NACKs for data received by Slave?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Enables an additional register which controls whether the DW_apb_i2c generates a NACK
+after a data byte has been transferred to it. This NACK generation only occurs when
+the DW_apb_i2c is a Slave-Receiver. If this register is set to a value of 1, it can
+only generate a NACK after a data byte is received; hence, the data transfer is aborted.
+Also, the data received is not pushed to the receive buffer.</p>
+                                            <p class="BLANK" />
+                                            <p>
+When the register is set to a value of 0, it generates NACK/ACK depending on 
+normal criteria.
+If this option is selected, the default value of the register IC_SLV_DATA_NACK_ONLY is always 0.
+The register must be explicitly programmed to a value of 1 if NACKs are to be generated. The
+register can only be written to successfully if DW_apb_i2c is disabled (IC_ENABLE[0] = 0) or the 
+slave part is inactive (IC_STATUS[6] = 0).</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE ==0</p>
+                                            <p>Parameter Name: IC_SLV_DATA_NACK_ONLY</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">When Receive FIFO is Physically full, Generate NACK for data received by slave?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter enables DW_apb_i2c in Slave mode to generate NACK for a data byte received 
+when Receive FIFO is physically full. The new data byte will not be pushed to the Receive
+FIFO, hence no overflow happens and rx_over interrupt will not be set.
+This works only when DW_apb_i2c is in Slave/Receiver mode (data being written
+to the slave) and is not applicable in Master mode.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: (IC_ULTRA_FAST_MODE ==0) &amp;&amp; (IC_SLV_DATA_NACK_ONLY ==0)</p>
+                                            <p>Parameter Name: IC_RX_FULL_GEN_NACK</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hold transfer when Tx FIFO is empty</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If this parameter is set, the master will only complete a transfer - that is issues a STOP - 
+when it finds a Tx FIFO entry tagged with a Stop bit. If the Tx FIFO becomes
+empty and the last byte does not have the Stop bit set, the master stalls
+the transfer by holding the SCL line low.</p>
+                                            <p class="BLANK" />
+                                            <p>
+If this parameter is not set, the master completes a transfer when the 
+Tx FIFO is empty. In SMbus Mode (IC_SMBUS=1),
+IC_EMPTYFIFO_HOLD_MASTER_EN should be always enabled.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_EMPTYFIFO_HOLD_MASTER_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">When Receive FIFO is physically full, Hold the bus till Receive FIFO has space available?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When the Rx FIFO is physically full to its RX_BUFFER_DEPTH, 
+this parameter provides a hardware method to hold the bus till Rx FIFO data 
+is read out and there is a space available in the FIFO.
+This parameter can be used when DW_apb_i2c is either a slave-receiver (that
+is, data is written to the device) or a master-receiver (that is, the device reads
+data from a slave).</p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: If parameter "IC_RX_FULL_GEN_NACK" is enabled, then setting this parameter
+has no impact in slave-receiver mode since, the controller NACK's the Data byte if Rx-FIFO
+has no empty space.</p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: If this parameter is checked and bit 9 of the IC_CON register (RX_FIFO_FULL_HLD_CTRL) is programmed to HIGH, then the RX_OVER interrupt is never set to 1 
+as the criteria to set this interrupt is never met. The RX_OVER interrupt can be found 
+in IC_INTR_STAT and IC_RAW_INTR_STAT registers. It is also an optional output signal,
+ ic_rx_over_intr(_n).</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: (IC_ULTRA_FAST_MODE ==0) &amp;&amp; (IC_MULTI_SAR_EN == 0)</p>
+                                            <p>Parameter Name: IC_RX_FULL_HLD_BUS_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable restart detect interrupt in slave mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When checked, allows the slave to detect and issue the restart interrupt when slave is 
+addressed. Setting this parameter affects the operation of DW_apb_i2c only when it is in slave mode. 
+This controls the "RESTART_DET" bit in the IC_RAW_INTR_STAT, IC_INTR_MASK, IC_INTR_STAT, 
+and IC_CLR_RESTART_DET registers.This also controls the ic_restart_det_intr(_n) 
+and ic_intr(_n) signals.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_SLV_RESTART_DET_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Generate STOP_DET interrupt only if Master is active?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c generates STOP_DET interrupt when master is active:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+Checked (1): Allows the master to detect and issue the stop interrupt when master is active.
+</li>
+                                                    <li>
+Unchecked (0): The master always detects and issues the stop interrupt irrespective of whether it is active.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>
+This parameter affects the operation of DW_apb_i2c when it is in master mode. 
+This controls the STOP_DET bit of the IC_RAW_INTR_STAT, IC_INTR_MASK, 
+IC_INTR_STAT and IC_CLR_STOP_DET registers. This also controls the ic_stop_det_intr(_n) and 
+ic_intr(_n) signals.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE ==0</p>
+                                            <p>Parameter Name: IC_STOP_DET_IF_MASTER_ACTIVE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Status bits to indicate the reason for clock stretching?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If this parameter is set, the DW_apb_i2c consists of status bits indicating
+the reason for clock stretching in the IC_STATUS Register.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE ==0</p>
+                                            <p>Parameter Name: IC_STAT_FOR_CLK_STRETCH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include programmable bit for blocking Master commands?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c transmits data on I2C bus as soon as data is available in 
+Tx FIFO. When checked, allows the master to hold the transmission of data on 
+I2C bus when Tx FIFO has data to transmit.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_TX_CMD_BLOCK</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable blocking Master commands after reset?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c has its transmit command block enabled or disabled after reset.
+If checked, the DW_apb_i2c blocks the transmission of data on I2C bus.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_TX_CMD_BLOCK==1</p>
+                                            <p>Parameter Name: IC_TX_CMD_BLOCK_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include First data byte indication in IC_DATA_CMD register?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c generates FIRST_DATA_BYTE status bit in IC_DATA_CMD register.
+When checked, the master/slave receiver to set the FIRST_DATA_BYTE status bit
+in IC_DATA_CMD register to indicate whether the data present in IC_DATA_CMD register is 
+first data byte after the address phase of a receive transfer.
+</p>
+                                            <p class="BLANK" />
+                                            <p>Note: In the case when APB_DATA_WIDTH is set to 8, you must perform two
+APB reads to the IC_DATA_CMD register to get status on bit 11.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: IC_FIRST_DATA_BYTE_STATUS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Avoid Rx FIFO Flush on Tranmsit Abort?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This Parameter controls the Rx FIFO Flush during the Transmit Abort.
+If this parameter is checked(1), only the Tx FIFO is flushed (not the Rx FIFO)
+Flush on the Transmit Abort.
+If this parameter is unchecked(0), both Tx FIFO and Rx FIFO are flushed on Transmit Abort.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE ==0</p>
+                                            <p>Parameter Name: IC_AVOID_RX_FIFO_FLUSH_ON_TX_ABRT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Enable IC_CLK Frequency Reduction?</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>This parameter is used to reduce the system clock frequency (ic_clk) 
+by reducing the internal latency required to generate the high period 
+and low period of the SCL line.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: ([&lt;functionof&gt; %item]) &amp;&amp; (IC_ULTRA_FAST_MODE ==0)</p>
+                                            <p>Parameter Name: IC_CLK_FREQ_OPTIMIZATION</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-I2CVersion3.0Features"></a>I2C Version 3.0 Features Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-I2CVersion3.0Features"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+I2C Version 3.0 Features Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="I2C Version 3.0 Features Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              I2C 3.0 Features
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Bus Clear feature?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter will enable the Bus clear feature for the DW_apb_i2c core.
+</p>
+                                            <p class="BLANK" />
+                                            <p>
+If this parameter is set:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If an SDA line is stuck at low for IC_SDA_STUCK_LOW_TIMEOUT period of ic_clk, DW_apb_i2c master generates a master transmit abort (IC_TX_ABRT_SOURCE[17]: ABRT_SDA_STUCK_AT_LOW) to indicate SDA stuck at low.<p class="BLANK" />User can enable the SDA_STUCK_RECOVERY_EN (IC_ENABLE[3]) register bit to recover the SDA by sending at most 9 SCL clocks.<p class="BLANK" />If SDA line is recovered, then the master generates a STOP and auto clear the 'SDA_STUCK_RECOVERY_EN' register bit and resume the normal I2C transfers.<p class="BLANK" />If an SDA line is not recovered, then the master auto clears the SDA_STUCK_RECOVERY_EN register bit and asserts the SDA_STUCK_NOT_RECOVERED (IC_STATUS[11]) status bit to indicate the SDA is not recovered after sending 9 SCL clocks which intimate the user for system reset.
+</li>
+                                                    <li>
+If SCL line is stuck at low for IC_SCL_STUCK_LOW_TIMEOUT period of ic_clk, DW_apb_i2c Master will generate an SCL_STUCK_AT_LOW (IC_INTR_RAW_STATUS[14]) interrupt to intimate the user for system reset.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE ==0</p>
+                                            <p>Parameter Name: IC_BUS_CLEAR_FEATURE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has SCL Stuck Timeout value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffffffff</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the IC_SCL_STUCK_LOW_TIMEOUT Register.</p>
+                                            <p>Values: 0x0, ..., 0xffffffff</p>
+                                            <p>DefaultValue: 0xffffffff</p>
+                                            <p>Enabled: IC_BUS_CLEAR_FEATURE==1</p>
+                                            <p>Parameter Name: IC_SCL_STUCK_TIMEOUT_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has SDA Stuck Timeout value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffffffff</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the IC_SDA_STUCK_LOW_TIMEOUT Register.</p>
+                                            <p>Values: 0x0, ..., 0xffffffff</p>
+                                            <p>DefaultValue: 0xffffffff</p>
+                                            <p>Enabled: IC_BUS_CLEAR_FEATURE==1</p>
+                                            <p>Parameter Name: IC_SDA_STUCK_TIMEOUT_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable DEVICE-ID feature?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If this Parameter is enabled, the DW_apb_i2c slave includes a 24-bit 
+IC_DEVICE_ID Register to store the value of
+Device-ID and transmits whenever master is requested.</p>
+                                            <p class="BLANK" />
+                                            <p>
+The Master mode includes a DEVICE_ID bit 13 in IC_TAR register to initiate
+the Device ID read for a particular slave address mentioned in IC_TAR[6:0]
+register.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE ==0</p>
+                                            <p>Parameter Name: IC_DEVICE_ID</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Has I2C Slave DEVICE ID value of?</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Device ID Value of the I2C Slave stored in the IC_DEVICE_ID Register (24 bit, MSB is transferred first
+on the Device ID read from the master).</p>
+                                            <p>Values: 0x0, ..., 0xffffff</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: IC_DEVICE_ID==1</p>
+                                            <p>Parameter Name: IC_DEVICE_ID_VALUE</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-SMBusFeatures"></a>SMBus Features Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-SMBusFeatures"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+SMBus Features Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="SMBus Features Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              I2C System Management Bus Features
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable SMBus Mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c Master/Slave supports SMBus mode.
+If checked, the DW_apb_i2c includes the SMBus mode related registers, real-time checks, 
+timeout interrupts, and SMBus optional signals.</p>
+                                            <p class="BLANK" />
+                                            <p>
+Note: If this parameter is selected (1), then the user can set the parameter
+IC_MAX_SPEED_MODE to Standard mode(1) or Fast Mode/Fast Mode Plus (2).</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: ([&lt;functionof&gt; %item]) &amp;&amp; (IC_ULTRA_FAST_MODE ==0)</p>
+                                            <p>Parameter Name: IC_SMBUS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable Multiple SAR feature?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter allows user to include Multiple SAR feature in the DW_apb_i2c.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: ([&lt;functionof&gt; %item]) &amp;&amp; (IC_SMBUS == 1)</p>
+                                            <p>Parameter Name: IC_MULTI_SAR_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of SAR's Supported?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter determines the number of SARs supported by DW_apb_i2c.</p>
+                                            <p>Values: 2, 3, 4</p>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: IC_MULTI_SAR_EN == 1</p>
+                                            <p>Parameter Name: IC_NUM_SARS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has SMBus clock low Slave extend default Timeout value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffffffff</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the IC_SMBUS_CLK_LOW_SEXT Register.</p>
+                                            <p>Values: 0x0, ..., 0xffffffff</p>
+                                            <p>DefaultValue: 0xffffffff</p>
+                                            <p>Enabled: IC_SMBUS==1</p>
+                                            <p>Parameter Name: IC_SMBUS_CLK_LOW_SEXT_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has SMBus clock low Master extend default Timeout value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffffffff</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the IC_SMBUS_CLK_LOW_MEXT Register.</p>
+                                            <p>Values: 0x0, ..., 0xffffffff</p>
+                                            <p>DefaultValue: 0xffffffff</p>
+                                            <p>Enabled: IC_SMBUS==1</p>
+                                            <p>Parameter Name: IC_SMBUS_CLK_LOW_MEXT_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has SMBus Thigh:Max Idle count Value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffff</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the IC_SMBUS_THIGH_MAX_IDLE_COUNT Register.</p>
+                                            <p>Values: 0x0, ..., 0xffff</p>
+                                            <p>DefaultValue: 0xffff</p>
+                                            <p>Enabled: IC_SMBUS==1</p>
+                                            <p>Parameter Name: IC_SMBUS_RST_IDLE_CNT_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable SMBus Optional Signals?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter controls whether DW_apb_i2c includes 
+Optional SMBus Suspend and Alert signals on the interface.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_SMBUS==1</p>
+                                            <p>Parameter Name: IC_SMBUS_SUSPEND_ALERT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Optional slave address register?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter controls whether to include optional 
+Slave Address Register in SMBus Mode.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: (IC_SMBUS == 1) &amp;&amp; (IC_MULTI_SAR_EN==0)</p>
+                                            <p>Parameter Name: IC_OPTIONAL_SAR</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has I2C default optional slave address of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether to include Optional Slave Address Register in
+SMBus Mode. A user is not allowed to assign any reserved 
+addresses. The reserved address are as follows:</p>
+                                            <p class="BLANK" />
+                                            <p>
+0x00 0x01 0x02 0x03 0x04 0x05 0x06 0x07</p>
+                                            <p class="BLANK" />
+                                            <p>
+0x78 0x79 0x7a 0x7b 0x7c 0x7d 0x7e 0x7f</p>
+                                            <p>Values: 0x0, ..., 0x7f</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: IC_OPTIONAL_SAR==1</p>
+                                            <p>Parameter Name: IC_OPTIONAL_SAR_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable Address Resolution Protocol in SMBus Mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether DW_apb_i2c includes logic to detect and
+respond ARP commands in Slave mode. It also includes logic to
+generate/validate the PEC byte at the end of the transfer in 
+Slave mode only.</p>
+                                            <p>Values: 0x0, 0x1</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: IC_SMBUS==1</p>
+                                            <p>Parameter Name: IC_SMBUS_ARP</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">SMBus Unique Device Identifier (UDID) Hardcode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls whether Unique Device Identifier (UDID) used for Dynamic
+Address Resolution process in SMBus ARP Mode is Hardcoded 
+(Upper 96-bits) or Complete UDID is Software Programmable.</p>
+                                            <p>Values: 0x0, 0x1</p>
+                                            <p>DefaultValue: 0x1</p>
+                                            <p>Enabled: IC_SMBUS_ARP==1</p>
+                                            <p>Parameter Name: IC_SMBUS_UDID_HC</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has SMBUS Unique device identifier (MSB 96 bits) value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If the parameter IC_SMBUS_UDID_HC is 1, stores the Static Unique 
+Device Identifier used for Dynamic Address Resolution process in 
+SMBus ARP Mode (Upper 96bits of UDID).
+If the parameter IC_SMBUS_UDID_HC is 0, then this field is used as the
+default value of the upper 96bits of the UDID Registers
+{IC_SMBUS_UDID_WORD3, IC_SMBUS_UDID_WORD2, IC_SMBUS_UDID_WORD1}</p>
+                                            <p>Values: 0x0, ..., 0xffffffffffffffffffffffff</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: IC_SMBUS_ARP==1</p>
+                                            <p>Parameter Name: IC_SMBUS_UDID_MSB</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has Default SMBus Unique device identifier (LSB 32 bits) value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffffffff</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If the parameter IC_SMBUS_UDID_HC is 1, specifies default value of 
+the IC_SMBUS_UDID_LSB register used for Dynamic Address Resolution 
+process in SMBus ARP mode (Lower 32bits of UDID).
+If the parameter IC_SMBUS_UDID_HC is 0, specifies default value of 
+the IC_SMBUS_UDID_WORD0 register used for Dynamic Address Resolution 
+process in SMBus ARP mode (Lower 32bits of UDID).</p>
+                                            <p>Values: 0x0, ..., 0xffffffff</p>
+                                            <p>DefaultValue: 0xffffffff</p>
+                                            <p>Enabled: IC_SMBUS_ARP==1</p>
+                                            <p>Parameter Name: IC_SMBUS_UDID_LSB_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has Default Persistent Slave Address register bit Value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the Persistent Slave Address register bit in IC_CON Register.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_SMBUS_ARP==1</p>
+                                            <p>Parameter Name: IC_PERSISTANT_SLV_ADDR_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has Default Persistent Slave Address register (IC_SAR2) bit Value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the Persistent Slave Address register (IC_SAR2) bit in IC_CON Register.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: (IC_MULTI_SAR_EN == 1) &amp;&amp; (IC_NUM_SARS &gt;= 2) &amp;&amp; (IC_SMBUS_ARP==1)</p>
+                                            <p>Parameter Name: IC_PERSISTANT_SLV_ADDR2_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has Default Persistent Slave Address register (IC_SAR3) bit Value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the Persistent Slave Address register (IC_SAR3) bit in IC_CON Register.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: (IC_MULTI_SAR_EN == 1) &amp;&amp; (IC_NUM_SARS &gt;= 3) &amp;&amp; (IC_SMBUS_ARP==1)</p>
+                                            <p>Parameter Name: IC_PERSISTANT_SLV_ADDR3_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Has Default Persistent Slave Address register (IC_SAR4) bit Value of?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Default value of the Persistent Slave Address register (IC_SAR4) bit in IC_CON Register.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: (IC_MULTI_SAR_EN == 1) &amp;&amp; (IC_NUM_SARS &gt;= 4) &amp;&amp; (IC_SMBUS_ARP==1)</p>
+                                            <p>Parameter Name: IC_PERSISTANT_SLV_ADDR4_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select the Multiple SAR UDID Identification Process?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When set to 0, the DW_apb_i2c uses UDID[LOG2_IC_NUM_SARS-1:0] bits to identify each slave during the
+SMBus ARP sequence. When set to 1, the DW_apb_i2c incorporates separate UDID registers for each slave.
+The DW_apb_i2c uses these values to identify each slave during the SMBus ARP sequence.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: IC_SMBUS_ARP==1 &amp;&amp; IC_MULTI_SAR_EN==1</p>
+                                            <p>Parameter Name: IC_MULTI_SAR_UDID_CTRL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hardcode IC_SAR2 SMBus Unique Device Identifier (UDID)?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When set to 1, the UDID of the IC_SAR2 slave address is hardcoded and registers IC_SAR2_SMBUS_UDID_WORD0/1/2/3 are removed.
+When set to 0, the UDID of IC_SAR2 is programmable through registers IC_SAR2_SMBUS_UDID_WORD0/1/2/3.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: IC_MULTI_SAR_UDID_CTRL==1</p>
+                                            <p>Parameter Name: IC_SAR2_SMBUS_UDID_HC</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Default Value of Registers IC_SAR2_SMBUS_UDID_WORD0/1/2/3?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffff0000ffff0000ffff00003fff0000</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If the parameter IC_SAR2_SMBUS_UDID_HC is 1, stores the Static Unique Device Identifier used for
+Dynamic Address Resolution process in SMBus ARP Mode for IC_SAR2 slave address. If the parameter
+IC_SAR2_SMBUS_UDID_HC is 0, then this field is used as the default value of the IC_SAR2 UDID Registers
+{IC_SAR2_SMBUS_UDID_WORD3, IC_SAR2_SMBUS_UDID_WORD2, IC_SAR2_SMBUS_UDID_WORD1, IC_SAR2_SMBUS_UDID_WORD0}.</p>
+                                            <p>Values: 0x0, ..., 0xffffffffffffffffffffffffffffffff</p>
+                                            <p>DefaultValue: 0xffff0000ffff0000ffff00003fff0000</p>
+                                            <p>Enabled: IC_MULTI_SAR_UDID_CTRL==1</p>
+                                            <p>Parameter Name: IC_SAR2_SMBUS_UDID_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hardcode IC_SAR3 SMBus Unique Device Identifier (UDID)?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When set to 1, the UDID of the IC_SAR3 slave address is hardcoded and registers IC_SAR3_SMBUS_UDID_WORD0/1/2/3 are removed.
+When set to 0, the UDID of IC_SAR3 is programmable through registers IC_SAR3_SMBUS_UDID_WORD0/1/2/3.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: IC_NUM_SARS&gt;=3 &amp;&amp; IC_MULTI_SAR_UDID_CTRL==1</p>
+                                            <p>Parameter Name: IC_SAR3_SMBUS_UDID_HC</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Default Value of Registers IC_SAR3_SMBUS_UDID_WORD0/1/2/3?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffff0000ffff0000ffff00007fff0000</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If the parameter IC_SAR3_SMBUS_UDID_HC is 1, stores the Static Unique Device Identifier used for
+Dynamic Address Resolution process in SMBus ARP Mode for IC_SAR3 slave address. If the parameter
+IC_SAR3_SMBUS_UDID_HC is 0, then this field is used as the default value of the IC_SAR3 UDID Registers
+{IC_SAR3_SMBUS_UDID_WORD3, IC_SAR3_SMBUS_UDID_WORD2, IC_SAR3_SMBUS_UDID_WORD1, IC_SAR3_SMBUS_UDID_WORD0}.</p>
+                                            <p>Values: 0x0, ..., 0xffffffffffffffffffffffffffffffff</p>
+                                            <p>DefaultValue: 0xffff0000ffff0000ffff00007fff0000</p>
+                                            <p>Enabled: IC_NUM_SARS&gt;=3 &amp;&amp; IC_MULTI_SAR_UDID_CTRL==1</p>
+                                            <p>Parameter Name: IC_SAR3_SMBUS_UDID_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hardcode IC_SAR4 SMBus Unique Device Identifier (UDID)?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When set to 1, the UDID of the IC_SAR4 slave address is hardcoded and registers IC_SAR4_SMBUS_UDID_WORD0/1/2/3 are removed.
+When set to 0, the UDID of IC_SAR4 is programmable through registers IC_SAR4_SMBUS_UDID_WORD0/1/2/3.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: IC_NUM_SARS&gt;=4 &amp;&amp; IC_MULTI_SAR_UDID_CTRL==1</p>
+                                            <p>Parameter Name: IC_SAR4_SMBUS_UDID_HC</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Default Value of Registers IC_SAR4_SMBUS_UDID_WORD0/1/2/3?</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0xffff0000ffff0000ffff0000bfff0000</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>If the parameter IC_SAR4_SMBUS_UDID_HC is 1, stores the Static Unique Device Identifier used for
+Dynamic Address Resolution process in SMBus ARP Mode for IC_SAR4 slave address. If the parameter
+IC_SAR4_SMBUS_UDID_HC is 0, then this field is used as the default value of the IC_SAR4 UDID Registers
+{IC_SAR4_SMBUS_UDID_WORD3, IC_SAR4_SMBUS_UDID_WORD2, IC_SAR4_SMBUS_UDID_WORD1, IC_SAR4_SMBUS_UDID_WORD0}.</p>
+                                            <p>Values: 0x0, ..., 0xffffffffffffffffffffffffffffffff</p>
+                                            <p>DefaultValue: 0xffff0000ffff0000ffff0000bfff0000</p>
+                                            <p>Enabled: IC_NUM_SARS&gt;=4 &amp;&amp; IC_MULTI_SAR_UDID_CTRL==1</p>
+                                            <p>Parameter Name: IC_SAR4_SMBUS_UDID_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-I2CVersion6.0Features"></a>I2C Version 6.0 Features Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-I2CVersion6.0Features"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+I2C Version 6.0 Features Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="I2C Version 6.0 Features Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              I2C 6.0 Features
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable Ultra-Fast Mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter is used to control whether DW_apb_i2c supports Ultra-Fast speed mode or not.</p>
+                                            <p class="BLANK" />
+                                            <p>
+If this Parameter is enabled, the Master
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+Disables the Arbitration, clock synchronization features.
+</li>
+                                                    <li>
+Support only write transfers.
+</li>
+                                                    <li>
+Does not check the validity of ACK/NACK for each byte.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>
+The Slave 
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+Supports only write transfers.
+</li>
+                                                    <li>
+Disables the logic to generate ACK/NACK after the end of each byte.
+</li>
+                                                    <li>
+Disables the logic to stretch the clock if RX-FIFO is full.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: IC_ULTRA_FAST_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Ultra Fast speed SCL high count is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0001</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of Ultra-Fast Speed I2C Clock SCL High Count register (IC_UFM_SCL_HCNT). 
+The value must be calculated based on the I2C data rate desired and I2C clock frequency.
+When parameter IC_USE_COUNTS = 0, this parameter is automatically calculated using the IC_CLOCK_PERIOD parameter.</p>
+                                            <p>Values: IC_HCNT_LO_LIMIT, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x0001</p>
+                                            <p>Enabled: (IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE==1)</p>
+                                            <p>Parameter Name: IC_UFM_SCL_HIGH_COUNT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Ultra Fast speed SCL low count is?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0006</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of Ultra-Fast Speed I2C Clock SCL Low Count register (IC_UFM_SCL_LCNT). 
+The value must be calculated based on the I2C data rate desired and I2C clock frequency.
+When parameter IC_USE_COUNTS = 0, this parameter is automatically calculated using the IC_CLOCK_PERIOD parameter.</p>
+                                            <p>Values: IC_LCNT_LO_LIMIT, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x0006</p>
+                                            <p>Enabled: (IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE==1)</p>
+                                            <p>Parameter Name: IC_UFM_SCL_LOW_COUNT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Maximum length (in ic_clk cycles) of suppressed spikes in Ultra Fast mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset value of maximum suppressed spike length register in Ultra-Fast Mode (IC_UFM_SPKLEN Register).
+Spike length is expressed in ic_clk cycles and this value is calculated based on the value of IC_CLOCK_PERIOD.</p>
+                                            <p>Values: 0x1, ..., 0xff</p>
+                                            <p>DefaultValue: 0x1</p>
+                                            <p>Enabled: IC_ULTRA_FAST_MODE ==1</p>
+                                            <p>Parameter Name: IC_DEFAULT_UFM_SPKLEN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Has Ultra Fast mode tBuf count Value of?</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0x8</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Default value of the IC_UFM_TBUF_CNT Register. This parameter is active when the IC_USE_COUNTS and
+IC_ULTRA_FAST_MODE parameters are checked (1); otherwise, this value is automatically calculated 
+using the IC_CLOCK_PERIOD parameter.</p>
+                                            <p>Values: 0x0, ..., 0xffff</p>
+                                            <p>DefaultValue: 0x8</p>
+                                            <p>Enabled: (IC_USE_COUNTS==1) &amp;&amp; (IC_ULTRA_FAST_MODE==1)</p>
+                                            <p>Parameter Name: IC_UFM_TBUF_CNT_DEFAULT</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

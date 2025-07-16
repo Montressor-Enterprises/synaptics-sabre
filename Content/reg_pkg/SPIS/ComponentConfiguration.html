@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Parameters for DW_apb_ssi - 4.03a</title>
+        <link rel="home" href="#idp33023640" title="Parameters for DW_apb_ssi - 4.03a" />
+        <link rel="next" href="#Parameter-Descriptions" title="" />
+    </head>
+    <body>
+        <div class="article">
+            <h1><a name="idp33023640"></a>Parameters for DW_apb_ssi - 4.03a</h1>
+            <div class="sect1">
+                <div class="titlepage">
+                </div>
+                <p>These tables define all of the user configuration options for this component. Entries which are grayed-out are disabled (read-only) in the current configuration.</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li><a  href="#paramtable-TopLevelParameters" title="Table&#160;1.&#160;Top Level Parameters Parameters">Top Level Parameters</a>
+                        </li>
+                        <li><a  href="#paramtable-SPIParameters" title="Table&#160;2.&#160;SPI Parameters Parameters">SPI Parameters</a>
+                        </li>
+                        <li><a  href="#paramtable-Clocking" title="Table&#160;3.&#160;Clocking Parameters">Clocking</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-TopLevelParameters"></a>Top Level Parameters Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-TopLevelParameters"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Top Level Parameters Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Top Level Parameters Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              System Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">APB Interface type</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">APB 3.0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the APB slave interface type.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>APB 2.0 (0)</li>
+                                                    <li>APB 3.0 (1)</li>
+                                                    <li>APB 4.0 (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: APB 2.0</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: SSI_APBIF_TYPE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable APB error response?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Yes</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures if APB 3.0 interface should provide error response for invalid
+read and write accesses. If this parameter is set to 0 then pslverr will 
+always be driven to 0.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: SSI_APBIF_TYPE != 0</p>
+                                            <p>Parameter Name: SSI_APB3_ERR_RESP_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">APB Data Bus Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Width of APB data bus</p>
+                                            <p>Values: 8, 16, 32</p>
+                                            <p>DefaultValue: 32</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: APB_DATA_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Device Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Serial master or slave configuration</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Serial Slave</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configure the device as a master or a slave serial peripheral</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Serial Slave (0)</li>
+                                                    <li>Serial Master (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Serial Master</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_IS_MASTER</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Enhanced Clock Ratio Architecture?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Yes</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the device to include new architecture for Transmit and Receive FIFO.
+This will enable the device to work in clock ratio of 4 and 6 between ssi_clk and sclk_in signals.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: SSI_IS_MASTER==0 &amp;&amp; [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: SSI_ENH_CLK_RATIO</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Maximum Transfer Size</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32 Bits</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the Maximum Transfer Size supported by device.
+The Receive amd Transmit FIFO widths will be equal to configured value</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>16 Bits (16)</li>
+                                                    <li>32 Bits (32)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 16 Bits</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_MAX_XFER_SIZE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Receive FIFO buffer depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x20</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the depth of the receive FIFO buffer.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If SSI_SYNC_CLK == 0 or SSI_SPI_MODE != 0, minimum FIFO depth is 4.
+</li>
+                                                    <li>
+Else minimum FIFO depth is 2.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 0x2, ..., 0x100</p>
+                                            <p>DefaultValue: 0x8</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_RX_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Transmit FIFO buffer depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x20</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the depth of the transmit FIFO buffer.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If SSI_SPI_MODE == 0, minimum FIFO depth is 2.
+</li>
+                                                    <li>
+If SSI_SPI_MODE != 0 and SSI_MAX_XFER_SIZE == 16, minimum FIFO depth is 5.
+</li>
+                                                    <li>
+If SSI_SPI_MODE != 0 and SSI_MAX_XFER_SIZE == 32, minimum FIFO depth is 3.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 0x2, ..., 0x100</p>
+                                            <p>DefaultValue: 0x8</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_TX_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of slave select lines</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the number of slave select lines from the DW_apb_ssi master.</p>
+                                            <p>Values: 1, ..., 16</p>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: SSI_IS_MASTER==1</p>
+                                            <p>Parameter Name: SSI_NUM_SLAVES</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Programmable RXD Sample Logic</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Include logic to allow programmable delay on the sample time of
+the rxd input. When this logic is included, the default sample
+time of the rxd input can be delayed by a programmable number
+of ssi_clk cycles.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: SSI_IS_MASTER==1</p>
+                                            <p>Parameter Name: SSI_HAS_RX_SAMPLE_DELAY</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Maximum RXD Sample Delay</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">4</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Defines the maximum number of ssi_clk cycles that can
+be used to delay the sampling of the rxd input
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+2 flip-flops added to design logic for each value
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 4, ..., 255</p>
+                                            <p>DefaultValue: 4</p>
+                                            <p>Enabled: SSI_HAS_RX_SAMPLE_DELAY==1</p>
+                                            <p>Parameter Name: SSI_RX_DLY_SR_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Peripheral ID code</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0xffffffff</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Individual peripheral Identification code.</p>
+                                            <p>Values: 0x0, ..., 0xffffffff</p>
+                                            <p>DefaultValue: 0xffffffff</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_ID</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Endian conversion for XIP and data register Reads?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When enabled user can choose whether a sideband signal or register programming is used to select the endianness for XIP and data register reads.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+0 - No 
+</li>
+                                                    <li>
+1 - Use sideband signal endconv_en
+</li>
+                                                    <li>
+2 - Programming SECONV field in CTRLR0 register
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Use sideband signal (1)</li>
+                                                    <li>Use register programming (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: SSI_IS_MASTER==1</p>
+                                            <p>Parameter Name: SSI_INC_ENDCONV</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              External Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include DMA handshaking interface signals?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the inclusion of DMA handshaking interface signals.
+Check the box to include the DMA interface signals.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_HAS_DMA</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Configure interrupt pinout</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Combined Interrupt</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects which interrupt related pins appear as outputs of the design.
+The user has a choice of either a single combined interrupt (the logical
+OR of all DW_apb_ssi interrupt outputs) or have each individual interrupt
+appear as a separate output pin on the component.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+When configurated as a master there are 6 individual interrupts.
+</li>
+                                                    <li>
+When configurated as a slave there are 5 individual interrupts.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Individual Interrupts (0)</li>
+                                                    <li>Combined Interrupt (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Individual Interrupts</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_INTR_IO</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Active interrupt level</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Active High</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the active level of the output interrupt lines.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Active Low (0)</li>
+                                                    <li>Active High (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Active Low</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_INTR_POL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Internal Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hard code the frame format?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When set, the frame format (serial protocol) can be fixed so that the user cannot dynamically
+program it. This setting restricts the use of DW_apb_ssi to be only a single-frame
+format peripheral.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_HC_FRF</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Default frame format</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Motorola SPI</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the frame format that will be available directly after reset.
+User can configure any of the frame formats to be the default frame format.
+If the frame format is hardcoded, the default frame format is the only
+frame format possible.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Motorola SPI (0x0)</li>
+                                                    <li>TI SSP (0x1)</li>
+                                                    <li>NatSemi Microwire (0x2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Motorola SPI</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_DFLT_FRF</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Default serial clock polarity</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls the default state of the clock polarity.
+Defines the level of the serial clock when in-active (not toggling).
+Only used when the frame format is Motorola SPI.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>0 (0x0)</li>
+                                                    <li>1 (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: SSI_DFLT_FRF==0</p>
+                                            <p>Parameter Name: SSI_DFLT_SCPOL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Default serial clock phase</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Controls the default state of the clock phase.
+Only used when the frame format is Motorola SPI.
+The serial clock phase selects the relationship of the serial clock with the
+serial data. When 0, data is captured on the first edge of the serial clock.
+When 1, data is captured on the second edge of the serial clock.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>0 (0x0)</li>
+                                                    <li>1 (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: SSI_DFLT_FRF==0</p>
+                                            <p>Parameter Name: SSI_DFLT_SCPH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Toggle slave select signal between frames when in SPI mode and SCPH=0?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Yes</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When operating in SPI mode with clock phase (SCPH) set to 0, this parameter 
+controls the behavior of the slave select line (ss_*_n) between data frames.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If this parameter is set to "Yes" and CTRLR0.SSTE is "1" the ss_*_n line will toggle between consecutive data frames, with the serial clock (sclk) being held to its default value while ss_*_n is high.
+</li>
+                                                    <li>
+If this parameter is set to "Yes" and CTRLR0.SSTE is "0" the ss_*_n will stay low and sclk will run continuously for the duration of the transfer; 
+</li>
+                                                    <li>
+If this parameter is set to 0 the ss_*_n will stay low and sclk will run continuously for the duration of the transfer
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Yes</p>
+                                            <p>Enabled: (SSI_DFLT_FRF==0) || (SSI_HC_FRF==0)</p>
+                                            <p>Parameter Name: SSI_SCPH0_SSTOGGLE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Default Endianess Value</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Endian Conversion Disabled</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Controls the default state of the endian conversion feature. 
+Defines the reset value of the CTRLR0.SECONV register field.
+Only used in Master mode.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Endian Conversion Disabled (0x0)</li>
+                                                    <li>Endian Conversion Enabled (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Endian Conversion Disabled</p>
+                                            <p>Enabled: SSI_INC_ENDCONV==2</p>
+                                            <p>Parameter Name: SSI_DFLT_SECONV</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-SPIParameters"></a>SPI Parameters Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-SPIParameters"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+SPI Parameters Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="SPI Parameters Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Enhanced SPI mode Parameters
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select SPI mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Standard SPI Mode</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures whether the core works in Standard or Dual or Quad or Octal SPI Mode.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+In Dual Mode - width of txd and rxd signals will be 2-bits.
+</li>
+                                                    <li>
+In Quad Mode - width of txd and rxd signals will be 4-bits.
+</li>
+                                                    <li>
+In Octal Mode - width of txd and rxd signals will be 8-bits.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Standard SPI Mode (0)</li>
+                                                    <li>SPI Dual Mode (1)</li>
+                                                    <li>SPI Quad Mode (2)</li>
+                                                    <li>SPI Octal Mode (3)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Standard SPI Mode</p>
+                                            <p>Enabled: ((SSI_DFLT_FRF==0) || (SSI_HC_FRF==0)) &amp;&amp; (SSI_IS_MASTER==1) &amp;&amp; [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: SSI_SPI_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable Enhanced SPI I/O mapping</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures whether user wants to hardcode the I/O Mapping inside the controller.
+After selecting this option the RXD[1] signal will be used to sample the incoming data
+during SPI standard mode of operation.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: SSI_SPI_MODE!=0</p>
+                                            <p>Parameter Name: SSI_IO_MAP_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Dual transfer rate transfers in SPI frame format?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the device to support Dual Data transmission on both
+positive and negative edge of sclk_out</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: SSI_SPI_MODE != 0 &amp;&amp; SSI_IS_MASTER==1 &amp;&amp; [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: SSI_HAS_DDR</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include data strobe signal for rxd line?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the device to include data strobe signaling
+for rxd signal. This signal can be included only when DW_apb_ssi support dual data rate transfers</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: SSI_HAS_DDR ==1 &amp;&amp; SSI_IS_MASTER==1 &amp;&amp; [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: SSI_HAS_RXDS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Data Mask Signal for data transfers in SPI mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects if data mask signal should be included on SPI interface. 
+Data mask signal, when active, will mask the write data on SPI interface</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: (SSI_SPI_MODE != 0) &amp;&amp; (SSI_APBIF_TYPE == 2)</p>
+                                            <p>Parameter Name: SSI_SPI_DM_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Include XIP feature in SPI mode?</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>If selected DW_apb_ssi will be able to perform eXecute In Place (XIP) commands
+while working in SPI protocol. A new sideband signal (xip_en) will be included as a part of APB interface
+which can be used to select if slave interface is used to perform register read/write or in XIP mode.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: (SSI_SPI_MODE != 0) &amp;&amp; (SSI_APBIF_TYPE != 0)</p>
+                                            <p>Parameter Name: SSI_XIP_EN</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-Clocking"></a>Clocking Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-Clocking"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Clocking Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Clocking Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Synchronization parameters
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Are pclk and ssi_clk synchronous?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Defines if the pclk is synchronous to the ssi_clk.
+If they are synchronous then one does not need to retime signals
+across the clock domains.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Yes</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_SYNC_CLK</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Generate clock enable input for ssi_clk?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">No</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When enabled, the ssi_clk_en signal enables data propagation
+through ssi_clk flip-flops. When disabled, the ssi_clk flip-flops
+are always enabled.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>No (0)</li>
+                                                    <li>Yes (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: No</p>
+                                            <p>Enabled: SSI_SYNC_CLK==1</p>
+                                            <p>Parameter Name: SSI_CLK_EN_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">pclk to ssi_clk Synchronization Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Defines the number of synchronization register stages for signals passing from the DW_apb_ssi Slave clock domain (pclk) to DW_apb_ssi Core Clock domain (ssi_clk).
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+2: Two-stage synchronization, both stages positive edge.
+</li>
+                                                    <li>
+3: Three-stage synchronization, all stages positive edge.
+</li>
+                                                    <li>
+4: Four-stage synchronization, all stages positive edge.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>
+across the clock domains.</p>
+                                            <p>Values: 2, 3, 4</p>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_P2S_SYNC_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">ssi_clk to pclk Synchronization Depth</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Defines the number of synchronization register stages for signals passing from the DW_apb_ssi Core Clock domain (ssi_clk) to Slave clock domain (pclk).
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+2: Two-stage synchronization, both stages positive edge.
+</li>
+                                                    <li>
+3: Three-stage synchronization, all stages positive edge.
+</li>
+                                                    <li>
+4: Four-stage synchronization, all stages positive edge.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>
+across the clock domains.</p>
+                                            <p>Values: 2, 3, 4</p>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SSI_S2P_SYNC_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

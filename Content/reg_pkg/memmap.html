@@ -1,0 +1,1362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Sabre Memory Map</title>
+    </head>
+    <body>
+        <h1>Sabre Memory Map</h1>
+        <table class="TableStyle-table" style="mc-table-style: url('../Resources/TableStyles/table.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-table-Head-Header1">
+                    <th class="TableStyle-table-HeadE-Column1-Header1">Start Address</th>
+                    <th class="TableStyle-table-HeadE-Column1-Header1">End Address</th>
+                    <th class="TableStyle-table-HeadE-Column1-Header1">Block</th>
+                    <th class="TableStyle-table-HeadE-Column1-Header1">Comment</th>
+                    <th class="TableStyle-table-HeadD-Column1-Header1">Released_Header</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x00000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x0001FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">ITCM_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x01000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x0100FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">ROM_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x10000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x1001FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">ITCM</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x11000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x1100FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">ROM</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x20000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2001FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">DTCM_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x23E80000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x23EFFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">VM0_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block. High 512KiB aliased to lower</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x23F00000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x23FFFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">VM1_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x24000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x240FFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_MEMA_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP Mem A</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x24100000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2416FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_MEMB_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP Mem B</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2C000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2FFFFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">XSPI_XIP_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x30000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x3001FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">DTCM</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x33E80000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x33EFFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">VM0</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block. High 512KiB aliased to lower</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x33F00000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x33FFFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">VM1</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x34000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x340FFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_MEMA</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP Mem A</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x34100000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x3416FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_MEMB</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP Mem B</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x3C000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x3FFFFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">XSPI_XIP</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory Block</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40012000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40012FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU0_PWRCTRL_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU Private Region - arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4001F000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4001FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU0_IDENTITY_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU Private Region - arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40080000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40080FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">NSACFG</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40100000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4010AFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="USB_CTRL_NS/ComponentRegisters.html">USB_CTRL_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_usb2_device_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4010B000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4010BFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="USB_PHY_NS/biuusbPHY.html">USB_PHY_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">usbPHY.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40110000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40110FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SDIO0_NS/ComponentRegisters.html">SDIO0_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mshc_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40111000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40111FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SDIO1_NS/ComponentRegisters.html">SDIO1_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mshc_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40200000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40203FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="IMG_DHUB_NS/biuimageProc64bDhub.html">IMG_DHUB_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">imageProcDhub.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40210000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x402101FF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="IMG_BCM_NS/biuimageProc.html">IMG_BCM_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">imageProc.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40210400</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x402105FF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="IMG_PIPE_NS/biuIMGPIPE.html">IMG_PIPE_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">imgPipe.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40210800</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4021087F</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="IMG_GBL_NS/biuimageProcGbl.html">IMG_GBL_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">imageProcGbl.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40220000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40227FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_DEV_WRAP_NS/biuCSIDEV.html">CSI2_DEV_WRAP_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">csidev.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40220000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40227FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_DEV_NS/ComponentRegisters.html">CSI2_DEV_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipicsi2_device_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40228000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4022FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_HOST0_WRAP_NS/biuCSIHOST.html">CSI2_HOST0_WRAP_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">csihost.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40228000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4022FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_HOST0_NS/ComponentRegisters.html">CSI2_HOST0_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_csi2_host_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40230000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40237FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_HOST1_WRAP_NS/biuCSIHOST.html">CSI2_HOST1_WRAP_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">csihost.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40230000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40237FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_HOST1_NS/ComponentRegisters.html">CSI2_HOST1_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_csi2_host_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40302000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40302FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SOC_NS/biuSOC_REG.html">SOC_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">soc.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40304000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40304FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">ROM_MPC_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40305000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40305FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">XSPI_MPC_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40306000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40306FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="GPIO0_NS/ComponentRegisters.html">GPIO0_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_gpio_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40307000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40307FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="GPIO1_NS/ComponentRegisters.html">GPIO1_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_gpio_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40312000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40312FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I2CM0_NS/ComponentRegisters.html">I2CM0_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_i2c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40313000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40313FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I2CM1_NS/ComponentRegisters.html">I2CM1_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_i2c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40314000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40314FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I2CS_NS/ComponentRegisters.html">I2CS_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_i2c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40315000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40315FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SPIM_NS/ComponentRegisters.html">SPIM_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_ssi_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40316000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40316FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SPIS_NS/ComponentRegisters.html">SPIS_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_ssi_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40317000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40317FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="UART0_NS/ComponentRegisters.html">UART0_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_uart_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40318000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40318FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="UART1_NS/ComponentRegisters.html">UART1_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_uart_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40319000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40319FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I3C0_NS/ComponentRegisters.html">I3C0_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_i3c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031A000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031AFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I3C1_NS/ComponentRegisters.html">I3C1_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_i3c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031B000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031DFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="XSPI_PHY_NS/XSPI_PHY_NS.html">XSPI_PHY_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">cadence (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031B000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031CFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="XSPI_CTRL_NS/XSPI_CTRL_NS.html">XSPI_CTRL_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">cadence (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031E000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031EFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I2S_NS/biuI2S_REG.html">I2S_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">I2S.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031F000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SWIRE_USER_NS/biuSW_USER_REG.html">SWIRE_USER_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arasan IP</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031F000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4031FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SWIRE_IP_NS/biuSW_IP_REG.html">SWIRE_IP_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arasan IP</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40320000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40320FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">NPU_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40322000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40323FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="DMA0_NS/DMA0_NS.html">DMA0_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40324000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40325FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="DMA1_NS/DMA1_NS.html">DMA1_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">otp.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40330000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4033FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="GLOBAL_NS/biuglobal_cfg.html">GLOBAL_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">global.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40340000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40340FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="PVT_NS/biupvt_sensor.html">PVT_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">pvt_sensor.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40350000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x403507FF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="AON_MAIN_NS/biuAON_Main.html">AON_MAIN_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">aon.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40350800</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40350BFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="AON_I2C_NS/biui2c_slave_aon.html">AON_I2C_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">aon.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40350C00</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40350FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="AON_POR_NS/biuPOR_REGISTERS.html">AON_POR_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">aon.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40352000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x40355FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">AON_MEM_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48000FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER0_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48001000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48001FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER1_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48002000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48002FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER2_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48003000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48003FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER3_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48020000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48020FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SYSINFO_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4802F000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4802FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER_SLOWCLK_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48040000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48040FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">NSWDCTRL</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48041000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48041FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">NSWDREF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48101000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x48101FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SYSCOUNT_STAT_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50011000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50011FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU0_SECCTRL</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU Private Region - arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50012000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50012FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU0_PWRCTRL</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU Private Region - arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5001F000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5001FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU0_IDENTITY</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU Private Region - arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50080000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50080FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SACFG</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50083000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50083FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">VM0_MPC</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50084000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50084FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">VM1_MPC</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50100000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5010AFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="USB_CTRL/ComponentRegisters.html">USB_CTRL</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_usb2_device_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5010B000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5010BFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="USB_PHY/biuusbPHY.html">USB_PHY</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">usbPHY.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50110000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50110FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SDIO0/ComponentRegisters.html">SDIO0</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mshc_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50111000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50111FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SDIO1/ComponentRegisters.html">SDIO1</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mshc_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50200000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50203FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="IMG_DHUB/biuimageProc64bDhub.html">IMG_DHUB</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">imageProcDhub.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50210000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x502101FF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="IMG_BCM/biuimageProc.html">IMG_BCM</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">imageProc.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50210400</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x502105FF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="IMG_PIPE/biuIMGPIPE.html">IMG_PIPE</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">imgPipe.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50210800</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5021087F</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="IMG_GBL/biuimageProcGbl.html">IMG_GBL</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">imageProcGbl.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50220000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50227FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_DEV_WRAP/biuCSIDEV.html">CSI2_DEV_WRAP</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">csidev.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50220000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50227FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_DEV/ComponentRegisters.html">CSI2_DEV</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipicsi2_device_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50228000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5022FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_HOST0/ComponentRegisters.html">CSI2_HOST0</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_csi2_host_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50228000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5022FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_HOST0_WRAP/biuCSIHOST.html">CSI2_HOST0_WRAP</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">csihost.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50230000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50237FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_HOST1_WRAP/biuCSIHOST.html">CSI2_HOST1_WRAP</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">csihost.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50230000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50237FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="CSI2_HOST1/ComponentRegisters.html">CSI2_HOST1</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_csi2_host_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50302000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50302FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SOC/biuSOC_REG.html">SOC</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">soc.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50304000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50304FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">ROM_MPC</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50305000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50305FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">XSPI_MPC</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50306000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50306FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="GPIO0/ComponentRegisters.html">GPIO0</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_gpio_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50307000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50307FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="GPIO1/ComponentRegisters.html">GPIO1</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_gpio_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50312000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50312FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I2CM0/ComponentRegisters.html">I2CM0</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_i2c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50313000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50313FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I2CM1/ComponentRegisters.html">I2CM1</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_i2c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50314000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50314FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I2CS/ComponentRegisters.html">I2CS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_i2c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50315000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50315FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SPIM/ComponentRegisters.html">SPIM</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_ssi_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50316000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50316FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SPIS/ComponentRegisters.html">SPIS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_ssi_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50317000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50317FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="UART0/ComponentRegisters.html">UART0</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_uart_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50318000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50318FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="UART1/ComponentRegisters.html">UART1</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_uart_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50319000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50319FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I3C0/ComponentRegisters.html">I3C0</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_i3c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031A000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031AFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I3C1/ComponentRegisters.html">I3C1</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_i3c_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031B000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031BFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="XSPI_CTRL/XSPI_CTRL.html">XSPI_CTRL</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">cadence (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031B000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031DFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="XSPI_PHY/XSPI_PHY.html">XSPI_PHY</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">cadence (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031E000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031EFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="I2S/biuI2S_REG.html">I2S</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">I2S.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031F000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SWIRE_IP/biuSW_IP_REG.html">SWIRE_IP</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">SW_IP.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031F000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5031FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="SWIRE_USER/biuSW_USER_REG.html">SWIRE_USER</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">SW_USER.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50320000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50320FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">NPU</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50322000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50323FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="DMA0/DMA0.html">DMA0</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50324000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50325FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="DMA1/DMA1.html">DMA1</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">otp.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50330000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5033FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="GLOBAL/biuglobal_cfg.html">GLOBAL</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">global.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50340000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50340FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="PVT/biupvt_sensor.html">PVT</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">pvt_sensor.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50350000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x503507FF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="AON_MAIN/biuAON_Main.html">AON_MAIN</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">aon.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50350800</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50350BFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="AON_I2C/biui2c_slave_aon.html">AON_I2C</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">aon.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50350C00</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50350FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="AON_POR/biuPOR_REGISTERS.html">AON_POR</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">aon.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50352000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x50355FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">AON_MEM</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58000FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER0</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58001000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58001FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER1</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58002000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58002FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER2</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58003000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58003FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER3</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58020000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58020FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SYSINFO</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58021000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58021FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SYSCONTROL</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58022000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58022FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SYS_PPU</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58023000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58023FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">CPU0_PPU</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58028000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58028FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">MGMT_PPU</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58029000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58029FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">DEBUG_PPU</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5802E000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5802EFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">WATCHDOG_SLOWCLK</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5802F000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x5802FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">TIMER_SLOWCLK</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58040000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58040FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SWDCTRL</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58041000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58041FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SWDREF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58100000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58100FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SYSCOUNT_CTRL_S</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58101000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x58101FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">SYSCOUNT_STAT_S</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4800000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA480FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LPS_LPSENSE_NS/biuLP_SENSE.html">LPS_LPSENSE_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">lp_sense_registers.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4810000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA481FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LPS_CSI2_HOST_NS/ComponentRegisters.html">LPS_CSI2_HOST_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_csi2_host_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4810000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA481FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LPS_CSI2_HOST_WRAP_NS/biuCSIHOST.html">LPS_CSI2_HOST_WRAP_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4820000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA483FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_JPEG_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4840000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA484FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_DFF0_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4850000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA485FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_DFF1_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4860000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA486FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_DFF2_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4870000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA487FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_DFF3_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4880000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA488FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_HWVAD_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4890000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA489FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_STATISTICS_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA48A0000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA48AFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LPS_G1_REGS_NS/biugear1_cfg.html">LPS_G1_REGS_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">gear1_cfg.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA4900000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA49FFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_MEM_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5000FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_UART_NS/ComponentRegisters.html">LP_UART_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_uart_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5001000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5001FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_GPIO_NS/ComponentRegisters.html">LP_GPIO_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_gpio_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5002000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5002FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_CACHE_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5003000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5003FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_WDT_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5004000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5004FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_TIMER0_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5005000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5005FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_TIMER1_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5006000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5006FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_TOP_NS/biuLP_PROC.html">LP_TOP_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">lp_proc.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5007000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5007FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_CLKRST_NS/biulp_proc_clk_rst.html">LP_CLKRST_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">lp_proc_clk_rst.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5800000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA580FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_NN_ENGINE0_NS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA5810000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xA581FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_NN_MSS_NS/biuNN_MSS.html">LP_NN_MSS_NS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4800000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB480FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LPS_LPSENSE/biuLP_SENSE.html">LPS_LPSENSE</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">lp_sense_registers.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4810000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB481FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LPS_CSI2_HOST_WRAP/biuCSIHOST.html">LPS_CSI2_HOST_WRAP</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">csihost.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4810000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB481FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LPS_CSI2_HOST/ComponentRegisters.html">LPS_CSI2_HOST</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DWC_mipi_csi2_host_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4820000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB483FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_JPEG</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4840000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB484FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_DFF0</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4850000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB485FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_DFF1</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4860000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB486FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_DFF2</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4870000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB487FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_DFF3</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4880000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB488FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_HWVAD</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4890000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB489FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_STATISTICS</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB48A0000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB48AFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LPS_G1_REGS/biugear1_cfg.html">LPS_G1_REGS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">gear1_cfg.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB4900000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB49FFFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LPS_MEM</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">Memory</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5000000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5000FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_UART/ComponentRegisters.html">LP_UART</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_uart_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5001000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5001FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_GPIO/ComponentRegisters.html">LP_GPIO</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">DW_apb_gpio_header.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5002000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5002FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_CACHE</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5003000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5003FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_WDT</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5004000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5004FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_TIMER0</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5005000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5005FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_TIMER1</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">arm related (html &amp; header not available)</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5006000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5006FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_TOP/biuLP_PROC.html">LP_TOP</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">lp_proc.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5007000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5007FFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"><a href="LP_CLKRST/biulp_proc_clk_rst.html">LP_CLKRST</a>
+                    </td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1">lp_proc_clk_rst.h</td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB5800000</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xB580FFFF</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1">LP_NN_ENGINE0</td>
+                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyB-Column1-Body1">0xB5810000</td>
+                    <td class="TableStyle-table-BodyB-Column1-Body1">0xB581FFFF</td>
+                    <td class="TableStyle-table-BodyB-Column1-Body1"><a href="LP_NN_MSS/biuNN_MSS.html">LP_NN_MSS</a>
+                    </td>
+                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

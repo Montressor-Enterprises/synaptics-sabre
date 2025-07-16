@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>PVT_NS Reg</title>
+    </head>
+    <body>
+        <h1>pvt_sensor</h1>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>pvt_sensor_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000000</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>PVT Control Register</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Enable PVT Sensor ADC for measuremet</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_SEL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>PVT Sensor Measurement mode</p>
+                    <p>00: select temperature-related voltage</p>
+                    <p>01: select external voltage</p>
+                    <p>10: for test purpose</p>
+                    <p>11: for test purpose</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_TSEN_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Bandgap Circuit Enable Control</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_SAMPLE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSADC Sample, Writing 1 to this bit Generates one clock cycle</p>
+                    <p>Sample Pulse to PVT</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[9:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_DATA_COUNT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0xD</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Increase the value of tsadc_data_count to get a higher</p>
+                    <p>precision output</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[13:10]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_TSEN_TRIM
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x8</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Bandgap voltage trim control</p>
+                    <p>4’b1000: minimum voltage</p>
+                    <p>4’b1111: maximum voltage</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[19:14]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_DATA_LT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Delay interms of REFCLK after data ready at which the data is</p>
+                    <p>to be latched</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[20:20]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSEN_CONT_SAMPLE_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>When set TSEN continuous sample mode is enabled</p>
+                    <p>Please set TSEN_CONT_SAMPLE_INTERVAL register for sampling</p>
+                    <p>interval</p>
+                    <p>Also disable TSADC_EN in continuous sample mode.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>pvt_sensor_TSEN_CONT_SAMPLE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000004</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[19:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>INTERVAL_TIMER
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x7FF</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSEN continuous sample interval</p>
+                    <p>Default is 2.7 ms interval</p>
+                    <p>Also minimum interval has to be 1 clk as TSEN needs to see 0 to</p>
+                    <p>1 transition on Enable port</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>pvt_sensor_TSEN_ANA_REG
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000008</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Bandgap chopper enable control</p>
+                    <p>0: disable chopper</p>
+                    <p>1: enable chopper</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Temperature-related voltage buffer control</p>
+                    <p>0: disable voltage buffer</p>
+                    <p>1: enable voltage buffer</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B2
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Bandgap voltage buffer control</p>
+                    <p>0: disable voltage buffer and select AVDD as reference</p>
+                    <p>1: enable voltage buffer and select bandgap voltage as reference</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B3
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>External voltage buffer control</p>
+                    <p>0: disable voltage buffer</p>
+                    <p>1: enable voltage buffer</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B4
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Temperature-related voltage control</p>
+                    <p>0: select voltage 1</p>
+                    <p>1: select voltage 2</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B5
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Temperature-related voltage filter bypass control</p>
+                    <p>0: select filter</p>
+                    <p>1: bypass filter</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[6:6]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B6
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Bandgap voltage filter bypass control</p>
+                    <p>0: select filter</p>
+                    <p>1: bypass filter</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:7]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B7
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Oscillator control</p>
+                    <p>0: disable oscillator</p>
+                    <p>1: enable oscillator</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B8
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[9:9]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B9
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Process corner mode select control</p>
+                    <p>0: disable process corner mode</p>
+                    <p>1: enable process corner mode</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[10:10]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B10
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[11:11]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B11
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[12:12]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B12
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[13:13]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B13
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[14:14]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B14
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:15]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>B15
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Reserved</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(RW)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>pvt_sensor_CLK_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000000C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>REFCLK_DIV4_SEL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>REFCLK Divide by 2 Select</p>
+                    <p>0: REFCLK/2 used as TSEN Clock</p>
+                    <p>1: REFCLK/4 used as TSEN Clock</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_CLKDIV_INSEL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x2</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSADC Clock Divider Input clock Selection</p>
+                    <p>0: REFCLK/2</p>
+                    <p>1: REFCLK/4</p>
+                    <p>2,3: REFCLK</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSADC_CLKDIV_VAL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x20</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSADC Clock Divider value</p>
+                    <p>TSADC_CLK = DIV_INCLK/(TSADC_CLKDIV_VAL+1)</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(RW)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>pvt_sensor_TSADC_INT_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000010</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSEN_DATA_RDY_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSEN_DATA_RDY Interrupt Enable</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>PROC_DATA_RDY_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>PROC_DATA_RDY Interrupt Enable</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSEN_MAX_FAIL_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSEN Max Data Limit Failure Interrupt</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSEN_MIN_FAIL_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSEN Min Data Limit Failure Interrupt</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(RW)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>pvt_sensor_TSEN_DATA_LIMIT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000014</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>MAX
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x3FF</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Temperature Sensor Max Data Limit</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>MIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Temperature Sensor Min Data Limit</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(RW)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>pvt_sensor_PVT_DATA_OUT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000018</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>PVT Sensor Data Read Out</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSEN_DATA
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p> TSEN Monitor Data Read. Only LSB 10-bits are Valid</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>PROC_DATA
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p> Process Monitor Data Read. Only LSB 10-bits are Valid</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(WOC-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>pvt_sensor_PVT_INT_STATUS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000001C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>PVT Sensor Interrupt Status Register</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSEN_DATA_RDY_INTR
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSEN_DATA_RDY Interrupt Enable</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>PROC_DATA_RDY_INTR
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>PROC_DATA_RDY Interrupt Enable</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSEN_MAX_FAIL_INTR
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSEN Max Data Limit Failure Interrupt</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>TSEN_MIN_FAIL_INTR
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>TSEN Min Data Limit Failure Interrupt</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

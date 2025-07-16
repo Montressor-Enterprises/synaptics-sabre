@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title> XSPI_PHY_NS </title>
+    </head>
+    <body>
+        <h1>XSPI_PHY_NS</h1>
+        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-table-Head-Header1">
+                    <th class="TableStyle-table-HeadE-Column1-Header1">Address</th>
+                    <th class="TableStyle-table-HeadD-Column1-Header1">Register</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2000</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_dq_timing_reg">phy_dq_timing_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2004</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_dqs_timing_reg">phy_dqs_timing_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2008</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_gate_lpbk_ctrl_reg">phy_gate_lpbk_ctrl_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x200c</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_dll_master_ctrl_reg">phy_dll_master_ctrl_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2010</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_dll_slave_ctrl_reg">phy_dll_slave_ctrl_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2014</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_ie_timing_reg">phy_ie_timing_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2018</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_obs_reg_0">phy_obs_reg_0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x201c</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_dll_obs_reg_0">phy_dll_obs_reg_0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2020</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_dll_obs_reg_1">phy_dll_obs_reg_1</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2028</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_static_togg_reg">phy_static_togg_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2034</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_wr_deskew_pd_ctrl_0_reg">phy_wr_deskew_pd_ctrl_0_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2070</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_version_reg">phy_version_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2074</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_features_reg">phy_features_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2080</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_ctrl_reg">phy_ctrl_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2084</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_tsel_reg">phy_tsel_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2088</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_gpio_ctrl_0">phy_gpio_ctrl_0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x208c</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_gpio_ctrl_1">phy_gpio_ctrl_1</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x2090</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#phy_gpio_status_0">phy_gpio_status_0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyB-Column1-Body1">0x2094</td>
+                    <td class="TableStyle-table-BodyA-Column1-Body1"><a href="#phy_gpio_status_1">phy_gpio_status_1</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_dq_timing_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_dq_timing_reg</td>
+                    <td>0x2000</td>
+                    <td>This register controls the DQ related timing.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>data_clkperiod_delay</td>
+                    <td>Defines additional latency on the write datapath. It also adds a clock cycle delay for the data OE path which is equivalent of adding 2 to the data_select_oe_end and data_select_oe_start.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:12]</td>
+                    <td>data_select_tsel_start</td>
+                    <td>Defines the DQ pad dynamic termination select enable time. Larger values add greater delay to when tsel turns on. Each bit changes the output enable time by a 1/2 cycle resolution.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[11:8]</td>
+                    <td>data_select_tsel_end</td>
+                    <td>Defines the DQ pad dynamic termination select disable time. Larger values increase the delay to when tsel turns off. Each bit changes the output enable time by a 1/2 cycle resolution.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[6:4]</td>
+                    <td>data_select_oe_start</td>
+                    <td>Adjusts the starting point of the DQ pad output enable window. Lower numbers pull the rising edge earlier in time and larger numbers cause the rising edge to be delayed. Each bit changes the output enable time by a 1/2 cycle resolution.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[2:0]</td>
+                    <td>data_select_oe_end</td>
+                    <td>
+              Adjusts the ending point of the DQ pad output enable window. Lower numbers pull the falling edge earlier in time and larger numbers
+ cause the falling edge to be delayed. Each bit changes the output enable time by a 1/2 cycle resolution.
+            </td>
+                    <td>rw</td>
+                    <td>0x2</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_dqs_timing_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_dqs_timing_reg</td>
+                    <td>0x2004</td>
+                    <td>This register controls the DQS related timing.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[22:22]</td>
+                    <td>use_ext_lpbk_dqs</td>
+                    <td>This bit is used in conjunction with bits 21 and 20 to control how read data is sampled by the PHY
+ This bit is only valid when bit 20 = '1' and bit 21 = '1' and selects if the internally generated clock source should be 
+ looped back within the rebar pad (The PHY will then sample the read data using mem_rebar_ipad), or if the integrator should take the
+ signal from the rebar pin, loop it back on the board back to the PHY using the lpbk_dqs pin. The PHY will then sample the read data using lpbk_dqs
+ [list] [*]0 - use internal lpbk_dqs (mem_rebar_ipad) for data capture.[*]1 - use external lpbk_dqs (lpbk_dqs connected to the lpbk_dqs_IO PAD) for data capture.[/list]</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[21:21]</td>
+                    <td>use_lpbk_dqs</td>
+                    <td>This bit is used in conjunction with bits 22 and 20 to control how read data is sampled by the PHY.
+ This bit is only valid when bit 20 is set to '1', meaning it is only relevant when read data is not being sampled by DQS from the memory device. 
+ If bit 20 is set to '0' this bit should also be set to '0'.
+ When using the PHY with the xSPI controller, this bit must be set to the same value as bit 20.
+ This bit selects which internal source will be used by the PHY to sample the read data. This is internally generated and is passed out of the PHY via rebar_opad
+ If bit 22 of this register is '0', then it will be internally looped back within the rebar pad. If bit 22 of this register is '1', the rebar_opad will be passed
+ through the rebar pad and it will be the responsibility of the integrator to loop that back to the PHY into the lpbk_dqs pin. Refer to section 2 "Read Sampling lpbk_dqs".
+ . [list] [*]0 - Use phony DQS for data capture.[*]1 - Use lpbk_dqs for data capture.
+ [/list]</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[20:20]</td>
+                    <td>use_phony_dqs</td>
+                    <td>This bit is used in conjunction with bits 22 and 21 to control how read data is sampled by the PHY.
+ This bit selects whether the read data sent by the memory device will be sampled by DQS supplied by the memory device, or by a signal locally generated within the PHY.[list] [*]0 - Use DQS from device for data capture.[*]1 - Use internally generated DQS for data capture.[/list]</td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>phony_dqs_sel</td>
+                    <td>If this bit is cleared the phony_dqs is synchronous with rising edge of the clk_phy before sending to the entry flops. If this bit is set high the phony_dqs is synchronous with falling edge of clk_phy before sending to the entry flops.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:12]</td>
+                    <td>dqs_select_tsel_start</td>
+                    <td>Defines the DQ pad dynamic termination select enable time. Larger values add greater delay to when tsel turns on. Each bit changes the output enable time by a 1/2 cycle resolution.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[11:8]</td>
+                    <td>dqs_select_tsel_end</td>
+                    <td>Defines the DQ pad dynamic termination select disable time. Larger values increase the delay to when tsel turns off. Each bit changes the output enable time by a 1/2 cycle resolution.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_gate_lpbk_ctrl_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_gate_lpbk_ctrl_reg</td>
+                    <td>0x2008</td>
+                    <td>This register controls the gate and loopback control related timing.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:31]</td>
+                    <td>sync_method</td>
+                    <td>
+              Defines the method of transfering the data from DQS domain flops to the clk_phy clock domain.
+ [list]
+ [*]if set low the read pointer advances based upon a programmable delay of the dfi_rddata_en pulse from the DFI interface.
+ [*]if set high the read pointer advances based upon a programmable delay of the empty signal.
+ Recommended setting for SD/eMMC controller.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[23:19]</td>
+                    <td>rd_del_sel</td>
+                    <td>Defines the read data delay. Holds the number of cycles to delay the dfi_rddata_en signal prior to enabling the read FIFO. After this delay, the read pointers begin incrementing the read FIFO.
+ If 'sync_method' is set high the value of this field must take into account the synchronization time of the pointers in the entry FIFO (adding three clock cycles should be sufficient). </td>
+                    <td>rw</td>
+                    <td>0x1b</td>
+                </tr>
+                <tr>
+                    <td>[18:18]</td>
+                    <td>underrun_suppress</td>
+                    <td>This field turns off the generation of the underrun signal when 'sync_method' is set high. 
+ Recommended value is zero.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>rd_del_sel_empty</td>
+                    <td>Defines the read data delay for the empty signal generated based on the incoming DQS strobes. For zero delay the data are passed from entry flops to the iodatain* flops one clock cycle after the !empty signals is asserted.
+ Normally the zero value of this field is sufficient as the signal is generated based on the gray pointer synchronized with two stage synchronizer on clk_phy clock domain which gives minimum two clock cycle path from entry flop to the iodatain flop.
+ Increasing the value of this field delays the moment of passing the data from entry flops to the iodatain flops. Increased value gives even more time to propagate the data but the bigger value the bigger probability to overflow the FIFO. Recommended value is zero.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:13]</td>
+                    <td>lpbk_err_check_timing</td>
+                    <td>Sets the cycle delay between the LFSR and loopback error check logic to ensure that the LFSR sourced data and data being looped back arrive at the same clock cycle for comparison. This value is related to the rd_del_sel field, and is equal to 7 - rd_del_sel.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[12:12]</td>
+                    <td>lpbk_fail_muxsel</td>
+                    <td>Selects data output type for phy_obs_reg_0[23:8]. [list][*]0 = Return the expected data. [*]1 = Return the actual data.[/list]</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[11:10]</td>
+                    <td>loopback_control</td>
+                    <td>Loopback control. [list][*]0 = Normal Operation Mode. [*]1 = lpbk_start; Enables loopback write mode. [*]2 = lpbk_stop; Stop loopback to check error register. [*]3 = clear; Clear loopback registers.[/list]</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[9:9]</td>
+                    <td>lpbk_internal</td>
+                    <td>Controls the loopback read multiplexer. [list][*]0 = External Loopback. [*]1 = Internal loopback.[/list]</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[8:8]</td>
+                    <td>lpbk_en</td>
+                    <td>Controls internal write multiplexer. [list][*]0 = Normal Operation. [*]1 = Enable loopback.[/list]</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[6:6]</td>
+                    <td>gate_cfg_always_on</td>
+                    <td>This parameter cause the gate to be always on.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[5:4]</td>
+                    <td>gate_cfg_close</td>
+                    <td>Normally the gate is closing when all bits of dfi_cebar are high or when dfi_rd_pre_post_amble and rebar_dfi are high. This parameter allows to extend the closing of the DQS gate. Recommended value is zero.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[3:0]</td>
+                    <td>gate_cfg</td>
+                    <td>Coarse adjust of gate open time. This value is the number of cycles to delay the dfi_rddata_en signal prior to opening the gate in full cycle increments. Decreasing this value pulls the gate earlier in time. This field should be programmed such that the gate signal lands in the valid DQS gate window.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_dll_master_ctrl_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_dll_master_ctrl_reg</td>
+                    <td>0x200c</td>
+                    <td>This register holds the control for the Master DLL logic.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[23:23]</td>
+                    <td>param_dll_bypass_mode</td>
+                    <td>DLL bypass mode control. Controls the bypass mode of the master and slave DLLs. The param_dll_bypass_mode is intended to be used only for debug. [list][*]0 - Normal operational mode. DLL functioning in normal mode of operation where the slave delay line settings are used as fractional delay of the master delay line encoder reading of the number of delays in one cycle. [*]1 - Bypass mode on. Delays are defined in phy_dll_slave_ctrl_reg. Master DLL is disabled with only 1 delay element in its delay line. The slave slave delay lines decode delays in absolute delay elements rather than as fractional delays. The dll_lock field (bit [0]) of the phy_dll_obs_reg_0 parameter will be forced high. [/list]</td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[22:20]</td>
+                    <td>param_phase_detect_sel</td>
+                    <td>
+              Selects the number of delay elements to be inserted between the phase detect flip-flops.
+ Defaults to 0x0 although the recommended value is 2 elements but if a lock condition is
+ not detected, the user should increase the number of delay elements.
+ [list]
+ [*]'b000 - One delay element.
+ [*]'b001 - Two delay element.
+ [*]'b010 - Three delay element.
+ [*]'b011 - Four delay element.
+ [*]'b100 - Five delay element.
+ [*]'b101 - Six delay element.
+ [*]'b110 - Seven delay element.
+ [*]'b111 - Eight delay element.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[18:16]</td>
+                    <td>param_dll_lock_num</td>
+                    <td>Holds the number of consecutive increment or decrement indications that will trigger an unlock condition and increment the dll_unlock_cnt field (bits [7:3]) and either the lock_dec_dbg (bits [23:16]) or lock_inc_dbg (bits [31:24]) fields of the phy_dll_obs_reg_0 parameter.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>param_dll_start_point</td>
+                    <td>This value is the initial delay value for the DLL. This value is also used as the increment value if the initial value is less than a half-clock cycle. This field should be set such that it is not greater than 7/8ths of a clock period given the worst case element delay. For example, if the frequency is 200MHz (5ns cycle time) with a worst case element 80ps delay, this field should be set to = 5 * (7/8) / .080 = 54 elements. This calculation helps determine the start point which achieves the fastest lock. However, a small value such as 0x04 may be used instead to ensure that the DLL does not lock on a harmonic. Note that with a small value like this, the initial lock time will be longer. Value smaller than 0x04 may cause no lock by DLL.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_dll_slave_ctrl_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_dll_slave_ctrl_reg</td>
+                    <td>0x2010</td>
+                    <td>This register holds the control for the slave DLL logic.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>clk_wr_delay</td>
+                    <td>Controls the clk_wr delay line which adjusts the write DQ bit timing in 1/256th steps of the clock period in normal DLL locked mode. In bypass mode, this field directly programs the number of delay elements.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>read_dqs_delay</td>
+                    <td>Controls the read DQS delay which adjusts the timing in 1/256th of the clock period when in normal DLL locked mode. In bypass mode, this field directly programs the number of delay elements.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_ie_timing_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_ie_timing_reg</td>
+                    <td>0x2014</td>
+                    <td>This register controls the DQS related timing.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[20:20]</td>
+                    <td>ie_always_on</td>
+                    <td>Forces the input enable(s) to be on always.</td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[18:16]</td>
+                    <td>dq_ie_start</td>
+                    <td>Define the start position for the DQ input enable.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[14:12]</td>
+                    <td>dq_ie_stop</td>
+                    <td>Define the stop position for the DQ input enable.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[10:8]</td>
+                    <td>dqs_ie_start</td>
+                    <td>Define the start position for the DQS input enable.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[6:4]</td>
+                    <td>dqs_ie_stop</td>
+                    <td>Define the stop position for the DQS input enable.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[3:0]</td>
+                    <td>rddata_en_ie_dly</td>
+                    <td>Specifies the number of clocks of delay for the dfi_rddata_en signal to line it up with the true (normal) DFI read data position. The MC must deliver an early version of the read data enable to allow time for the input pads to turn on and this field allows the PHY to create the original timing.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_obs_reg_0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_obs_reg_0</td>
+                    <td>0x2018</td>
+                    <td>This register holds the following observable points in the PHY.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[25:25]</td>
+                    <td>dqs_overflow</td>
+                    <td>Status signal to indicate that the logic gate was closed too late
+ ie. the number of DQS strobes exceed the capacity of the entry FIFO.
+ It indicates that rd_del_sel signal value is too high and dfi_rddata are corrupted.
+ It is possible that overflow status is asserted with underrun status - in such case the overflow takes the precedence.
+ The dll_rst_n or rst_n clears this flag.
+                                </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[24:24]</td>
+                    <td>dqs_underrun</td>
+                    <td>Status signal to indicate that the logic gate had to
+ be forced closed. It indicates that either the DQS
+ strobe did not appear during read or rd_del_sel
+ signal value is too low and dfi_rddata are corrupted.
+ The dll_rst_n or rst_n clears this
+ flag.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[23:8]</td>
+                    <td>lpbk_dq_data</td>
+                    <td>If errors are encountered in loopback test this field reports the actual data or the expected data, depending on the setting of the phy_gate_lpbk_ctrl_reg [12] parameter bit. This field is not clear by the clear state of the loopback. If there are no errors in loopback test the value is zero (or value from previous state).</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[1:0]</td>
+                    <td>lpbk_status</td>
+                    <td>Loopback Status [list] [*] Bit0 - lpbk start; Defines the status of the loopback mode. 0 = Not in loopback mode; 1 = In loopback mode. [*] Bit1 - lpbk status; Defines the status of the loopback mode. 0 = Last Loopback test had no errors; 1 = Last loopback test contained data errors. [/list] </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_dll_obs_reg_0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_dll_obs_reg_0</td>
+                    <td>0x201c</td>
+                    <td>This register holds the following observable points in the PHY.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:24]</td>
+                    <td>lock_inc_dbg</td>
+                    <td>Holds the state of the cumulative dll_lock_inc register when the dll_unlock_cnt field(bits [7:3]) of this parameter was triggered to increment or was last saturated at a value of 0x1f.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[23:16]</td>
+                    <td>lock_dec_dbg</td>
+                    <td>Holds the state of the cumulative dll_lock_dec register when the dll_unlock_cnt field(bits [7:3]) of this parameter was triggered to decrement or was last saturated at a value of 0x1f.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>dll_lock_value</td>
+                    <td>Reports the number of delay elements that the DLL has determined for lock in either full clock or half clock mode. In full clock mode, this value equals the number of delay elements in one cycle. In half clock mode, this value equals the number of delay elements in one half clock cycle. In saturation mode, this value equals the maximum number of delay elements. The slaves use this value to set up their delays for the clk_wr and read DQS signals. This value is valid only when locking mechanism is done.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:3]</td>
+                    <td>dll_unlock_cnt</td>
+                    <td>Reports the number of times that the master DLL consecutive increment or decrement value programmed into the param_dll_lock_num field (bits [18:16]) of the phy_dll_master_ctrl_reg register has been triggered. The dll_unlock_cnt will saturate at a value of 0x1f. Asserting the dll_rst_n signal will reset this counter to 0.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[2:1]</td>
+                    <td>dll_locked_mode</td>
+                    <td>
+              Indicates status of DLL. Defines the mode in which the DLL has achieved the lock.
+ [list]
+ [*]'b00 - Full clock mode. The master delay line was long enough to lock on one full
+ clock cycle of delay. In this mode, the dll_lock_value field (bits [15:8]) of this
+ parameter indicates the number of delays in full clock cycles.
+ [*]'b01 - Reserved.
+ [*]'b10 - Half clock mode. The master delay line was not long enough to lock one full
+ cycle of delay but could lock on a half-cycle of delay. In this mode, the
+ dll_lock_value field (bits [15:8]) of this parameter indicates the number
+ of delays in one half clock cycles.
+ [*]'b11 - Saturation mode. The master delay line was not long enough to lock on a full or
+ a half-clock cycle. In this mode, the encoder value is fixed at the maximum delay line
+ setting and the master DLL will be disabled. The slave delay lines continue to use the
+ fractional delays based upon the fixed saturation value of the delay line.
+ [/list]
+            </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>dll_lock</td>
+                    <td>Indicates status of DLL. It indicates the DLL locking when the DLL lock logic found (not inc AND not dec) OR (an inc then dec) OR (a dec then inc). When param_dll_start_point is set smaller than half clock period the first found (a dec then inc) isn't the really DLL locking point but dll_lock is asserted. [list][*]0 - DLL has not locked. [*]1 - DLL is locked. [/list]</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_dll_obs_reg_1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_dll_obs_reg_1</td>
+                    <td>0x2020</td>
+                    <td>This register holds the following observable points in the PHY.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[23:16]</td>
+                    <td>decoder_out_wr</td>
+                    <td>Holds the encoded value for the clk_wr delay line for this slice.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>decoder_out_rd</td>
+                    <td>Holds the encoded value for the read delay line for this slice.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_static_togg_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_static_togg_reg</td>
+                    <td>0x2028</td>
+                    <td>This register controls the static aging feature of the PHY.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[22:20]</td>
+                    <td>static_togg_enable</td>
+                    <td>Control to enable the toggle signal during static activity.
+ When low the feature is disabled.
+ [list][*]bit 0 - master delay line enable.
+ [*]bit 1 - read path delay line enable.
+ [*]bit 2 - write path delay line enable.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>static_togg_global_enable</td>
+                    <td>Global control to enable the toggle signal during static activity.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:0]</td>
+                    <td>static_tog_clk_div</td>
+                    <td>Clock divider to create toggle signal.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_wr_deskew_pd_ctrl_0_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_wr_deskew_pd_ctrl_0_reg</td>
+                    <td>0x2034</td>
+                    <td>This register holds the values of phase detect block for each DQ bit on the write path.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[6:6]</td>
+                    <td>dq_sw_dq_phase_bypass</td>
+                    <td>
+              [list]
+ [*]'b0 - Use phase detect circuit to determine
+ the half_cycle_shift.
+ [*]'b1 - Use the clk_wr_delay delay line setting to
+ determine the half_cycle_shift. A delay line
+ setting of 0x00-0x7f means half_cycle_shift
+ = 0 and a delay line setting of 0x80-0xff
+ means half_cycle_shift = 1.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[5:5]</td>
+                    <td>dq_en_sw_half_cycle</td>
+                    <td>Enables the software
+ half cycle shift. This determines if write data is
+ transferred to the clk_wr domain on the
+ positive or negative edge of the PHY clock.
+ This field is valid when dq_sw_dq_phase_bypass is low.
+ [list]
+ [*]'b0 - Hardware automatically controls any
+ shifting needed for the write level delay line.
+ [*]'b1 - The setting in the dq0_sw_half_cycle_shift
+ field this reg defines the shift.
+ Note: If the user chooses to control the half
+ cycle shift manually, it is important that the
+ dq_sw_half_cycle_shift field (bit [4]) of the
+ phy_wr_deskew_pd_ctrl_reg parameter be
+ cleared to 'b0 if the delay is less than a 1/2
+ cycle and set to 'b1 if the delay is greater than
+ a 1/2 cycle. It is recommended to allow the
+ hardware to control this automatically.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[4:4]</td>
+                    <td>dq_sw_half_cycle_shift</td>
+                    <td>
+              [list]
+ [*]'b0 - No effect.
+ [*]'b1 - Adds a half clock delay to the write data path.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[2:0]</td>
+                    <td>dq_phase_detect_sel</td>
+                    <td>
+              DLL Phase Detect Selector for DQ generation to handle the clock domain crossing between the clock and clk_wr signal. Selects the number
+ of delay elements to be inserted between the phase detect flip-flops. Defaults to 0x0.
+ [list]
+ [*]'b000 - One delay element.
+ [*]'b001 - Two delay element.
+ [*]'b010 - Three delay element.
+ [*]'b011 - Four delay element.
+ [*]'b100 - Five delay element.
+ [*]'b101 - Six delay element.
+ [*]'b110 - Seven delay element.
+ [*]'b111 - Eight delay element.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_version_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_version_reg</td>
+                    <td>0x2070</td>
+                    <td>This register contains release identification number.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:16]</td>
+                    <td>combo_phy_magic_number</td>
+                    <td>Magic number.</td>
+                    <td>ro</td>
+                    <td>0x6182</td>
+                </tr>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>phy_fix</td>
+                    <td>Fixed number (minor revision number).</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>phy_rev</td>
+                    <td>PHY revision number.</td>
+                    <td>ro</td>
+                    <td>0x7</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_features_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_features_reg</td>
+                    <td>0x2074</td>
+                    <td>This register shows available hardware features.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[15:15]</td>
+                    <td>asf_sup</td>
+                    <td>Support for Automotive Safety Feature.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[14:14]</td>
+                    <td>pll_sup</td>
+                    <td>Support for PLL.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[13:13]</td>
+                    <td>jtag_sup</td>
+                    <td>Support for JTAG muxes. </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[12:12]</td>
+                    <td>ext_lpbk_dqs</td>
+                    <td>Support for external LPBK_DQS io pad. </td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[11:11]</td>
+                    <td>reg_intf</td>
+                    <td>SFR interface type. This is an encoded value. [list][*]0 - DFI. [*]1 - APB.[/list]    </td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[10:10]</td>
+                    <td>per_bit_deskew</td>
+                    <td>Support for per-bit deskew.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[9:9]</td>
+                    <td>dfi_clock_ratio</td>
+                    <td>Support for clock ratio on DFI interface. This is an encoded value. [list][*]0 - 1:1 [*]1 - 1:2 [/list]  </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[8:8]</td>
+                    <td>aging</td>
+                    <td>Support for aging in delay lines.</td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[7:7]</td>
+                    <td>dll_tap_num</td>
+                    <td>Number of taps in delay line. This is an encoded value. [list][*]0 - 128. [*]1 - 256. [/list] </td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[6:5]</td>
+                    <td>bank_num</td>
+                    <td>Maximum number of banks supported by hardware. This is an encoded value. [list][*]0 - One bank. [*]1 - Two banks. [*]2 - Four banks. [*]3 - Eight banks.[/list] </td>
+                    <td>ro</td>
+                    <td>0x3</td>
+                </tr>
+                <tr>
+                    <td>[4:4]</td>
+                    <td>sd_emmc</td>
+                    <td>Support for SD/eMMC.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[3:3]</td>
+                    <td>xspi</td>
+                    <td>Support for XSPI.</td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[2:2]</td>
+                    <td>sdr_16bit</td>
+                    <td>Support for 16bit in ONFI SDR work mode.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[1:1]</td>
+                    <td>onfi_41</td>
+                    <td>Support for ONFI4.1 - NAND Flash.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>onfi_40</td>
+                    <td>Support for ONFI4.0 - NAND Flash.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_ctrl_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_ctrl_reg</td>
+                    <td>0x2080</td>
+                    <td>This register handles the global control settings for the PHY.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[8:4]</td>
+                    <td>phony_dqs_timing</td>
+                    <td>The value of the field should be Zero for xSPI. Please refer to the controller User guide "Extended_read_mode"</td>
+                    <td>rw</td>
+                    <td>0x18</td>
+                </tr>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>ctrl_clkperiod_delay</td>
+                    <td>Defines additional latency on the control signals WE/RE/CE/WP.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_tsel_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_tsel_reg</td>
+                    <td>0x2084</td>
+                    <td>This register handles the global control settings for the termination selects for reads.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[23:20]</td>
+                    <td>tsel_off_value_data</td>
+                    <td>Termination select off value for the data.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[19:16]</td>
+                    <td>tsel_rd_value_data</td>
+                    <td>Termination select read value for the data.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:12]</td>
+                    <td>tsel_off_value_dqs</td>
+                    <td>Termination select off value for the data strobe.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[11:8]</td>
+                    <td>tsel_rd_value_dqs</td>
+                    <td>Termination select read value for the data strobe.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_gpio_ctrl_0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_gpio_ctrl_0</td>
+                    <td>0x2088</td>
+                    <td>This register is a general purpose register. The [31:0] vector is brought to the PHY I/Os. User may choose to use these pins to control any static settings that may be required for the connected I/O pads.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>phy_gpio_ctrl_0_value</td>
+                    <td>General purpose register field. The [31:0] vector is brought to the PHY I/Os. User may choose to use these pins to control any static settings that may be required for the connected I/O pads.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_gpio_ctrl_1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_gpio_ctrl_1</td>
+                    <td>0x208c</td>
+                    <td>This register is a general purpose register. The [31:0] vector is brought to the PHY I/Os. User may choose to use these pins to control any static settings that may be required for the connected IO pads.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>phy_gpio_ctrl_1_value</td>
+                    <td>General purpose register field. The [31:0] vector is brought to the PHY IOs. User may choose to use these pins to control any static settings that may be required for the connected IO pads.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_gpio_status_0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_gpio_status_0</td>
+                    <td>0x2090</td>
+                    <td>This register is a general purpose register. A [31:0] vector is brought from the PHY IOs to this register. User may choose to use this as a status register.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>phy_gpio_status_0_value</td>
+                    <td>This register is a general purpose register. A [31:0] vector is brought from the PHY IOs to this register. User may choose to use this as a status register.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="phy_gpio_status_1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>phy_gpio_status_1</td>
+                    <td>0x2094</td>
+                    <td>This register is a general purpose register. A [31:0] vector is brought from the PHY IOs to this register. User may choose to use this as a status register.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>phy_gpio_status_1_value</td>
+                    <td>This register is a general purpose register. A [31:0] vector is brought from the PHY I/Os to this register. User may choose to use this as a status register.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

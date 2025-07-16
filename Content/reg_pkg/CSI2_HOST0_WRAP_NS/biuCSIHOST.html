@@ -1,0 +1,1919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/register_table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>CSI2_HOST0_WRAP_NS Reg</title>
+    </head>
+    <body>
+        <h1>CSIHOST</h1>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_mem
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000000</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>Dummy (16KB) register space for MIPI CSI2 Host Controller</p>
+                    <p>Internal memory</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>Memory</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Memory</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_PHYCTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004000</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>General Control and Status registers for DPHY-RX I/Os and wrapper logic</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[6:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>hsfreqrange
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>High-speed Frequency Range Selection</p>
+                    <p>See Operating Frequency Range selection and default values. This signal should be set with the D-PHY in power-down and must not change during operation.</p>
+                    <p>This signal can be overridden through D-PHY test control registers</p>
+                    <p>Refer Table4-4 in DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[14:7]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>cfgclkfreqrange
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x20</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>System clock frequency configuration preset. Should be set according to the following equation:</p>
+                    <p>cfgclkfreqrange[5:0] = round[(Fcfg_clk(MHz)-17)*4]</p>
+                    <p>Refer Table4-4 in DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:15]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>cont_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>This signal places the macro in IO continuity test mode. All other</p>
+                    <p>interface signals should be placed in their default values.</p>
+                    <p>Refer Table4-6 in DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[16:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>biston
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Set 1 to start the DPHY-RX bist test.</p>
+                    <p>Refer Table 4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[17:17]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>cfg_clk_off
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>PHY configuration clock (cfg_clk) gating control. Set 1 to stop cfg_clk</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[20:18]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txclkescdiv
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Escape mode transmit clock which is used to generate escape sequences in DPHY can’t be greater than 20MHz.</p>
+                    <p>The txclkesc clock input coming from global clock module of imageProc subsystem can have higher frequency. This clock is divided and fed to DPHY-RX</p>
+                    <p>0:div2</p>
+                    <p>1:div3</p>
+                    <p>2:div4</p>
+                    <p>3:div6</p>
+                    <p>4:div8</p>
+                    <p>5:div12</p>
+                    <p>others:div2</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[21:21]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txclkescen
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Txclkesc divider enable</p>
+                    <p>Keep txclkescen = 0 when txclkescdiv is being written. Set txclkescen to 1 after txclkescdiv is configured</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[22:22]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txclkesc_off
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Txclkesc clock going to the DPHY can be stopped by setting this bit to 1</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_PHYCTRL1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004004</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>shutdownz
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rstz
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ateen
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Write 1 to enable DPHY controllability through BIU register. Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>tpsel
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Write 1 to enable DPHY test interface controllability through BIU registers. Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_PHYTESTDIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004008</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>value
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_PHYTESTEN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000400C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>value
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_PHYTESTCLK
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004010</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>value
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_PHYTESTCLR
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004014</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>value
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004018</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>pclk_off
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Host Controller’s pclk gating. Set this bit to 1 to stop pclk</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ipi_clk_off
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Host Controller’s ipi_clk gating. Set this bit to 1 to ipi_clk</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_PHYSTS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000401C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>bistdone
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>bistok
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>cont_data
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Each pin of this output bus is used to verify the continuity from the</p>
+                    <p>chips pin all the way to the PHYs analog ports (package, bonding, die, among others).</p>
+                    <p>cont_data output signals should be ignored when cont_en is deasserted (PHY not set for IO Continuity Test mode).</p>
+                    <p>■ cont_data[0]: rext</p>
+                    <p>■ cont_data[1]: clkn</p>
+                    <p>■ cont_data[2]: clkp</p>
+                    <p>■ cont_data[3]: datan0</p>
+                    <p>■ cont_data[4]: datap0</p>
+                    <p>■ cont_data[5]: datan1</p>
+                    <p>■ cont_data[6]: datap1</p>
+                    <p>This signal can be overridden through D-PHY test control registers.</p>
+                    <p>Refer Table4-6 in DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_GENH_PHYTESTDOUT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004020</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>value
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 in DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_DPHYRX_PPI_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004024</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>Control and status registers for DPHY-RX PPI I/Os</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>basedir_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Configures the Base Direction for Lane</p>
+                    <p>■ basedir_0 = 1: Configures lane as RX upon startup of the PHY</p>
+                    <p>■ basedir_0 = 0: Configures lane as TX</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txrequestesc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Escape Mode Transmit Request</p>
+                    <p>This signal together with txlpdtesc_0, txulpsesc_0, and txtriggeresc[3:0] is used to request the entry into any Escape mode. Once in Escape mode, the lane stays in Escape mode until txrequestesc_0 is de-asserted.</p>
+                    <p>Note: It can only be asserted by the protocol layer while txrequestdatahs is at low level.</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txlpdtesc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Escape Mode Transmit Low-Power Data</p>
+                    <p>This signal is asserted with txrequestesc to cause the lane module to enter low- power data transmission mode. The lane module remains in this mode until txrequestesc_0 is de-asserted.</p>
+                    <p>Note: txulpsesc_0 and all the bits of txtriggeresc_0 must be at low level when txlpdtesc_0 is at high level.</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txulpsesc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txulpsexit_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txtriggeresc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[16:9]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txdataesc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[17:17]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txvalidesc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[18:18]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>enableclk
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-7 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[20:19]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>forcetxstopmode_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[21:21]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>turnrequest_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[22:22]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>turndisable_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[24:23]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>forcerxmode_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[26:25]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>enable_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_DPHYRX_PPI_STATUS0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004028</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ulpsactivenotclk
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table 9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxactivehs_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxsynchs_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>txreadyesc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:6]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxclkesc_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[9:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxlpdtesc_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[13:10]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxtriggeresc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[17:14]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxtriggeresc_1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[19:18]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>errsoths_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[21:20]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>errsotsynchs_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[23:22]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxulpsesc_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_DPHYRX_PPI_STATUS1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000402C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxdataesc_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxdataesc_1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[17:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxvalidesc_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[19:18]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxvalidhs_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[21:20]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>erresc_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[23:22]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>errsyncesc_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[25:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>errcontrol_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[26:26]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>errcontentionlp0_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[27:27]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>errcontentionlp1_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[29:28]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ulpsactivenot_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>[0] for lane-0; [1] for lane-1</p>
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[30:30]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>direction_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table4-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_DPHYRX_PPI_STATUS2
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004030</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxdatahs_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxdatahs_1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[16:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxskewcalhs
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[17:17]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>stopstateclk
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[18:18]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxulpsclknot
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[19:19]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>rxclkactivehs
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[21:20]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>stopstatedata_N
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Refer Table9-3 of DPHY-RX databook</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_IRQEN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004034</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>HCIRQ
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Interrupt Enable for CSI2 Host Controller ‘interrupt’</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(WOC-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_IRQSTS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00004038</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>HCIRQ
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>This bit reflects the state of CSI2 Host Controller ‘interrupt’ flag.</p>
+                    <p>It is set on the assertion (rising edge) of ‘interrupt’ and stays high till SW clears the bit by writing 1 to it.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>CSIHOST_DEBUG_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000403C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SEL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Debug bus mux selection</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

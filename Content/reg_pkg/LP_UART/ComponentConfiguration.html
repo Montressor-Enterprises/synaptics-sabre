@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Parameters for DW_apb_uart - 4.03a</title>
+        <link rel="home" href="#idp19940488" title="Parameters for DW_apb_uart - 4.03a" />
+        <link rel="next" href="#Parameter-Descriptions" title="" />
+    </head>
+    <body>
+        <div class="article">
+            <h1><a name="idp19940488"></a>Parameters for DW_apb_uart - 4.03a</h1>
+            <div class="sect1">
+                <div class="titlepage">
+                </div>
+                <p>These tables define all of the user configuration options for this component. Entries which are grayed-out are disabled (read-only) in the current configuration.</p>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable"></a> Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+ Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Register Interface Type</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">APB2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects Register Interface type as APB2, APB3 or APB4.
+By default, DW_apb_uart supports APB2 interface.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>APB2 (0)</li>
+                                                    <li>APB3 (1)</li>
+                                                    <li>APB4 (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: APB2</p>
+                                            <p>Enabled: [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: SLAVE_INTERFACE_TYPE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">UART FIFO depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">256</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Receiver and Transmitter FIFO depth in bytes. A setting of NONE means
+no FIFOs, which implies the 16450-compatible mode of operation. Most
+enhanced features are unavailable in the 16450 mode such as the Auto
+Flow Control and Programmable THRE interrupt modes. Setting a FIFO
+depth greater than 256 restricts the FIFO Memory to External only. For
+more details, refer to the "FIFO Support" section of the databook.</p>
+                                            <p>Values: 0, 16, 32, 64, 128, 256, 512, 1024, 2048</p>
+                                            <p>DefaultValue: 16</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: FIFO_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Slave Error Response Enable</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Enable Slave Error response signaling. The component will refrain
+From signaling an error response if this parameter is disabled. 
+This will result in disabling all features that require SLVERR functionality to be implemented.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;0</p>
+                                            <p>Parameter Name: PSLVERR_RESP_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">UART Protection Level</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Reset Value of UART_PROT_LEVEL register.
+A high on any bit of UART protection level requires a high on the
+corresponding pprot input bit to gain access to the protected registers.
+Else, SLVERR response is triggered. A zero on the protection bit will
+provide access to the register if other protection levels are satisfied.</p>
+                                            <p>Values: 0x0, ..., 0x7</p>
+                                            <p>DefaultValue: 0x2</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;1 &amp;&amp; PSLVERR_RESP_EN==1</p>
+                                            <p>Parameter Name: PROT_LEVEL_RST</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hard-Code Protection Level?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Setting this parameter to 1 makes UART_PROT_LEVEL a read-only register.
+The register can be programmed at run-time by a user if this
+hard-code option is set to 0.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;1 &amp;&amp; PSLVERR_RESP_EN==1</p>
+                                            <p>Parameter Name: HC_PROT_LEVEL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Width of Register timeout counter</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Defines the width of Register timeout counter. If set to zero,
+the timeout counter register is disabled, and timeout is triggered
+as soon as the transaction tries to read an empty RX FIFO or write
+to a full TX FIFO. These are the only cases where PREADY signal
+goes low, in all other cases PREADY is tied high. Setting
+values from 4 to 8 for this parameter configures the timeout
+period from 2^4 to 2^8 pclk cycles.</p>
+                                            <p>Values: 0, 4, 5, 6, 7, 8</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;0 &amp;&amp; PSLVERR_RESP_EN==1 &amp;&amp; FIFO_MODE!=0</p>
+                                            <p>Parameter Name: REG_TIMEOUT_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Hardcode Register timeout counter value</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Checking this parameter makes Register timeout counter a read-only register.
+The register can be programmed by user if the hardcode option is turned off.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;0 &amp;&amp; PSLVERR_RESP_EN==1 &amp;&amp; REG_TIMEOUT_WIDTH&gt;0 &amp;&amp; FIFO_MODE!=0</p>
+                                            <p>Parameter Name: HC_REG_TIMEOUT_VALUE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Register timeout counter default start value</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Defines the reset value of Register timeout counter.</p>
+                                            <p>Values: 0, ..., POW_2_REG_TIMEOUT_WIDTH</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: SLAVE_INTERFACE_TYPE&gt;0 &amp;&amp; PSLVERR_RESP_EN==1 &amp;&amp; REG_TIMEOUT_WIDTH&gt;0 &amp;&amp; FIFO_MODE!=0</p>
+                                            <p>Parameter Name: REG_TIMEOUT_VALUE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">RS485 Interface Support</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Disabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral for RS485 Interface support.
+If enabled, new signals 'de', 're' and 'rs485_en' are included in the interface
+to support RS485 transceiver.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (0)</li>
+                                                    <li>Enabled (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: UART_RS485_INTERFACE_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Active High RS485 Driver Enable Signal?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the polarity of the RS485 Driver Enable (de) signal.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: UART_RS485_INTERFACE_EN==1</p>
+                                            <p>Parameter Name: UART_DE_POL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Active High RS485 Receiver Enable Signal?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the polarity of the RS485 Receiver Enable (re) signal.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: UART_RS485_INTERFACE_EN==1</p>
+                                            <p>Parameter Name: UART_RE_POL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable 9-bit Mode Support?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Disabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have 9-bits of data per character.
+The 9th-bit of the data byte sent from the master is set to 1 
+to indicate the address byte while cleared to 0 to indicate 
+the data byte.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (0)</li>
+                                                    <li>Enabled (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: UART_9BIT_DATA_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">APB Data Bus Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Width of APB data bus to which this component is attached.
+The data width can be set to 8, 16 or 32. Register access
+is on 32-bit boundaries, unused bits are held at static 0.</p>
+                                            <p>Values: 8, 16, 32</p>
+                                            <p>DefaultValue: 32</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: APB_DATA_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">FIFO Memory Type</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Internal</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects between external, user-supplied memory or internal DesignWare
+memory (DW_ram_r_w_s_dff) for the receiver and transmitter FIFOs. FIFO
+depths greater than 256 restrict FIFO Memory selection to external. In
+addition, selection of internal memory restricts the Memory Read Port
+Type to Dflip-flop-based, synchronous read port RAMs.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>External (0)</li>
+                                                    <li>Internal (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: External</p>
+                                            <p>Enabled: FIFO_MODE!=0 &amp;&amp; FIFO_MODE&lt;=256</p>
+                                            <p>Parameter Name: MEM_SELECT_USER</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IrDA SIR Mode Support</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Disabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have IrDA 1.0 SIR infrared mode. For more details,
+refer to the "IrDA 1.0 SIR Protocol" section of data book.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (0x0)</li>
+                                                    <li>Enabled (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SIR_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Low Power IrDA SIR Mode Support</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Disabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to operate in a low-power IrDA SIR mode. As
+the DW_apb_uart does not support a low-power mode with a counter system
+to maintain a 1.63us infrared pulse, Asynchronous Serial Clock Support
+will be automatically enabled, and the sclk must be fixed to 1.8432Mhz.
+This provides a 1.63us sir_out_n pulse at 115.2kbaud.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (0x0)</li>
+                                                    <li>Enabled (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: SIR_MODE==1</p>
+                                            <p>Parameter Name: SIR_LP_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Support for IrDA SIR Low Power Reception Capabilities</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Disabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to to have SIR low power pulse reception
+capabalities. Two additional Low power Divisor Registers are implemented
+and must be written with a divisor that will give a baud rate of 115.2k
+for the low power pulse detection functionality to operate correctly. 
+Asynchronous Serial Clock support is automatically enabled in this mode.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (0)</li>
+                                                    <li>Enabled (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: SIR_MODE==1</p>
+                                            <p>Parameter Name: SIR_LP_RX</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Asychronous Serial Clock Support</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When set to Disabled, the DW_apb_uart is implemented with one system
+clock (pclk). When set to Enabled, two system clocks (pclk and sclk)
+are implemented in order to accommodate accurate serial baud rate
+settings, as well as APB bus interface requirements. Selecting Disabled,
+or a one-system clock, greatly restricts system clock settings
+available for accurate baud rates. For more details, refer to
+"Synchronization" section of the databook.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (1)</li>
+                                                    <li>Enabled (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: SIR_LP_MODE!=1 &amp;&amp; SIR_LP_RX!=1</p>
+                                            <p>Parameter Name: CLOCK_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Clock Domain Crossing Synchronization Depth?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Sets the number of synchronization stages to be placed on clock domain crossing signals.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+2: 2-stage synchronization with positive-edge capturing at both the stages
+</li>
+                                                    <li>
+3: 3-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                    <li>
+4: 4-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 2, 3, 4</p>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: SYNC_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Auto Flow Control</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Disabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have the 16750-compatible auto flow control
+mode. For more details, refer to "Auto Flow Control" section of the
+data book.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (0x0)</li>
+                                                    <li>Enabled (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: FIFO_MODE!=0</p>
+                                            <p>Parameter Name: AFCE_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">RTC Flow Control Trigger</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">RX FIFO Threshold Trigger</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>When set to 0, the DW_apb_uart uses the same receiver trigger level described in FCR.RCVR 
+register both for generating a DMA request and a handshake signal (rts_n). When 
+set to 1, the DW_apb_uart uses two separate trigger levels for a DMA request and handshake
+signal (rts_n) in order to maximize throughput on the interface.
+NOTE: Almost-Full Trigger refers to two available slots in the FIFO.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>RX FIFO Threshold Trigger (0x0)</li>
+                                                    <li>RX FIFO Almost-Full Trigger (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: RX FIFO Threshold Trigger</p>
+                                            <p>Enabled: AFCE_MODE!=0</p>
+                                            <p>Parameter Name: RTC_FCT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Programmable THRE Interrupt Mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have a programmable Transmitter Hold
+Register Empty (THRE) interrupt mode. For more information, refer to
+"Programmable THRE Interrupt" section of the data book.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (0x0)</li>
+                                                    <li>Enabled (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: FIFO_MODE!=0</p>
+                                            <p>Parameter Name: THRE_MODE_USER</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Clock Gate Enable Output on I/F?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have a clock gate enable output signal on
+the interface that indicates that the device is inactive, so clocks
+may be gated.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CLK_GATE_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include FIFO Access Mode?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have a programmable FIFO access mode.
+This is used for test purposes to allow the receiver FIFO to be
+written and the transmit FIFO to be read when FIFO's are implemented
+and enabled. When FIFO's are not implemented or not enabled it allows
+the RBR to be written and the THR to be read. For more details, refer
+to "FIFO Support" section in the data book.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: FIFO_ACCESS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Additional DMA Signals on I/F?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have four additional DMA signals on the
+interface so that the device is compatible with the DesignWare DMA
+controller interface requirements.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: DMA_EXTRA</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Active Low DMA Signals?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the polarity of the DMA interface signals.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: DMA_POL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Assert Tx Req On Reset?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the DMA Tx Request assertion logic.
+When set to 1, DMA Tx Request will be asserted upon reset.
+When set to 0, DMA Tx Request will not be asserted upon reset. 
+It will be asserted only after LCR register is written.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: DMA_HS_REQ_ON_RESET</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include On-chip Debug Output Signals on I/F?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have on-chip debug pins on the interface.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: DEBUG</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Baud Clock Reference Output Signal (baudout_n) on I/F?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">false</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have a baud clock reference output
+(baudout_n) pin on the interface.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: BAUD_CLK</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Add Version and ID Registers, Enable FIFO Status, Shadow and Encoded Parameters Register Options ?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have the option to include the FIFO status
+registers, shadow registers and encoded parameter register. Also configures
+the peripheral to have the UART component version and the peripheral ID registers.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: ADDITIONAL_FEATURES</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Software Accessible FIFO Status Registers?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have three additional FIFO status registers.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: FIFO_MODE!=0 &amp;&amp; ADDITIONAL_FEATURES==1</p>
+                                            <p>Parameter Name: FIFO_STAT</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Additional Shadow Registers for Reducing Software Overhead?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have nine additional registers that
+shadow some of the existing register bits that are regularly modified
+by software. These can be used to reduce the software overhead that is
+introduced by having to perform read-modify writes.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: ADDITIONAL_FEATURES==1</p>
+                                            <p>Parameter Name: SHADOW</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include Configuration Parameter Register?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have a component parameter register.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: ADDITIONAL_FEATURES==1</p>
+                                            <p>Parameter Name: UART_ADD_ENCODED_PARAMS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Remove Busy Functionality?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to be fully 16550 compatible. This is achieved
+by not having the busy functionality implemented.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: UART_16550_COMPATIBLE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Fractional Baud Rate Divisor Support</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enabled</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Configures the peripheral to have Fractional Baud Rate Divisor. If enabled, new 
+Fractional divisor latch register (DLF) is included to program the fractional divisor
+values. For more information about this feature, see "Fractional Baud Rate Support" section in the data book.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Disabled (0)</li>
+                                                    <li>Enabled (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Disabled</p>
+                                            <p>Enabled: [&lt;functionof&gt; %item]</p>
+                                            <p>Parameter Name: FRACTIONAL_BAUD_DIVISOR_EN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Fractional Divisor Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">6</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies the width of the fractional divisor. A high value means more precision but long averaging period.
+For more information about this feature, see "Fractional Baud Rate Support" section in the data book.</p>
+                                            <p>Values: 4, ..., 6</p>
+                                            <p>DefaultValue: 4</p>
+                                            <p>Enabled: FRACTIONAL_BAUD_DIVISOR_EN==1</p>
+                                            <p>Parameter Name: DLF_SIZE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">LSR clear Trigger?</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">RBR Read or LSR Read</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Adds a register field IER.ELCOLR and selects the method for clearing the status in the LSR register.
+This is applicable only for Overrun Error (OE), Parity Error (PE), Framing Error (FE), and Break Interrupt (BI) status bits.
+For more information, refer to Table 2-6 of the DW_apb_uart databook.</p>
+                                            <p class="BLANK" />
+                                            <p>
+When set to 0:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+LSR status bits (PE, FE and BI) are cleared either on reading Rx FIFO (RBR Read) or On reading LSR register.
+</li>
+                                                    <li>
+The Overrun Error Interrupt status is cleared only on reading LSR register.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>
+When set to 1:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If register field IER.ELCOLR = 0: LSR status bits (OE, PE, FE and BI) are cleared either on reading Rx FIFO (RBR Read) or On reading LSR register.
+</li>
+                                                    <li>
+If register field IER.ELCOLR = 1: LSR status bits (OE, PE, FE and BI) are cleared only on reading LSR register.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>RBR Read or LSR Read (0)</li>
+                                                    <li>LSR Read (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: RBR Read or LSR Read</p>
+                                            <p>Enabled: FIFO_MODE!=0</p>
+                                            <p>Parameter Name: LSR_STATUS_CLEAR</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

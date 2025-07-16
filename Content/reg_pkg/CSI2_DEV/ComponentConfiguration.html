@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Parameters for DWC_mipicsi2_device - 1.32a</title>
+        <link rel="home" href="#idp48414360" title="Parameters for DWC_mipicsi2_device - 1.32a" />
+        <link rel="next" href="#Parameter-Descriptions" title="" />
+    </head>
+    <body>
+        <div class="article">
+            <h1><a name="idp48414360"></a>Parameters for DWC_mipicsi2_device - 1.32a</h1>
+            <div class="sect1">
+                <p>These tables define all of the user configuration options for this component. Entries which are grayed-out are disabled (read-only) in the current configuration.</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li><a  href="#paramtable-GenericConfiguration" title="Table&#160;1.&#160;Generic Configuration Parameters">Generic Configuration</a>
+                        </li>
+                        <li><a  href="#paramtable-DataInterfaceFIFOConfiguration" title="Table&#160;2.&#160;Data Interface FIFO Configuration Parameters">Data Interface FIFO Configuration</a>
+                        </li>
+                        <li><a  href="#paramtable-DataInterfaceFIFOConfiguration_IDIFIFO" title="Table&#160;3.&#160;Data Interface FIFO Configuration / IDI FIFO Parameters">Data Interface FIFO Configuration / IDI FIFO</a>
+                        </li>
+                        <li><a  href="#paramtable-DataInterfaceFIFOConfiguration_IPIFIFO" title="Table&#160;4.&#160;Data Interface FIFO Configuration / IPI FIFO Parameters">Data Interface FIFO Configuration / IPI FIFO</a>
+                        </li>
+                        <li><a  href="#paramtable-DataInterfaceFIFOConfiguration_IPI2FIFO" title="Table&#160;5.&#160;Data Interface FIFO Configuration / IPI2 FIFO Parameters">Data Interface FIFO Configuration / IPI2 FIFO</a>
+                        </li>
+                        <li><a  href="#paramtable-DataInterfaceFIFOConfiguration_IPI3FIFO" title="Table&#160;6.&#160;Data Interface FIFO Configuration / IPI3 FIFO Parameters">Data Interface FIFO Configuration / IPI3 FIFO</a>
+                        </li>
+                        <li><a  href="#paramtable-DataInterfaceFIFOConfiguration_IPI4FIFO" title="Table&#160;7.&#160;Data Interface FIFO Configuration / IPI4 FIFO Parameters">Data Interface FIFO Configuration / IPI4 FIFO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-GenericConfiguration"></a>Generic Configuration Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-GenericConfiguration"></a>
+                        <p class="tableTitle" MadCap:autonum="Table 1. ">
+Generic Configuration Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Generic Configuration Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Physical Layer Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Use Synopsys D-PHY Automatic Integration</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter enables the Synopsys D-PHY as an internal sub-module in the design.</p>
+                                            <p class="BLANK" />
+                                            <p>
+You need to have access to the Synopsys D-PHY package and set up the following variables:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+setenv CSI2_DEVICE_PHY_PATH &lt;path where D-PHY is installed&gt;
+</li>
+                                                    <li>
+setenv CSI2_DEVICE_PLL_PATH &lt;path where D-PHY is installed&gt;
+</li>
+                                                    <li>
+setenv CSI2_DEVICE_PHY_LIBNAME &lt;.lib file name&gt;
+</li>
+                                                    <li>
+setenv CSI2_DEVICE_PLL_LIBNAME &lt;.lib file name&gt;
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_DEVICE_SNPS_PHY</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select PHY Type</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">D-PHY</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter specifies the PHY interface used in the design.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>D-PHY (1)</li>
+                                                    <li>C-PHY (2)</li>
+                                                    <li>COMBO_PHY (3)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: D-PHY</p>
+                                            <p>Enabled: CSI2_DEVICE_SNPS_PHY == 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_PHY_TYPE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select COMBO_PHY config</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">4L3T</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>4L3T (1)</li>
+                                                    <li>2L2T (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 4L3T</p>
+                                            <p>Enabled: CSI2_DEVICE_PHY_TYPE == 3</p>
+                                            <p>Parameter Name: CSI2_DEVICE_COMBO_PHY_CONFIG</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select Maximum Number of D-PHY Data Lanes</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter specifies the maximum number of data lanes supported by the D-PHY.</p>
+                                            <p>Values: 1, 2, 3, 4, 5, 6, 7, 8</p>
+                                            <p>DefaultValue: 4</p>
+                                            <p>Enabled: CSI2_DEVICE_PHY_TYPE == 1</p>
+                                            <p>Parameter Name: CSI2_DEVICE_DPHY_NUM_OF_LANES</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select D-PHY Data Width Mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8BIT</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Values: </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>8BIT (1)</li>
+                                                    <li>16BIT (2)</li>
+                                                    <li>32BIT (3)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 8BIT</p>
+                                            <p>Enabled: ((CSI2_DEVICE_DPHY_TYPE)&amp;(CSI2_DEVICE_SNPS_PHY == 0))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_DPHY_WIDTH_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select Maximum Number of C-PHY Lanes</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">3</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter specifies the maximum number of data lanes supported by the C-PHY.</p>
+                                            <p>Values: 1, 2, 3, 4</p>
+                                            <p>DefaultValue: 3</p>
+                                            <p>Enabled: CSI2_DEVICE_PHY_TYPE == 2</p>
+                                            <p>Parameter Name: CSI2_DEVICE_CPHY_NUM_OF_LANES</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select C-PHY Data Width Mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">16BIT</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>16BIT (1)</li>
+                                                    <li>32BIT (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 16BIT</p>
+                                            <p>Enabled: CSI2_DEVICE_CPHY_TYPE</p>
+                                            <p>Parameter Name: CSI2_DEVICE_CPHY_WIDTH_MODE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Generic Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Default Value for Number of Synchronizers</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">3</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter selects the number of synchronization stages used for clock domain crossing.</p>
+                                            <p class="BLANK" />
+                                            <p>
+All stages capture the data on the rising edge of the clock.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>2 (2)</li>
+                                                    <li>3 (3)</li>
+                                                    <li>4 (4)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_DEVICE_DFLT_F_SYNC_TYPE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Data Scrambling</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Data scrambling enable, active high.</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_DEVICE_DATA_SCRAMBLING</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Virtual Channel Extension</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Virtual Channel Extension enable:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+0: Up to 4 virtual channels
+</li>
+                                                    <li>
+1: Up to 16 virtual channels for DPHY; Up to 32 virtual channels for CPHY
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_DEVICE_VC_EXTENSION</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Video Pattern Generation</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+VPG enable, active high.</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_DEVICE_VPG</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Data Interface
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Select System Interface</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the system data interface:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+IDI: Image Data Interface
+</li>
+                                                    <li>
+IPI: Image Pixel Interface
+</li>
+                                                    <li>
+IDI&amp;IPI: Both IDI and IPI interfaces
+</li>
+                                                    <li>
+SDI: Stream Data Interface
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>IDI (1)</li>
+                                                    <li>IPI (2)</li>
+                                                    <li>IDI&amp;IPI (3)</li>
+                                                    <li>SDI (4)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: IDI</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_DEVICE_DATAINTERFACE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Data Width of IDI Interfaces</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">64BIT</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the Data Width of IDI Interfaces</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>64BIT (64)</li>
+                                                    <li>128BIT (128)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 64BIT</p>
+                                            <p>Enabled: ((CSI2_DEVICE_DATAINTERFACE == 1)||(CSI2_DEVICE_DATAINTERFACE == 3))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IDI_DATA_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of IPI Interfaces</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">3</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the Number of IPI interfaces in the controller.</p>
+                                            <p>Values: 1, 2, 3, 4</p>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: CSI2_DEVICE_DATAINTERFACE == 2</p>
+                                            <p>Parameter Name: CSI2_DEVICE_NR_IPI</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Data Width of IPI Interfaces</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">48BIT</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the Data Width of IPI interfaces.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>48BIT (1)</li>
+                                                    <li>192BIT (4)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 48BIT</p>
+                                            <p>Enabled: ((CSI2_DEVICE_DATAINTERFACE == 2)||(CSI2_DEVICE_DATAINTERFACE == 3))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_LANE_NUM</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Automotive Package Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Enable Automotive Package</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Enable Automotive Package
+To generate a DWC_mipicsi2_device controller with support for automotive package, you must have an associated DWC_ap_mipicsi2_device license.</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_DEVICE_AP</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Enable Safety Slave</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Enable Safety Slave</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: CSI2_DEVICE_AP</p>
+                                            <p>Parameter Name: CSI2_DEVICE_SS</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-DataInterfaceFIFOConfiguration"></a>Data Interface FIFO Configuration Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-DataInterfaceFIFOConfiguration"></a>
+                        <p class="tableTitle" MadCap:autonum="Table 2. ">
+Data Interface FIFO Configuration Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Data Interface FIFO Configuration Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              RAM TYPE Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Select External RAM Type</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">DPRAM</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>
+This parameter specifies External RAM Type:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+DPRAM: Dual-port synchronous RAMs
+</li>
+                                                    <li>
+SPRAM: Single-port synchronous RAMs
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>DPRAM (1)</li>
+                                                    <li>SPRAM (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: DPRAM</p>
+                                            <p>Enabled: ((CSI2_DEVICE_DATAINTERFACE == 1)||(CSI2_DEVICE_DATAINTERFACE == 2)||(CSI2_DEVICE_DATAINTERFACE == 3))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_EXT_RAM_TYPE</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-DataInterfaceFIFOConfiguration_IDIFIFO"></a>Data Interface FIFO Configuration / IDI FIFO Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-DataInterfaceFIFOConfiguration_IDIFIFO"></a>
+                        <p class="tableTitle" MadCap:autonum="Table 3. ">
+Data Interface FIFO Configuration / IDI FIFO Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Data Interface FIFO Configuration / IDI FIFO Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IDI Header FIFO Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IDI Header FIFO Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of the IDI header FIFO. This FIFO is implemented with logic gates (flip-flops).</p>
+                                            <p>Values: 4, ..., 256</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: CSI2_DEVICE_IDI_IF == 1</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IDI_HD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IDI Payload FIFO Width
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">External Payload RAM Width for IDI</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">64</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+The width of the external payload RAM for IDI</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 64</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IDI_PLD_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IDI Payload FIFO Configuration with DPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IDI Payload FIFO Depth with DPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of the IDI payload FIFO. This FIFO requires an external asynchronous DPRAM.</p>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_DPRAM == 1) &amp;&amp; (CSI2_DEVICE_IDI_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IDI_PLD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Required IDI Payload DPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of the RAM required for the IDI payload FIFO.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If value of CSI2_DEVICE_IDI_PLD_FIFO_DEPTH parameter is odd, the value of CSI2_DEVICE_IDI_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IDI_PLD_FIFO_DEPTH + 1).
+</li>
+                                                    <li>
+If value of CSI2_DEVICE_IDI_PLD_FIFO_DEPTH parameter is even but not an integer power of two, the value of CSI2_DEVICE_IDI_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IDI_PLD_FIFO_DEPTH + 2).
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IDI_PLD_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IDI Payload FIFO Configuration with SPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IDI Payload FIFO Depth with SPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the total depth of the IDI payload FIFO. This FIFO requires two external SPRAM.
+Provided value must be a multiple of 2. </p>
+                                            <p class="BLANK" />
+                                            <p>
+The total depth includes:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+External RAM depth.
+</li>
+                                                    <li>
+Internal CDC FIFO depth which is based on the level of almost full and cdc sync stage.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_SPRAM == 1) &amp;&amp; (CSI2_DEVICE_IDI_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IDI_PLD_FIFO_TOTAL_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Required IDI Payload PTP SPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">1010</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of RAM to the underlying PTP RAM controller of the IDI payload FIFO.
+This depth should be equally divided by the external odd and even ram.</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 1010</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IDI_PLD_PTP_SPRAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-DataInterfaceFIFOConfiguration_IPIFIFO"></a>Data Interface FIFO Configuration / IPI FIFO Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-DataInterfaceFIFOConfiguration_IPIFIFO"></a>
+                        <p class="tableTitle" MadCap:autonum="Table 4. ">
+Data Interface FIFO Configuration / IPI FIFO Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Data Interface FIFO Configuration / IPI FIFO Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Header FIFO Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI Header FIFO Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+The parameter specifies the depth of the IPI header FIFO. This FIFO is implemented with logic gates (flip-flops).</p>
+                                            <p>Values: 8, ..., 256</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: CSI2_DEVICE_IPI_IF == 1</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_HD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Payload FIFO Width
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">External Payload RAM Width for IPI</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">64</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+The width of the external payload RAM for IPI</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 64</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_PLD_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Payload FIFO Configuration with DPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI Payload FIFO Depth with DPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">606</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter is the depth of the IPI payload FIFO. This FIFO requires an external asynchronous DPRAM.</p>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_DPRAM == 1) &amp;&amp; (CSI2_DEVICE_IPI_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_PLD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Required IPI Payload DPRAM depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">608</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter is the depth of the RAM required for IPI payload FIFO.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If value of CSI2_DEVICE_IPI_PLD_FIFO_DEPTH parameter is odd, the value of CSI2_DEVICE_IPI_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IPI_PLD_FIFO_DEPTH + 1).
+</li>
+                                                    <li>
+If value of CSI2_DEVICE_IPI_PLD_FIFO_DEPTH parameter is even but not an integer power of two, the value of CSI2_DEVICE_IPI_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IPI_PLD_FIFO_DEPTH + 2).
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 608</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_PLD_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Payload FIFO Configuration with SPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI Payload FIFO Depth with SPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the total depth of the IPI payload FIFO. This FIFO requires two external SPRAM.
+Provided value must be a multiple of 2. </p>
+                                            <p class="BLANK" />
+                                            <p>
+The total depth includes:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+External RAM depth.
+</li>
+                                                    <li>
+Internal CDC FIFO depth which is based on the level of almost full and cdc sync stage.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_SPRAM == 1) &amp;&amp; (CSI2_DEVICE_IPI_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_PLD_FIFO_TOTAL_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Required IPI Payload PTP SPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">1008</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of RAM to the underlying PTP RAM controller of the IPI payload FIFO.
+This depth should be equally divided by the external odd and even ram.</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 1008</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_PLD_PTP_SPRAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-DataInterfaceFIFOConfiguration_IPI2FIFO"></a>Data Interface FIFO Configuration / IPI2 FIFO Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-DataInterfaceFIFOConfiguration_IPI2FIFO"></a>
+                        <p class="tableTitle" MadCap:autonum="Table 5. ">
+Data Interface FIFO Configuration / IPI2 FIFO Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Data Interface FIFO Configuration / IPI2 FIFO Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI2 Header FIFO Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI2 Header FIFO Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of the IPI2 header FIFO. This FIFO is implemented with logic gates (flip-flops).</p>
+                                            <p>Values: 8, ..., 256</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: CSI2_DEVICE_IPI2_IF == 1</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI2_HD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Payload FIFO Width
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">External Payload RAM Width for IPI</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">64</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+The width of the external payload RAM for IPI</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 64</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_PLD_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI2 Payload FIFO Configuration with DPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI2 Payload FIFO Depth with DPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">606</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter is the depth of the IPI2 payload FIFO. This FIFO requires an external asynchronous DPRAM.</p>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_DPRAM == 1) &amp;&amp; (CSI2_DEVICE_IPI2_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI2_PLD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Required IPI2 Payload DPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">608</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter is the depth of the RAM required for IPI2 payload FIFO.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If value of CSI2_DEVICE_IPI2_PLD_FIFO_DEPTH parameter is odd, the value of CSI2_DEVICE_IPI2_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IPI2_PLD_FIFO_DEPTH + 1).
+</li>
+                                                    <li>
+If value of CSI2_DEVICE_IPI2_PLD_FIFO_DEPTH parameter is even but not an integer power of two, the value of CSI2_DEVICE_IPI2_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IPI2_PLD_FIFO_DEPTH + 2).
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 608</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI2_PLD_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI2 Payload FIFO Configuration with SPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI2 Payload FIFO Depth with SPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the total depth of the IPI2 payload FIFO. This FIFO requires two external SPRAM.
+Provided value must be a multiple of 2. </p>
+                                            <p class="BLANK" />
+                                            <p>
+The total depth includes:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+External RAM depth.
+</li>
+                                                    <li>
+Internal CDC FIFO depth which is based on the level of almost full and cdc sync stage.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_SPRAM == 1) &amp;&amp; (CSI2_DEVICE_IPI2_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI2_PLD_FIFO_TOTAL_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Required IPI2 Payload PTP SPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">1008</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of RAM to the underlying PTP RAM controller of the IPI2 payload FIFO.
+This depth should be equally divided by the external odd and even ram.</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 1008</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI2_PLD_PTP_SPRAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-DataInterfaceFIFOConfiguration_IPI3FIFO"></a>Data Interface FIFO Configuration / IPI3 FIFO Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-DataInterfaceFIFOConfiguration_IPI3FIFO"></a>
+                        <p class="tableTitle" MadCap:autonum="Table 6. ">
+Data Interface FIFO Configuration / IPI3 FIFO Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Data Interface FIFO Configuration / IPI3 FIFO Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI3 Header FIFO Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI3 Header FIFO Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter is the depth of the IPI3 header FIFO. This FIFO is implemented with logic gates (flip-flops).</p>
+                                            <p>Values: 8, ..., 256</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: CSI2_DEVICE_IPI3_IF == 1</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI3_HD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Payload FIFO Width
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">External Payload RAM Width for IPI</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">64</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+The width of the external payload RAM for IPI</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 64</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_PLD_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI3 Payload FIFO Configuration with DPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI3 Payload FIFO Depth with DPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">606</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of the IPI3 payload FIFO. This FIFO requires an external asynchronous DPRAM.</p>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_DPRAM == 1) &amp;&amp; (CSI2_DEVICE_IPI3_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI3_PLD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Required IPI3 Payload DPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">608</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI3 payload FIFO.
+ If tvalue of CSI2_DEVICE_IPI3_PLD_FIFO_DEPTH parameter is odd, the value of CSI2_DEVICE_IPI3_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IPI3_PLD_FIFO_DEPTH + 1).
+ If value of CSI2_DEVICE_IPI3_PLD_FIFO_DEPTH parameter is even value but not an integer power of two, the value of CSI2_DEVICE_IPI3_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IPI3_PLD_FIFO_DEPTH + 2).</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 608</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI3_PLD_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI3 Payload FIFO Configuration with SPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI3 Payload FIFO Depth with SPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the total depth of the IPI3 payload FIFO. This FIFO requires two external SPRAM.
+Provided value must be a multiple of 2. </p>
+                                            <p class="BLANK" />
+                                            <p>
+The total depth includes:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+External RAM depth.
+</li>
+                                                    <li>
+Internal CDC FIFO depth which is based on the level of almost full and cdc sync stage.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_SPRAM == 1) &amp;&amp; (CSI2_DEVICE_IPI3_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI3_PLD_FIFO_TOTAL_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Required IPI3 Payload PTP SPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">1008</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of RAM to the underlying PTP RAM controller of the IPI3 payload FIFO.
+This depth should be equally divided by the external odd and even ram.</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 1008</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI3_PLD_PTP_SPRAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-DataInterfaceFIFOConfiguration_IPI4FIFO"></a>Data Interface FIFO Configuration / IPI4 FIFO Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-DataInterfaceFIFOConfiguration_IPI4FIFO"></a>
+                        <p class="tableTitle" MadCap:autonum="Table 7. ">
+Data Interface FIFO Configuration / IPI4 FIFO Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Data Interface FIFO Configuration / IPI4 FIFO Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI4 Header FIFO Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI4 Header FIFO Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter is the depth of the IPI4 header FIFO. This FIFO is implemented with logic gates (flip-flops).</p>
+                                            <p>Values: 8, ..., 256</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: CSI2_DEVICE_IPI4_IF == 1</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI4_HD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Payload FIFO Width
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">External Payload RAM Width for IPI</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">64</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+The width of the external payload RAM for IPI</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 64</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI_PLD_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI4 Payload FIFO Configuration with DPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI4 Payload FIFO Depth with DPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of the IPI4 payload FIFO. This FIFO requires an external asynchronous DPRAM.</p>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_DPRAM == 1) &amp;&amp; (CSI2_DEVICE_IPI4_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI4_PLD_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Required IPI4 Payload DPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter is the depth of the RAM required for IPI4 payload FIFO.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+If value of CSI2_DEVICE_IPI4_PLD_FIFO_DEPTH parameter is odd, the value of CSI2_DEVICE_IPI4_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IPI4_PLD_FIFO_DEPTH + 1).
+</li>
+                                                    <li>
+If value of CSI2_DEVICE_IPI4_PLD_FIFO_DEPTH parameter is even but not an integer power of two, the value of CSI2_DEVICE_IPI4_PLD_RAM_DEPTH is required to be (CSI2_DEVICE_IPI4_PLD_FIFO_DEPTH + 2).
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI4_PLD_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI4 Payload FIFO Configuration with SPRAM
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI4 Payload FIFO Depth with SPRAM</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1024</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+This parameter specifies the total depth of the IPI4 payload FIFO. This FIFO requires two external SPRAM.
+Provided value must be a multiple of 2. </p>
+                                            <p class="BLANK" />
+                                            <p>
+The total depth includes:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+External RAM depth.
+</li>
+                                                    <li>
+Internal CDC FIFO depth which is based on the level of almost full and cdc sync stage.
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 128, ..., 16384</p>
+                                            <p>DefaultValue: 1024</p>
+                                            <p>Enabled: ((CSI2_DEVICE_USE_SPRAM == 1) &amp;&amp; (CSI2_DEVICE_IPI4_IF == 1))</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI4_PLD_FIFO_TOTAL_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Required IPI4 Payload PTP SPRAM Depth</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">1008</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>
+This parameter specifies the depth of RAM to the underlying PTP RAM controller of the IPI4 payload FIFO.
+This depth should be equally divided by the external odd and even ram.</p>
+                                            <p>Values: -2147483648, ..., 2147483647</p>
+                                            <p>DefaultValue: 1008</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_DEVICE_IPI4_PLD_PTP_SPRAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Parameters for DW_apb_gpio - 2.14a</title>
+        <link rel="home" href="#idp58966648" title="Parameters for DW_apb_gpio - 2.14a" />
+        <link rel="next" href="#Parameter-Descriptions" title="" />
+    </head>
+    <body>
+        <div class="article">
+            <h1><a name="idp58966648"></a>Parameters for DW_apb_gpio - 2.14a</h1>
+            <div class="sect1">
+                <div class="titlepage">
+                </div>
+                <p>These tables define all of the user configuration options for this component. Entries which are grayed-out are disabled (read-only) in the current configuration.</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li><a  href="#paramtable-BasicConfig" title="Table&#160;1.&#160;Basic Config Parameters">Basic Config</a>
+                        </li>
+                        <li><a  href="#paramtable-PortA" title="Table&#160;2.&#160;Port A Parameters">Port A</a>
+                        </li>
+                        <li><a  href="#paramtable-PortB" title="Table&#160;3.&#160;Port B Parameters">Port B</a>
+                        </li>
+                        <li><a  href="#paramtable-PortC" title="Table&#160;4.&#160;Port C Parameters">Port C</a>
+                        </li>
+                        <li><a  href="#paramtable-PortD" title="Table&#160;5.&#160;Port D Parameters">Port D</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-BasicConfig"></a>Basic Config Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-BasicConfig"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Basic Config Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Basic Config Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Basic Config
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Add encoded parameters</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Adds the encoded parameters that provides the firmware an easy and quick way of identifying the DesignWare component within an I/O memory map. Some critical design-time options determine how a driver must interact with the peripheral. There is a minimal area overhead when you include these parameters. Additionally, this option allows a self-configurable single driver to be developed for each component.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_ADD_ENCODED_PARAMS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">APB Data Bus Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies the width of APB Data Bus to which this component is attached.</p>
+                                            <p>Values: 8, 16, 32</p>
+                                            <p>DefaultValue: 32</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: APB_DATA_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Ports</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the number of ports supported.</p>
+                                            <p>Values: 1, 2, 3, 4</p>
+                                            <p>DefaultValue: 4</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_NUM_PORTS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">DW_apb_gpio ID</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Includes/Excludes the DW_apb_gpio ID register. If set to Include, provides an ID code value (set with GPIO_ID_NUM) that the system can read.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0x0)</li>
+                                                    <li>Include (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Include</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_ID</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">DW_apb_gpio ID Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies the GPIO ID register width. The width of the identification code that is configured in GPIO_ID_NUM.</p>
+                                            <p>Values: 1, ..., 32</p>
+                                            <p>DefaultValue: 32</p>
+                                            <p>Enabled: GPIO_ID == 1</p>
+                                            <p>Parameter Name: GPIO_ID_WIDTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">DW_apb_gpio ID Value</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Specifies the GPIO ID Value. The ID code value that the system reads back when the device identification is present.</p>
+                                            <p>Values: 0x0, ..., POW_2_GPIO_ID_WIDTH</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: GPIO_ID == 1</p>
+                                            <p>Parameter Name: GPIO_ID_NUM</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-PortA"></a>Port A Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-PortA"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Port A Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Port A Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Port A
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">32</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter configures the width of Port A.</p>
+                                            <p>Values: 1, ..., 32</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_PWIDTH_A</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Auxiliary H/W</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Exclude</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Port A can be configured with this parameter to have external, auxiliary hardware signals controlling the data and the direction of Port A rather than the software. If set to 0, the functionality for the hardware/software multiplexing is not implemented.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0x0)</li>
+                                                    <li>Include (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_HW_PORTA</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A controlled from single source?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies the Port A hardware/software control. If set, all bits of Port A are either entirely under software control (if Port A Auxiliary H/W is excluded) or entirely under hardware control (if Port A Auxiliary H/W is included). If this parameter is not set, the "gpio_sw_porta" register determines which bits of the port are under hardware control and which are under software control.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: GPIO_HW_PORTA==1</p>
+                                            <p>Parameter Name: GPIO_PORTA_SINGLE_CTL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Default Direction</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Input</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter configures the default direction of Port A after power-on reset.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Input (0)</li>
+                                                    <li>Output (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Input</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_DFLT_DIR_A</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Default Mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">S/W</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter sets the default mode of Port A after a Power-On-Reset to either software or hardware.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>S/W (0)</li>
+                                                    <li>H/W (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: S/W</p>
+                                            <p>Enabled: GPIO_HW_PORTA == 1</p>
+                                            <p>Parameter Name: GPIO_DFLT_SRC_A</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Debounce Logic</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Includes the Debounce logic and includes the capability of debouncing interrupts using an external slow clock.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0x0)</li>
+                                                    <li>Include (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: GPIO_PORTA_INTR == 1</p>
+                                            <p>Parameter Name: GPIO_DEBOUNCE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Interrupt</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>If Port A is required to be used as an interrupt source, then set this parameter to 1.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0x0)</li>
+                                                    <li>Include (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Include</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_PORTA_INTR</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Interrupt Polarity</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Active High</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Sets the polarity on the output of Port A. The single combined interrupt and the separate individual interrupts share a common polarity.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Active Low (0)</li>
+                                                    <li>Active High (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Active Low</p>
+                                            <p>Enabled: GPIO_PORTA_INTR == 1</p>
+                                            <p>Parameter Name: GPIO_INT_POL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Single Interrupt Generated?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies that Port A can be configured to generate multiple interrupt signals or a single combined interrupt flag. When set to 1, the component generates a single combined interrupt flag.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0)</li>
+                                                    <li>true (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: false</p>
+                                            <p>Enabled: GPIO_PORTA_INTR == 1</p>
+                                            <p>Parameter Name: GPIO_INTR_IO</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Read Back Data Synchronization</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter controls the inclusion of metastability registers on the read back path when reading the external input signal gpio_ext_porta from the gpio_ext_porta memory-mapped registers.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0)</li>
+                                                    <li>Include (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_PA_SYNC_EXT_DATA</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Software Register Reset Value</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies the Power-on-Reset value of Port A Software Register gpio_swporta.</p>
+                                            <p>Values: 0x0, ..., 0xffffffff</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_SWPORTA_RESET</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Interrupt Synchronisation</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Include</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Synchronizes Port A interrupts. If set, metastability flip-flops for Port A interrupts are instantiated as part of the component. Otherwise, metastability flip-flops are not instantiated, and it is assumed that interrupt synchronization is taken care outside of the component.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0)</li>
+                                                    <li>Include (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Include</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: GPIO_PA_SYNC_INTERRUPTS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port A Clock Domain Crossing Synchronization Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Sets the number of synchronization stages to be placed on clock domain crossing signals of port A.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+2: 2-stage synchronization with positive-edge capturing at both the stages
+</li>
+                                                    <li>
+3: 3-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                    <li>
+4: 4-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 2, 3, 4</p>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: GPIO_PA_SYNC_INTERRUPTS==1 || GPIO_PA_SYNC_EXT_DATA==1</p>
+                                            <p>Parameter Name: GPIO_PA_SYNC_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Port A Interrupt Detection</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Include</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>If Port A is required to generate interrupt on both rising and falling edges of the external input signal, then set this parameter to 1.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0)</li>
+                                                    <li>Include (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: GPIO_PORTA_INTR == 1</p>
+                                            <p>Parameter Name: GPIO_INT_BOTH_EDGE</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-PortB"></a>Port B Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-PortB"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Port B Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Port B Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Port B
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port B Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter configures the width of Port B.</p>
+                                            <p>Values: 1, ..., 32</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 1</p>
+                                            <p>Parameter Name: GPIO_PWIDTH_B</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port B Auxiliary H/W</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Exclude</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates Port B Auxiliary H/W support. When set to 1, Port B has external, auxiliary hardware signals controlling the data and the direction of Port B rather than the software. If set to 0, then the functionality for the hardware-software multiplexing is not implemented.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0x0)</li>
+                                                    <li>Include (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 1</p>
+                                            <p>Parameter Name: GPIO_HW_PORTB</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port B controlled from single source?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates Port B Hardware/Software control. If set, all bits of Port B are either entirely under software control (if Port B Auxiliary H/W is excluded) or entirely under hardware control (if Port B Auxiliary H/W is included). If this parameter is not set, then the "gpio_sw_portb" register determines which bits of the port are under hardware control and which are under software control.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: GPIO_HW_PORTB==1 &amp;&amp; GPIO_NUM_PORTS&gt;1</p>
+                                            <p>Parameter Name: GPIO_PORTB_SINGLE_CTL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port B Default Direction</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Input</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter sets the default direction of Port B after Power-on-Reset.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Input (0)</li>
+                                                    <li>Output (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Input</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 1</p>
+                                            <p>Parameter Name: GPIO_DFLT_DIR_B</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port B Default Mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">S/W</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates default mode if the auxiliary H/W is supported on port B. The default source of the input data, the output data, and the control of Port B are configurable. This parameter sets the reset value of the gpio_portb_ctl register.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>S/W (0)</li>
+                                                    <li>H/W (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: S/W</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 1 &amp;&amp; GPIO_HW_PORTB == 1</p>
+                                            <p>Parameter Name: GPIO_DFLT_SRC_B</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port B Read Back Data Synchronization</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Exclude</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter controls the inclusion of metastability registers on the read back path when reading the external input signal gpio_ext_portb from the gpio_ext_portb memory-mapped registers.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0)</li>
+                                                    <li>Include (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 1</p>
+                                            <p>Parameter Name: GPIO_PB_SYNC_EXT_DATA</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port B Clock Domain Crossing Synchronization Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Sets the number of synchronization stages to be placed on clock domain crossing signals of port B.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+2: 2-stage synchronization with positive-edge capturing at both the stages
+</li>
+                                                    <li>
+3: 3-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                    <li>
+4: 4-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 2, 3, 4</p>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: GPIO_PB_SYNC_EXT_DATA==1 &amp;&amp; GPIO_NUM_PORTS&gt;1</p>
+                                            <p>Parameter Name: GPIO_PB_SYNC_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Port B Software Register Reset Value</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Indicates the Power-on-Reset value of Port B Software Register. This is the reset value of the gpio_swportb register.</p>
+                                            <p>Values: 0x0, ..., 0xff</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 1</p>
+                                            <p>Parameter Name: GPIO_SWPORTB_RESET</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-PortC"></a>Port C Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-PortC"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Port C Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Port C Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Port C
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port C Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter sets the width of Port C.</p>
+                                            <p>Values: 1, ..., 32</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 2</p>
+                                            <p>Parameter Name: GPIO_PWIDTH_C</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port C Auxiliary H/W</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Exclude</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates the Port C Auxiliary H/W Support. When set to 1, Port C has external, auxiliary hardware signals controlling the data and the direction of Port C, rather than the software. If set to 0, then the functionality for the hardware-software multiplexing is not implemented.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0x0)</li>
+                                                    <li>Include (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 2</p>
+                                            <p>Parameter Name: GPIO_HW_PORTC</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port C controlled from single source?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates Port C Hardware/Software Control. If set, all bits of Port C are either entirely under software control (if Port C Auxiliary H/W is excluded) or entirely under hardware control (if Port C Auxiliary H/W is included). If this parameter is not set, then the "gpio_sw_portc" register determines which bits of the port are under hardware control and which are under software control.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: GPIO_HW_PORTC==1 &amp;&amp; GPIO_NUM_PORTS &gt; 2</p>
+                                            <p>Parameter Name: GPIO_PORTC_SINGLE_CTL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port C Default Direction</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Input</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter sets the default direction of Port C after Power-on-Reset.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Input (0)</li>
+                                                    <li>Output (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Input</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 2</p>
+                                            <p>Parameter Name: GPIO_DFLT_DIR_C</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port C Default Mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">S/W</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates default mode if auxiliary H/W supported on port C. The default source of the input data, the output data, and the control of Port C are configurable. This parameter sets the reset value of the gpio_portc_ctl register.
+Power On Reset to either S/W or H/W.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>S/W (0)</li>
+                                                    <li>H/W (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: S/W</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 2 &amp;&amp; GPIO_HW_PORTC == 1</p>
+                                            <p>Parameter Name: GPIO_DFLT_SRC_C</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port C Read Back Data Synchronization</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Exclude</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates Port C Read Back Data Synchronization. This parameter controls inclusion of metastability registers on the read back path when reading the external input signal gpio_ext_portc from the gpio_ext_portc memory-mapped registers.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0)</li>
+                                                    <li>Include (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 2</p>
+                                            <p>Parameter Name: GPIO_PC_SYNC_EXT_DATA</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port C Clock Domain Crossing Synchronization Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Sets the number of synchronization stages to be placed on clock domain crossing signals of port C.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+2: 2-stage synchronization with positive-edge capturing at both the stages
+</li>
+                                                    <li>
+3: 3-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                    <li>
+4: 4-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 2, 3, 4</p>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: GPIO_PC_SYNC_EXT_DATA==1 &amp;&amp; GPIO_NUM_PORTS&gt;2</p>
+                                            <p>Parameter Name: GPIO_PC_SYNC_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Port C Software Register Reset Value</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Indicates Power-on-Reset value of the Port C Software Register. This is the reset value of the gpio_swportc register.</p>
+                                            <p>Values: 0x0, ..., 0xff</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 2</p>
+                                            <p>Parameter Name: GPIO_SWPORTC_RESET</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-PortD"></a>Port D Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-PortD"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Port D Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Port D Parameters" width="100%" cellspacing="0" style="mc-table-style: url('../../Resources/TableStyles/table.css');">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Port D
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port D Width</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter configures the width of Port D.</p>
+                                            <p>Values: 1, ..., 32</p>
+                                            <p>DefaultValue: 8</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 3</p>
+                                            <p>Parameter Name: GPIO_PWIDTH_D</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port D Auxiliary H/W</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Exclude</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates Port D Auxiliary H/W Support. When set to 1, Port D has external, auxiliary hardware signals controlling the data and the direction of Port D, rather than software. If set to 0, then the functionality for the hardware-software multiplexing is not implemented.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0x0)</li>
+                                                    <li>Include (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 3</p>
+                                            <p>Parameter Name: GPIO_HW_PORTD</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port D controlled from single source?</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">true</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates Port D Hardware/Software Control. If set, all bits of Port D are either entirely under software control (if Port D Auxiliary H/W is excluded) or entirely under hardware control (if Port C Auxiliary H/W is included). If this parameter is not set, then the "gpio_sw_portd" register determines which bits of the port are under hardware control and which are under software control.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>false (0x0)</li>
+                                                    <li>true (0x1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: true</p>
+                                            <p>Enabled: GPIO_HW_PORTD==1 &amp;&amp; GPIO_NUM_PORTS &gt; 3</p>
+                                            <p>Parameter Name: GPIO_PORTD_SINGLE_CTL</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port D Default Direction</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Input</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>This parameter sets the default direction of Port D after Power On Reset.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Input (0)</li>
+                                                    <li>Output (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Input</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 3</p>
+                                            <p>Parameter Name: GPIO_DFLT_DIR_D</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port D Default Mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">S/W</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates the default mode if auxiliary H/W is supported on port D. The default source of the input data, the output data, and the control of Port D are configurable. This parameter sets the reset value of the gpio_portd_ctl register.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>S/W (0)</li>
+                                                    <li>H/W (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: S/W</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 3 &amp;&amp; GPIO_HW_PORTD == 1</p>
+                                            <p>Parameter Name: GPIO_DFLT_SRC_D</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port D Read Back Data Synchronization</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Exclude</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates the Port D Read Back Data Synchronization. This parameter controls the inclusion of metastability registers on the read back path when reading the gpio_ext_portd external input signal from the gpio_ext_portd memory-mapped registers.</p>
+                                            <p>Values: 
+                                            </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>Exclude (0)</li>
+                                                    <li>Include (1)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: Exclude</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 3</p>
+                                            <p>Parameter Name: GPIO_PD_SYNC_EXT_DATA</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Port D Clock Domain Crossing Synchronization Depth</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Sets the number of synchronization stages to be placed on clock domain crossing signals of port D.
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+2: 2-stage synchronization with positive-edge capturing at both the stages
+</li>
+                                                    <li>
+3: 3-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                    <li>
+4: 4-stage synchronization with positive-edge capturing at all stages
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 2, 3, 4</p>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: GPIO_PD_SYNC_EXT_DATA==1 &amp;&amp; GPIO_NUM_PORTS&gt;3</p>
+                                            <p>Parameter Name: GPIO_PD_SYNC_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">Port D Software Register Reset Value</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0x0</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Indicates Power-on-Reset value of Port D Software Register. This is the reset value of the gpio_swportd register.</p>
+                                            <p>Values: 0x0, ..., 0xff</p>
+                                            <p>DefaultValue: 0x0</p>
+                                            <p>Enabled: GPIO_NUM_PORTS &gt; 3</p>
+                                            <p>Parameter Name: GPIO_SWPORTD_RESET</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

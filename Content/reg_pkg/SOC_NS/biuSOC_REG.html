@@ -1,0 +1,3315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/register_table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>SOC_NS Reg</title>
+    </head>
+    <body>
+        <h1>SOC_REG</h1>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_CPU_CTRL_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000000</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>CPU Related Controls for SSE300 Sub System</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0RSTREQENRST
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>CPU0RSTREQEN reset value.</p>
+                    <p>0: AIRCR.SYSRESETREQ disabled</p>
+                    <p>1: AIRCR.SYSRESETREQ enabled</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0WAITRST
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>CPU0WAIT reset value</p>
+                    <p>0: Boot normally</p>
+                    <p>1: Wait at boot</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0INTNMIENABLERST
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>CPU0INTNMIENABLERST reset value</p>
+                    <p>0: Internal NMI sources are masked from driving NMI</p>
+                    <p>1: Internal NMI sources can drive NMI</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0EXPNMIENABLERST
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>CPU0EXPNMIENABLE reset value</p>
+                    <p>0: CPU0EXPNMI is masked from driving NMI</p>
+                    <p>1: CPU0EXPNMI is allowed to drive NMI</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0WAITCLR
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>When high, clears the SSE300 register field CPUWAIT.CPU0WAIT</p>
+                    <p>Once set to 1, this signal must be held at 1 until</p>
+                    <p>CPU0WAITCLRRESP is 1</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0CFGFPU
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>If the FPU is configured, this signal enables support for</p>
+                    <p>floating-point operation and scalar floating point CDE</p>
+                    <p>instructions</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:6]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0CFGMVE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x2</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: MVE not included</p>
+                    <p>1: Integer subset of MVE included</p>
+                    <p>2: Integer and half and single-precision floating-point MVE</p>
+                    <p>included. This option is only valid if CFGFPU = 1</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0MPUNSDISABLE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>When high, disables support for thenon-secure MPU region</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[9:9]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0MPUSDISABLE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>When high, disables support for the secure MPU region.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[10:10]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0INITL1RSTDIS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>When high, this signal disables the L1 cache invalidation out of</p>
+                    <p>reset.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[11:11]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>LOCKNSVTOR0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>When high, disables writes to the VTOR_NS register. For more</p>
+                    <p>information on this register, see the Arm v8-M Architecture</p>
+                    <p>Reference Manual.</p>
+                    <p>Asserting this signal prevents changes to the Non-Secure vector</p>
+                    <p>table base address.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[12:12]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>LOCKNSMPU0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>When high, disables writes to registers that are associated with</p>
+                    <p>the Non-Secure MPU region.</p>
+                    <p>MPU_CTRL_NS</p>
+                    <p>MPU_RNR_NS</p>
+                    <p>MPU_RBAR_NS</p>
+                    <p>MPU_RLAR_NS</p>
+                    <p>MPU_RBAR_A_NSn</p>
+                    <p>MPU_RLAR_A_NSn</p>
+                    <p>For more information on these registers, see Arm v8-M</p>
+                    <p>Architecture Reference Manual.</p>
+                    <p>Asserting this signal prevents changes to the memory regions</p>
+                    <p>which have been programmed in the Non-Secure MPU. All writes to</p>
+                    <p>the registers are ignored.</p>
+                    <p>This signal can be changed dynamically.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_CPU_CTRL_1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000004</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>CPU Related Controls for SSE300 Sub System</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[24:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>INITSVTOR0RST_31_7
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x220000</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>The value of CPU0 secure vector table offset address register in</p>
+                    <p>the SSE300 System Control Register</p>
+                    <p>Drives bits 31:7</p>
+                    <p>Point to ROM at 0x1100_0000</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_CPU_CTRL_2
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000008</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>CPU Related Controls for SSE300 Sub System</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[24:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0CFGSSTCALIB
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Secure SysTick calibration value</p>
+                    <p>CPU0CFGSSTCALIB[23:0]</p>
+                    <p>TENMS:</p>
+                    <p>Integer value to compute a 10ms (100MHz) delay from the CPU0CLK</p>
+                    <p>CPU0CFGSSTCALIB[24]</p>
+                    <p>SKEW:</p>
+                    <p>0: 10ms calibration is exact</p>
+                    <p>1: 10ms calibration is not exact because of clock frequency</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_CPU_CTRL_3
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000000C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>CPU Related Controls for SSE300 Sub System</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[24:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0CFGNSSTCALIB
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Secure SysTick calibration value</p>
+                    <p>CPU0CFGNSSTCALIB[23:0]</p>
+                    <p>TENMS:</p>
+                    <p>Integer value to compute a 10ms (100MHz) delay from the CPU0CLK</p>
+                    <p>CPU0CFGNSSTCALIB[24]</p>
+                    <p>SKEW:</p>
+                    <p>0: 10ms calibration is exact</p>
+                    <p>1: 10ms calibration is not exact because of clock frequency</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_CPU_STAT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000010</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>CPU Related Status for SSE300 Sub System</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0LOCKUP
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Processor lockup status.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0WAITCLRRESP
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Response to the CPU0WAITCLR request. This signal is set to 1</p>
+                    <p>until CPU0WAITCLR request goes to 0.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_CPU_CTI_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000014</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>Currently in A0, they are connected to registers</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0DBGRESTART
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Request for synchronized exit from halt mode. Forms a handshake</p>
+                    <p>with DBGRESTARTED. If multiprocessor debug support is not</p>
+                    <p>required, DBGRESTART must be tied LOW</p>
+                    <p>Already controlled by internal CTI in SSE300</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0EDBGRQ
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>External debug request. A debug agent in the system asserts this</p>
+                    <p>signal to request that the processor enters Debug state.</p>
+                    <p>Already controlled by internal CTI in SSE300</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_CPU_CTI_STAT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000018</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>These signals are supposed to connected to external CTI in B0</p>
+                    <p>Currently in A0, they are connected to registers</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0HALTED
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>In halting mode debug. HALTED remains asserted while the</p>
+                    <p>processor is in debug</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>CPU0DBGRESTARTED
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Handshake for DBGRESTART</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DBG_CTRL_0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000001C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>System Controls related to Debug in SSE300 Sub System</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DBGENSELDIS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: DBGENIN is used</p>
+                    <p>1: SSE300 SECDBGSET/CLR is used</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>NIDENSELDIS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: NIDENIN is used</p>
+                    <p>1: SSE300 SECDBGSET/CLR is used</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SPIDENSELDIS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: SPIDENIN is used</p>
+                    <p>1: SSE300 SECDBGSET/CLR is used</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SPNIDENSELDIS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: SPNIDENIN is used</p>
+                    <p>1: SSE300 SECDBGSET/CLR is used</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DAPACCENSELDIS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: DAPACCENIN is used</p>
+                    <p>1: SSE300 SECDBGSET/CLR is used</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DAPDSSACCENSELDIS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x1</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: DAPDSSACCENIN is used</p>
+                    <p>1: SSE300 SECDBGSET/CLR is used</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DBG_CTRL_1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000020</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>System Controls related to Debug in SSE300 Sub System</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DBGENIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Debug Enable Input</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>NIDENIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Non-Invasive Debug Enable input</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SPIDENIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Secure Privilege Invasive Debug Enable Input</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SPNIDENIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Secure Privilege Non-Invasive Debug Enalbe Input</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DAPACCENIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>External Debug Access Enable Input</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DAPDSSACCENIN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Debug Access Port to Debug System Access Enable Input</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DBG_STAT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000024</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>System Controls related to Debug in SSE300 Sub System</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DBGEN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Merged Debug Enable Output</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>NIDEN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Merged Non-Invasive Debug Enable Output</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SPIDEN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Merged Secure Privilege Invasive Debug Enable Output</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SPNIDEN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>.Merged Secure Non-Invasive Debug Enable Output</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DAPACCEN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Merged External Debug Access Enable Output</p>
+                    <p>Note: The DAPACCEN and DAPDSSACCEN debug authentication signals</p>
+                    <p>control the access to the processor's D-AHB interface. DAPACCEN</p>
+                    <p>drives both ap_en and ap_secure_en inputs of DAPLite2. When</p>
+                    <p>DAPACCEN is LOW, any memory access result in authentication</p>
+                    <p>failure as described in Arm® CoreSight™ DAP-Lite2 Technical</p>
+                    <p>Reference Manual. When DAPDSSACCEN is LOW, the SIE-200 AHB to</p>
+                    <p>AHB and APB bridge, residing between DAP-Lite2 and the D-AHB</p>
+                    <p>interface of the processor, responds with error.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>DAPDSSACCEN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Merged Debug Access Port to Debug System Access Enable Output</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_CTRL_NS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000028</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 Non-Secure System Controls</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_stop_req_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel stop request for Non-secure channels. When asserted,</p>
+                    <p>all Non-secure channels that are not in IDLE will be stopped.</p>
+                    <p>Channels can be enabled by SW, but will be immediately stopped</p>
+                    <p>if this request is asserted.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_pause_req_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel pause request for Non-secure channels. When</p>
+                    <p>asserted, then all Non-secure channels that are not in IDLE</p>
+                    <p>will be paused. Channels can be enabled by SW, but will be</p>
+                    <p>immediately paused if this request is asserted. When the</p>
+                    <p>request is deasserted, the operation continues.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_CTRL_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000002C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 Secure System Secure Controls</p>
+                    <p>Note: All DMA*_S registers are only accessible by secure</p>
+                    <p>managers. Non-secure managers will RAZ/WI</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_stop_req_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel stop request for Secure channels. When asserted, all</p>
+                    <p>Secure channels that are not in IDLE will be stopped. Channels</p>
+                    <p>can be enabled by SW, but will be immediately stopped if this</p>
+                    <p>request is asserted.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_pause_req_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body"> </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_STAT_0_NS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000030</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Non-Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_stop_ack_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel stopped acknowledge for Non-secure channels. When</p>
+                    <p>asserted, all Non-secure channels are stopped or inactive.</p>
+                    <p>Four-phase handshake pair of allch_stop_req_nonsec.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_pause_ack_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel pause acknowledge for Non-secure channels. When</p>
+                    <p>asserted, all Non-secure channels are paused or inactive.</p>
+                    <p>Four-phase handshake pair of allch_pause_req_nonsec.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_STAT_0_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000034</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_stop_ack_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel stopped acknowledge for Secure channels. When</p>
+                    <p>asserted, all Secure channels are stopped or inactive.</p>
+                    <p>Four-phase handshake pair of allch_stop_req_sec.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_pause_ack_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel pause acknowledge for Secure channels. When</p>
+                    <p>asserted, all Secure channels are paused or inactive.</p>
+                    <p>Four-phase handshake pair of allch_pause_req_sec.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_STAT_1_NS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000038</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Non-Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_enabled_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is active.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_err_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel has</p>
+                    <p>encountered an error.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[23:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_stopped_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is stopped.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_paused_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is paused.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_STAT_1_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000003C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_enabled_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is active.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_err_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel has</p>
+                    <p>encountered an error.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[23:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_stopped_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is stopped.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_paused_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is paused.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_STAT_2_NS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000040</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Non Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_priv_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show the privilege setting of</p>
+                    <p>the channel.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_STAT_2_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000044</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_priv_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show the privilege setting of</p>
+                    <p>the channel.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show the security setting of</p>
+                    <p>the channel.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_BOOT_0_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000048</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Boot Configuration</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>boot_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Enables the channel 0 to load a first command after reset from a</p>
+                    <p>specified input address set by boot_addr</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>boot_memattr
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Boot address memory attributes. Has the same encodings as the</p>
+                    <p>LINKMEMATTRHI and LINKMEMATTRLO registers combined</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[10:9]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>boot_shareattr
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Boot address shareability attributes. Has the same encoding as</p>
+                    <p>the LINKSHAREATTR register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_BOOT_1_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000004C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Boot Configuration</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[30:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>boot_addr
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Word-aligned address for the boot process. boot_addr must point</p>
+                    <p>to a secure memory region because channel 0 boots as secure</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_CLK_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000050</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 Q-Channel Control</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>clk_force
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Setting to 1 disables dynamic clock gating on the q-channel</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>entry_delay
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Sets the value of the quiescence entry delay. Adds 0-255 clk</p>
+                    <p>cycles of hysteresis to the quiescence entry sequence</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA0_TRIG_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000054</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 Trigger Masks</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>enable
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>1 bit per trigger input to the DMA. When set to 1 will enable</p>
+                    <p>the trigger source into the DMA</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_CTRL_NS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000058</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 Non-Secure System Controls</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_stop_req_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel stop request for Non-secure channels. When asserted,</p>
+                    <p>all Non-secure channels that are not in IDLE will be stopped.</p>
+                    <p>Channels can be enabled by SW, but will be immediately stopped</p>
+                    <p>if this request is asserted.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_pause_req_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel pause request for Non-secure channels. When</p>
+                    <p>asserted, then all Non-secure channels that are not in IDLE</p>
+                    <p>will be paused. Channels can be enabled by SW, but will be</p>
+                    <p>immediately paused if this request is asserted. When the</p>
+                    <p>request is deasserted, the operation continues.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_CTRL_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000005C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 Secure System Secure Controls</p>
+                    <p>Note: All DMA*_S registers are only accessible by secure</p>
+                    <p>managers. Non-secure managers will RAZ/WI</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_stop_req_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel stop request for Secure channels. When asserted, all</p>
+                    <p>Secure channels that are not in IDLE will be stopped. Channels</p>
+                    <p>can be enabled by SW, but will be immediately stopped if this</p>
+                    <p>request is asserted.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_pause_req_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body"> </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_STAT_0_NS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000060</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Non-Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_stop_ack_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel stopped acknowledge for Non-secure channels. When</p>
+                    <p>asserted, all Non-secure channels are stopped or inactive.</p>
+                    <p>Four-phase handshake pair of allch_stop_req_nonsec.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_pause_ack_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel pause acknowledge for Non-secure channels. When</p>
+                    <p>asserted, all Non-secure channels are paused or inactive.</p>
+                    <p>Four-phase handshake pair of allch_pause_req_nonsec.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_STAT_0_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000064</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_stop_ack_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel stopped acknowledge for Secure channels. When</p>
+                    <p>asserted, all Secure channels are stopped or inactive.</p>
+                    <p>Four-phase handshake pair of allch_stop_req_sec.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>allch_pause_ack_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>All channel pause acknowledge for Secure channels. When</p>
+                    <p>asserted, all Secure channels are paused or inactive.</p>
+                    <p>Four-phase handshake pair of allch_pause_req_sec.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_STAT_1_NS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000068</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Non-Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_enabled_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is active.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_err_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel has</p>
+                    <p>encountered an error.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[23:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_stopped_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is stopped.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_paused_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is paused.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_STAT_1_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000006C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_enabled_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is active.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_err_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel has</p>
+                    <p>encountered an error.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[23:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_stopped_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is stopped.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_paused_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show when a channel is paused.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_STAT_2_NS
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000070</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Non Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_priv_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show the privilege setting of</p>
+                    <p>the channel.</p>
+                    <p>Signals are ANDed with ch_nonsec</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_STAT_2_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000074</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Secure Status</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_priv_sec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show the privilege setting of</p>
+                    <p>the channel.</p>
+                    <p>Signals are ANDed with !ch_nonsec</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>ch_nonsec
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Status indication per channel to show the security setting of</p>
+                    <p>the channel.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_BOOT_0_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000078</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Boot Configuration</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>boot_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Enables the channel 0 to load a first command after reset from a</p>
+                    <p>specified input address set by boot_addr</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>boot_memattr
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Boot address memory attributes. Has the same encodings as the</p>
+                    <p>LINKMEMATTRHI and LINKMEMATTRLO registers combined</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[10:9]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>boot_shareattr
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Boot address shareability attributes. Has the same encoding as</p>
+                    <p>the LINKSHAREATTR register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_BOOT_1_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000007C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 System Boot Configuration</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[30:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>boot_addr
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Word-aligned address for the boot process. boot_addr must point</p>
+                    <p>to a secure memory region because channel 0 boots as secure</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_CLK_CTRL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000080</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 Q-Channel Control</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>clk_force
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Setting to 1 disables dynamic clock gating on the q-channel</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[8:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>entry_delay
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Sets the value of the quiescence entry delay. Adds 0-255 clk</p>
+                    <p>cycles of hysteresis to the quiescence entry sequence</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_DMA1_TRIG_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000084</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>DMA-350 Trigger Masks</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>enable
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>1 bit per trigger input to the DMA. When set to 1 will enable</p>
+                    <p>the trigger source into the DMA</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_NPU_CTRL_S
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000088</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>Ethos U55 System Control</p>
+                    <p>All NPU*_S registers are only accessible by secure managers.</p>
+                    <p>Non-secure managers will RAZ/WI</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>PORPL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Power-On-Reset Privilege Level</p>
+                    <p>0: User</p>
+                    <p>1: Privileged</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>PORSL
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>Power-On-Reset Security Level</p>
+                    <p>0: Secure</p>
+                    <p>1: Non-secure</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>SOC_REG_SEC_MPROT
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000008C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2">
+                    <p>SOC Security Control.</p>
+                    <p>Directly drives the HPROT or AxPROT’s NS bit of the associated</p>
+                    <p>manager</p>
+                    <p>This register is only accessible by secure managers. Non-secure</p>
+                    <p>managers will RAZ/WI</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SDIO0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: Secure</p>
+                    <p>1: Non-Secure</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body">
+                <td class="TableStyle-register_table-BodyH-Column1-Body">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body">
+                    <p>SDIO1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body">
+                    <p>0: Secure</p>
+                    <p>1: Non-Secure</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

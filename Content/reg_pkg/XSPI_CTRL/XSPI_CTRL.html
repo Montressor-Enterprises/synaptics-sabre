@@ -1,0 +1,3512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/table.css" rel="stylesheet" MadCap:stylesheetType="table" /><title> XSPI_CTRL </title>
+    </head>
+    <body>
+        <h1>XSPI_CTRL</h1>
+        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-table-Head-Header1">
+                    <th class="TableStyle-table-HeadE-Column1-Header1">Address</th>
+                    <th class="TableStyle-table-HeadD-Column1-Header1">Register</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x0</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#cmd_reg0">cmd_reg0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x4</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#cmd_reg1">cmd_reg1</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x8</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#cmd_reg2">cmd_reg2</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xc</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#cmd_reg3">cmd_reg3</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x10</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#cmd_reg4">cmd_reg4</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x44</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#cmd_status">cmd_status</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x100</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#ctrl_status">ctrl_status</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x110</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#intr_status">intr_status</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x114</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#intr_enable">intr_enable</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x230</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#ctrl_config">ctrl_config</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x23c</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#dma_settings">dma_settings</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x240</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#sdma_size">sdma_size</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x244</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#sdma_trd_info">sdma_trd_info</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x388</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#xip_mode_cfg">xip_mode_cfg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x390</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#global_seq_cfg">global_seq_cfg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x394</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#global_seq_cfg_1">global_seq_cfg_1</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x398</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#direct_access_cfg">direct_access_cfg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x39c</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#direct_access_rmp">direct_access_rmp</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x3a0</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#direct_access_rmp_1">direct_access_rmp_1</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x420</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#prog_seq_cfg_0">prog_seq_cfg_0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x424</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#prog_seq_cfg_1">prog_seq_cfg_1</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x428</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#prog_seq_cfg_2">prog_seq_cfg_2</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x430</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#read_seq_cfg_0">read_seq_cfg_0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x434</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#read_seq_cfg_1">read_seq_cfg_1</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x438</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#read_seq_cfg_2">read_seq_cfg_2</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x440</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#we_seq_cfg_0">we_seq_cfg_0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x450</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_0">stat_seq_cfg_0</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x454</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_1">stat_seq_cfg_1</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x458</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_2">stat_seq_cfg_2</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x45c</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_3">stat_seq_cfg_3</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x460</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_4">stat_seq_cfg_4</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x464</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_5">stat_seq_cfg_5</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x46c</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_7">stat_seq_cfg_7</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x470</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_8">stat_seq_cfg_8</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x478</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#stat_seq_cfg_10">stat_seq_cfg_10</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xf00</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#xspi_ctrl_version">xspi_ctrl_version</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0xf04</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#ctrl_features_reg">ctrl_features_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x1000</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#wp_settings">wp_settings</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x1004</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#reset_pin_settings">reset_pin_settings</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x1008</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#clock_mode_settings">clock_mode_settings</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x100c</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#jedec_rst_timing_reg">jedec_rst_timing_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x1010</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#dev_delay_reg">dev_delay_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x1018</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#dev_active_max_reg">dev_active_max_reg</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyE-Column1-Body1">0x1030</td>
+                    <td class="TableStyle-table-BodyD-Column1-Body1"><a href="#dll_phy_update_cnt">dll_phy_update_cnt</a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-table-Body-Body1">
+                    <td class="TableStyle-table-BodyB-Column1-Body1">0x1034</td>
+                    <td class="TableStyle-table-BodyA-Column1-Body1"><a href="#dll_phy_ctrl">dll_phy_ctrl</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="cmd_reg0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cmd_reg0</td>
+                    <td>0x0</td>
+                    <td>
+            Command register 0. Writing data to this register will initiate a new transaction of the xSPI Flash Controller in STIG work mode. Refer to the STIG section in the UserGuide
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>cmd0</td>
+                    <td>Command 0 register field.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="cmd_reg1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cmd_reg1</td>
+                    <td>0x4</td>
+                    <td>Command register 1. This register is only used in CDMA/PIO(IP6522 only) and STIG work mode, and the definition changes depending on the workmode. Refer to the applicable section in the UserGuide. </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>cmd1</td>
+                    <td>Command 1 register field.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="cmd_reg2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cmd_reg2</td>
+                    <td>0x8</td>
+                    <td>Command register 2. This register is only used in CDMA/PIO(IP6522 only) and STIG work mode, and the definition changes depending on the workmode. Refer to the applicable section in the UserGuide. </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>cmd2</td>
+                    <td>Command 2 register field.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="cmd_reg3">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cmd_reg3</td>
+                    <td>0xc</td>
+                    <td>Command register 3. This register is only used in CDMA/PIO(IP6522 only) and STIG work mode, and the definition changes depending on the workmode. Refer to the applicable section in the UserGuide. </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>cmd3</td>
+                    <td>Command 3 register field.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="cmd_reg4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cmd_reg4</td>
+                    <td>0x10</td>
+                    <td>Command register 4. This register is only used in CDMA/PIO(IP6522 only) and STIG work mode, and the definition changes depending on the workmode. Refer to the applicable section in the UserGuide. </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>cmd4</td>
+                    <td>Command 4 register field.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="cmd_status">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cmd_status</td>
+                    <td>0x44</td>
+                    <td>This status register reports the Command Status
+ for STIG work mode when an xSPI flash transaction has completed.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>cmd_status</td>
+                    <td>
+              When operating in STIG mode mode, this register reports the STIG completion status. Refer to the UserGuide, section "Checking STIG Completion Status" for a full bitwise definition.
+            </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="ctrl_status">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ctrl_status</td>
+                    <td>0x100</td>
+                    <td>General Controller Status Register.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>init_comp</td>
+                    <td>This bit is set when the Cadence xSPI Controller has completed its reset and initialization process.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:7]</td>
+                    <td>ctrl_busy</td>
+                    <td>This bit indicates if controller is in the busy state or not.
+ 1: Controller is busy.
+ 0: Controller is idle.
+ Note that this bit is also routed to the controller interface via the ctrl_busy pin.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[4:4]</td>
+                    <td>gcmd_eng_mc_busy</td>
+                    <td>This bit is relevant for STIG mode only. This bit indicates when the controller is waiting for next/last instruction in glued instruction chain or it is executing requested sequence on the xSPI i/f. </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[3:3]</td>
+                    <td>gcmd_eng_busy</td>
+                    <td>
+              When operating in DIRECT work mode, this bit will be set high when the DIRECT CMD Generator is busy. Note that no new request on the AXI slave interface will be accepted while this is high..\n
+ When operating in STIG work mode, this bit will be set while the STIG engine is busy.
+            </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>sdma_busy</td>
+                    <td>When set, the AXI Slave interface is busy.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="intr_status">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>intr_status</td>
+                    <td>0x110</td>
+                    <td>Interrupt status register.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[28:28]</td>
+                    <td>dir_dev_err</td>
+                    <td>Set when a program operation in DIRECT mode failed. That is, the device returned the program fail bit when the status was checked. For IP6522A, this bit is also set when uncorrectable ECC error occurs in DIRECT mode.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[27:27]</td>
+                    <td>dir_ecc_corr_err</td>
+                    <td>For IP6522A, this bit is set when a correctable ECC error occurs in DIRECT mode.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[26:26]</td>
+                    <td>dir_cmd_err</td>
+                    <td>This bit is typically set when the host has attempted to do something that is unsupported or incorrect. An example could be that the host has triggered a write when the device is operating in XIP mode. The full list of error conditions is described in the Error/Event Handling section of the UserGuide.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[25:25]</td>
+                    <td>dir_dqs_err</td>
+                    <td>This bit is set when an incorrect number of DQS pulses were detected during a DIRECT mode read or status check. Essentially this status is passed from the soft PHY and could mean that the PHY is configured badly such that it expects DQS strobes but never received them or that the rd_del_sel value is incorrect and has caused data corruption and pointer misalignment in the PHY. To resolve this issue the PHY must be reset to clear the dqs_underrun and dqs_overflow flags and reset the read data pointers.  </td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[24:24]</td>
+                    <td>dir_crc_err</td>
+                    <td>This bit is set when CRC checking is enabled and a CRC error after a read or status checking command in DIRECT work mode has been detected.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[23:23]</td>
+                    <td>stig_done</td>
+                    <td>This bit is set when the last instruction in glued chain has completed.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[22:22]</td>
+                    <td>sdma_err</td>
+                    <td>This bit is set when an illegal access to the Slave DMA interface is detected.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[21:21]</td>
+                    <td>sdma_trigg</td>
+                    <td>This bit is set when the trigger condition for the Slave DMA is met. It is relevant to STIG and ACMD mode only and used to instruct the host when an access on the AXI slave interface is to be performed. This is explained in more detail in the Operating in ACMD or STIG mode sections of the UserGuide</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[20:20]</td>
+                    <td>cmd_ignored</td>
+                    <td>
+              STIG work mode: The controller detected that a command was sent when the STIG engine was already busy and ignored it.
+            </td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>ctrl_idle</td>
+                    <td>This is general status and indicates that the xSPI controller has returned to an IDLE state.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:15]</td>
+                    <td>gp_open_drain_3</td>
+                    <td>This simply reflects that a HIGH-to-LOW or LOW-to-HIGH transition was detected on the xspi_dfi_gp_open_drain[3] input pin.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[14:14]</td>
+                    <td>gp_open_drain_2</td>
+                    <td>This simply reflects that a HIGH-to-LOW or LOW-to-HIGH transition detected on the xspi_dfi_gp_open_drain[2] input pin.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[13:13]</td>
+                    <td>gp_open_drain_1</td>
+                    <td>This simply reflects that a HIGH-to-LOW or LOW-to-HIGH transition detected on the xspi_dfi_gp_open_drain[1] input pin.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[12:12]</td>
+                    <td>gp_open_drain_0</td>
+                    <td>This simply reflects that a HIGH-to-LOW or LOW-to-HIGH transition detected on the xspi_dfi_gp_open_drain[0] input pin.</td>
+                    <td>w1c</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="intr_enable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>intr_enable</td>
+                    <td>0x114</td>
+                    <td>
+            Interrupt enable register. If the selected bit of this register is set, the rising edge of the corresponding bit in intr_status will trigger an interrupt.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:31]</td>
+                    <td>intr_en</td>
+                    <td>Global Interrupts enable flag.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[28:28]</td>
+                    <td>dir_dev_err_en</td>
+                    <td>Enables interrupt when an uncorrectable ECC or program fail error occurred in DIRECT work mode.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[27:27]</td>
+                    <td>dir_ecc_corr_err_en</td>
+                    <td>Enables interrupt when a correctable ECC error occurred in DIRECT work mode.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[26:26]</td>
+                    <td>dir_cmd_err_en</td>
+                    <td>Enables interrupt when an invalid command sequence has been detected in DIRECT work mode.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[25:25]</td>
+                    <td>dir_dqs_err_en</td>
+                    <td>Enables interrupt when the controller returns DQS error after read or status checking command in DIRECT work mode.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[24:24]</td>
+                    <td>dir_crc_err_en</td>
+                    <td>Enables interrupt when the controller returns CRC error after read or status checking command in DIRECT work mode.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[23:23]</td>
+                    <td>stig_done_en</td>
+                    <td>Enables interrupt when an instruction in glued chain is completed.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[22:22]</td>
+                    <td>sdma_err_en</td>
+                    <td>Enables interrupt when an illegal access to the Slave DMA interface is detected.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[21:21]</td>
+                    <td>sdma_trigg_en</td>
+                    <td>Enables interrupt when the trigger condition for the Slave DMA is met.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[20:20]</td>
+                    <td>cmd_ignored_en</td>
+                    <td>Interrupt enable for detecting of ignored command.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>ctrl_idle_en</td>
+                    <td>Interrupt enable for detecting that Controller has returned to the IDLE state.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:15]</td>
+                    <td>gp_open_drain_3_en</td>
+                    <td>Interrupt enable for detecting the HIGH-to-LOW or LOW-to-HIGH transition on the xspi_dfi_gp_open_drain[3] input pin.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[14:14]</td>
+                    <td>gp_open_drain_2_en</td>
+                    <td>Interrupt enable for detecting the HIGH-to-LOW or LOW-to-HIGH transition on the xspi_dfi_gp_open_drain[2] input pin.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[13:13]</td>
+                    <td>gp_open_drain_1_en</td>
+                    <td>Interrupt enable for detecting the HIGH-to-LOW or LOW-to-HIGH transition on the xspi_dfi_gp_open_drain[1] input pin.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[12:12]</td>
+                    <td>gp_open_drain_0_en</td>
+                    <td>Interrupt enable for detecting the HIGH-to-LOW or LOW-to-HIGH transition on the xspi_dfi_gp_open_drain[0] input pin.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="ctrl_config">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ctrl_config</td>
+                    <td>0x230</td>
+                    <td>Device control register.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[5:5]</td>
+                    <td>work_mode</td>
+                    <td>
+              Field selecting controllers work mode. Allowed values are:
+ [list]
+ [*] 0 - DIRECT mode,
+ [*] 1 - STIG mode.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="dma_settings">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dma_settings</td>
+                    <td>0x23c</td>
+                    <td>AXI Interface settings register for the Slave interface.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[17:17]</td>
+                    <td>sdma_err_rsp</td>
+                    <td>
+              AXI error responses can only occur in ACMD or STIG work modes. If this bit is set then an AXI ERROR response will be returned if one of the following is true ..
+ 1. The host attempts to access the slave interface before it is permitted (refer to the required steps in STIG and ACMD sections of this document).
+ 2. The host issues an unsupported burst type. The controller only supports incremental bursts (non-wrapping) bursts currently.
+
+ If this bit is not set, an OK response is returned.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="sdma_size">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sdma_size</td>
+                    <td>0x240</td>
+                    <td>Transferred data block size for the Slave DMA module.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>sdma_size</td>
+                    <td>Transferred data block size in bytes for the Slave DMA module. Data size is rounded up to the data bus word size.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="sdma_trd_info">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sdma_trd_info</td>
+                    <td>0x244</td>
+                    <td>Information for current Slave DMA transaction.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[8:8]</td>
+                    <td>sdma_dir</td>
+                    <td>Transfer direction related to current Slave DMA transfer (0-read; 1-write).</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="xip_mode_cfg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>xip_mode_cfg</td>
+                    <td>0x388</td>
+                    <td>
+            Register designated to configure controller in XIP work mode
+ in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[23:16]</td>
+                    <td>xip_dis_mb_val</td>
+                    <td>
+              Value of mode-bits required to disable XIP mode.
+            </td>
+                    <td>rw</td>
+                    <td>0xff</td>
+                </tr>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>xip_en_mb_val</td>
+                    <td>
+              Value of mode-bits required to enable XIP mode.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>xip_en</td>
+                    <td>
+              XIP mode enable for selected memory bank.
+ If XIP mode is enabled only READ sequences are valid.
+ Invoking any other command sequence will be ignored
+ and dir_cmd_err will be rise.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="global_seq_cfg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>global_seq_cfg</td>
+                    <td>0x390</td>
+                    <td>
+            Register to configure common values for sequences in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[24:23]</td>
+                    <td>seq_type</td>
+                    <td>
+              Sequence type (common for all sequences):
+ [list]
+ [*] 0 - PROFILE 1,
+ [*] 1 - PROFILE 2 - HF (HyperFlash),
+ [*] 2 - PROFILE 2 - HR (HyperRAM),
+ [*] 3 - SPI NAND.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[20:20]</td>
+                    <td>seq_data_swap</td>
+                    <td>
+              Enables reversed byte order. This bit can be set only when data phase reflects Octal DDR mode.
+ In other modes this bit must be set to low.
+ Allowed values are:
+ [list]
+ [*] 1'b0 - Disable,
+ [*] 1'b1 - Enable.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[18:18]</td>
+                    <td>seq_tcms_en</td>
+                    <td>
+              Setting this bit enables tCMS timing in PROFILE 1. Refer to the dev_active_max register at offset 0x1018 for further details.
+ Allowed values are:
+ [list]
+ [*] 1'b0 - Disable,
+ [*] 1'b1 - Enable.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[17:17]</td>
+                    <td>seq_crc_ual_chunk_chk</td>
+                    <td>
+              Setting this bit enables the checking of CRC unaligned chunk from the Flash
+ Device. It can be set high only if seq_crc_ual_chunk_en = 1.
+ It must be set low otherwise.
+ Allowed values are:
+ [list]
+ [*] 1'b0 - Disable,
+ [*] 1'b1 - Enable.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>seq_crc_ual_chunk_en</td>
+                    <td>
+              Setting this bit enables taking into consideration the command address to
+ determine after how many bytes CRC data slice is expected to
+ be returned by the Flash Device.
+ Allowed values are:
+ [list]
+ [*] 1'b0 - Disable,
+ [*] 1'b1 - Enable.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[14:12]</td>
+                    <td>seq_crc_chunk_size</td>
+                    <td>
+              This field indicates the number of bytes after which CRC occurs.
+ Allowed values are:
+ [list]
+ [*] 3'b000 - n/a,
+ [*] 3'b001 - 8B,
+ [*] 3'b010 - 16B,
+ [*] 3'b011 - 32B,
+ [*] 3'b100 - 64B,
+ [*] 3'b101 - 128B,
+ [*] 3'b110 - 256B,
+ [*] 3'b111 - 512B.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x2</td>
+                </tr>
+                <tr>
+                    <td>[10:10]</td>
+                    <td>seq_crc_oe</td>
+                    <td>
+              This field determines if the controller expects the xSPI device to toggle
+ CRC data on both SPI clock edges in CRC-&gt;CRC# sequence.
+ Allowed values are:
+ [list]
+ [*] 1'b0 - Disable,
+ [*] 1'b1 - Enable.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[8:8]</td>
+                    <td>seq_crc_en</td>
+                    <td>
+              Setting this bit enables dynamic CRC calculation based on all previous bytes in the
+ current sequence and puts this value on xSPI Flash Interface.
+ Not required by Legacy Hyper Flash and xSPI Profile 2.0 Devices but
+ can be useful for external Flash Monitor to control data integrity.
+ Allowed values are:
+ [list]
+ [*] 1'b0 - Disable,
+ [*] 1'b1 - Enable.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:4]</td>
+                    <td>seq_page_size_pgm</td>
+                    <td>
+              Determines page size of device being used for PROGRAM operations.
+ Number of bytes in page = 2^page_size.
+ Allowed values are:
+ [list]
+ [*] 4'b0000 - 1B,
+ [*] 4'b0001 - 2B,
+ [*] ...,
+ [*] 4'b1000 - 256B,
+ [*] 4'b1001 - 512B,
+ [*] 4'b1010 - 1024B,
+ [*] 4'b1011 - 2048B,
+ [*] 4'b1100 - 4096B,
+ [*] 4'b1101 - n/a,
+ [*] ...,
+ [*] 4'b1111 - n/a.
+ [/list]
+ This field is not used in DIRECT mode for PROFILE 2 - HR or when SPI NAND device is selected.
+            </td>
+                    <td>rw</td>
+                    <td>0x8</td>
+                </tr>
+                <tr>
+                    <td>[3:0]</td>
+                    <td>seq_page_size_rd</td>
+                    <td>
+              Determines page size of device being used for READ operations.
+ Number of bytes in page = 2^page_size.
+ Allowed values are:
+ [list]
+ [*] 4'b0000 - 1B,
+ [*] 4'b0001 - 2B,
+ [*] ...,
+ [*] 4'b1000 - 256B,
+ [*] 4'b1001 - 512B,
+ [*] 4'b1010 - 1024B,
+ [*] 4'b1011 - 2048B,
+ [*] 4'b1100 - 4096B,
+ [*] 4'b1101 - n/a,
+ [*] ...,
+ [*] 4'b1111 - unlimited (controller will send all data with single xSPI command).
+ [/list]\n
+            </td>
+                    <td>rw</td>
+                    <td>0xf</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="global_seq_cfg_1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>global_seq_cfg_1</td>
+                    <td>0x394</td>
+                    <td>
+            Register to configure common values for sequences in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[29:28]</td>
+                    <td>seq_plane_cnt</td>
+                    <td>
+              Number of planes in SPI NAND device (encoded as 2^N):
+ [list]
+ [*] 0 - single plane,
+ [*] 1 - two planes,
+ [*] 2 - four planes,
+ [*] 3 - reserved.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[26:24]</td>
+                    <td>seq_page_per_block</td>
+                    <td>
+              Number of pages per blocks for SPI NAND device (encoded as 2^N):
+ [list]
+ [*] 0 - 1 page per block,
+ [*] 1 - 2 pages per block,
+ [*] ...
+ [*] 6 - 64 pages per block,
+ [*] 7 - 128 pages per block.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>seq_page_ca_size</td>
+                    <td>
+              Width of the Column Address for SPI NAND devices. Value of this field is used to calculate
+ the next page address in case when data size specified in sequence exceed the current page capacity.
+ [list]
+ [*] 1'd0 - 12 bit address width,
+ [*] 1'd1 - 13 bit address width
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="direct_access_cfg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>direct_access_cfg</td>
+                    <td>0x398</td>
+                    <td>
+            Register to hold specific configuration required while operating in the DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[28:16]</td>
+                    <td>dac_addr_mask</td>
+                    <td>
+              This mask is used for masking bits [44:32] of the system address for read/write transfers for PROFILE 2.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[12:12]</td>
+                    <td>rmp_addr_en</td>
+                    <td>
+              Enables Slave Data Interface address remapping.
+ When set to 1, the incoming AXI Slave address will be adapted
+ and sent to the Flash device as (address - N), where N is the value stored
+ in the remap address register (direct_access_rmp at offset 0x1c).
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[9:9]</td>
+                    <td>mode_bit_xip_dis</td>
+                    <td>
+              This bit is used to trigger exit from XIP mode within the device. Essentially, if set to 1, controller will send mode bits specified in the
+ xip_dis_mb_val on the next READ transaction.
+ This will cause disabling XIP work mode for both
+ device and controller.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[8:8]</td>
+                    <td>mode_bit_xip_en</td>
+                    <td>
+              This bit is used to trigger entry to XIP mode within the device. Essentially, if set to 1, the controller will send mode bits as specified in the
+ xip_en_mb_val on the next READ transaction.
+ This will cause switching both device and controller
+ into XIP work mode.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[4:4]</td>
+                    <td>rwds_cap_en</td>
+                    <td>
+              When enabled, the controller will support byte masking in the 
+ connected device by automatically translating the incoming AXI 
+ slave write strobes as needed. If the connected device does not 
+ support RWDS byte masking, this bit must be set low. Note that 
+ when low, the controller assumes all bytes on the AXI write 
+ channel have an equivalent AXI write strobe set to '1'. 
+ Also note that when this bit is set low, the user cannot 
+ send byte writes to an octal DDR device or 
+ to a device that is 16bit addressed. 
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[2:0]</td>
+                    <td>dac_bank_num</td>
+                    <td>
+              This field selects the bank (the attached memory device) targeted by the controller while operating in DIRECT mode.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="direct_access_rmp">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>direct_access_rmp</td>
+                    <td>0x39c</td>
+                    <td>
+              When rmp_addr_en of the direct config register is set to 1, the incoming AXI Slave address will be adapted
+ and sent to the Flash device as (address - N), where N[31:0] is the value stored
+ in this register
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>rmp_addr_val</td>
+                    <td>
+              Remapping of incoming address on the AXI Slave Interface to a different address used by the Flash device.
+ Value of this register must be aligned to 8 bytes.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="direct_access_rmp_1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>direct_access_rmp_1</td>
+                    <td>0x3a0</td>
+                    <td>
+              When rmp_addr_en of the direct config register is set to 1, the incoming AXI Slave address will be adapted
+ and sent to the Flash device as (address - N), where N[63:32] is the value stored
+ in this register
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>rmp_addr_val_1</td>
+                    <td>
+              Remapping of incoming address on Slave Data Interface to a different address used by the Flash device.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="prog_seq_cfg_0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prog_seq_cfg_0</td>
+                    <td>0x420</td>
+                    <td>
+            Register to configure PROGRAM sequence for PROFILE 1 and SPI NAND in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[29:24]</td>
+                    <td>prog_seq_p1_dummy_cnt</td>
+                    <td>
+              Number of dummy cycles in PROFILE 1. If 0 - dummy cycles disabled.\n
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[23:23]</td>
+                    <td>prog_seq_p1_data_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for data phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[21:20]</td>
+                    <td>prog_seq_p1_data_ios</td>
+                    <td>
+              Number of data lines used to send data phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[19:19]</td>
+                    <td>prog_seq_p1_addr_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for address phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[17:16]</td>
+                    <td>prog_seq_p1_addr_ios</td>
+                    <td>
+              Number of data lines used to send address phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[14:12]</td>
+                    <td>prog_seq_p1_addr_cnt</td>
+                    <td>
+              Number of address bytes.
+            </td>
+                    <td>rw</td>
+                    <td>0x3</td>
+                </tr>
+                <tr>
+                    <td>[11:11]</td>
+                    <td>prog_seq_p1_cmd_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for command phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[9:8]</td>
+                    <td>prog_seq_p1_cmd_ios</td>
+                    <td>
+              Number of data lines used to send command phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>prog_seq_p1_cmd_val</td>
+                    <td>
+              Command mnemonic value.
+            </td>
+                    <td>rw</td>
+                    <td>0x2</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="prog_seq_cfg_1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prog_seq_cfg_1</td>
+                    <td>0x424</td>
+                    <td>
+            Register to configure PROGRAM sequence for PROFILE 1 and SPI NAND in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>prog_seq_p1_cmd_ext_val</td>
+                    <td>
+              Command extension value.
+            </td>
+                    <td>rw</td>
+                    <td>0xfd</td>
+                </tr>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>prog_seq_p1_cmd_ext_en</td>
+                    <td>
+              Command extension enable.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="prog_seq_cfg_2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>prog_seq_cfg_2</td>
+                    <td>0x428</td>
+                    <td>
+            Register to configure PROGRAM sequence for PROFILE 2 in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[13:8]</td>
+                    <td>prog_seq_p2_latency_cnt</td>
+                    <td>
+              Number of latency cycles for PROFILE 2 - HR only.
+ Setting this bit to 0 will disable latency cycles.
+ This value should be set to 'N-1', where 'N' is the number
+ of latency clock cycles expected by the memory device.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[2:2]</td>
+                    <td>prog_seq_p2_mask_cmd_mod</td>
+                    <td>
+              Determines PROFILE 2 Command extension variant.
+ This influences bits [44:40]
+ of Command/Address. If this bit is set to 1
+ CA[44:40] will be set to all ones.
+ In DIRECT work mode if this bit is set to 0 bits [44:40]
+ of Command/Address will be
+ set to (sAWADDR[45:41] logically ANDed with dac_addr_mask[12:8]).
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="read_seq_cfg_0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>read_seq_cfg_0</td>
+                    <td>0x430</td>
+                    <td>
+            Register to configure READ sequence for PROFILE 1 and SPI NAND in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[29:24]</td>
+                    <td>read_seq_p1_dummy_cnt</td>
+                    <td>
+              Number of dummy cycles. If 0 - dummy cycles disabled.\n
+ This field is used when sending mode-bits is disabled.
+ Otherwise the read_seq_p1_mb_dummy_cnt should be used.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[23:23]</td>
+                    <td>read_seq_p1_data_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for data phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[21:20]</td>
+                    <td>read_seq_p1_data_ios</td>
+                    <td>
+              Number of data lines used to send data phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[19:19]</td>
+                    <td>read_seq_p1_addr_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for address phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[17:16]</td>
+                    <td>read_seq_p1_addr_ios</td>
+                    <td>
+              Number of data lines used to send address phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[14:12]</td>
+                    <td>read_seq_p1_addr_cnt</td>
+                    <td>
+              Number of address bytes.
+            </td>
+                    <td>rw</td>
+                    <td>0x3</td>
+                </tr>
+                <tr>
+                    <td>[11:11]</td>
+                    <td>read_seq_p1_cmd_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for command phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[9:8]</td>
+                    <td>read_seq_p1_cmd_ios</td>
+                    <td>
+              Number of data lines used to send command phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>read_seq_p1_cmd_val</td>
+                    <td>
+              Command mnemonic value.
+            </td>
+                    <td>rw</td>
+                    <td>0x3</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="read_seq_cfg_1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>read_seq_cfg_1</td>
+                    <td>0x434</td>
+                    <td>
+            Register to configure READ sequence for PROFILE 1 and SPI NAND in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:31]</td>
+                    <td>read_seq_p1_mb_en</td>
+                    <td>
+              Set to 1'b1 to ensure the mode bits as defined in the xip_dis_mb_val field are sent following the address bytes.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[29:24]</td>
+                    <td>read_seq_p1_mb_dummy_cnt</td>
+                    <td>
+              Number of dummy cycles. If 0 - dummy cycles are disabled.\n
+ This field is used when sending mode-bits is enabled.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>read_seq_p1_cmd_ext_val</td>
+                    <td>
+              Command extension value.
+            </td>
+                    <td>rw</td>
+                    <td>0xfc</td>
+                </tr>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>read_seq_p1_cmd_ext_en</td>
+                    <td>
+              Command extension enable.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="read_seq_cfg_2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>read_seq_cfg_2</td>
+                    <td>0x438</td>
+                    <td>
+            Register to configure READ sequence for PROFILE 2 in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[13:8]</td>
+                    <td>read_seq_p2_latency_cnt</td>
+                    <td>
+              Number of latency cycles. Setting this bit to 0 disables latency clock cycles.
+ This value should be set to 'N-1', where 'N' is the number
+ of latency clock cycles expected by the memory device.
+            </td>
+                    <td>rw</td>
+                    <td>0xf</td>
+                </tr>
+                <tr>
+                    <td>[3:3]</td>
+                    <td>read_seq_p2_hf_bound_en</td>
+                    <td>
+              This field is used by the controller to calculate read transaction crossing page boundary.
+ It is valid only when PROFILE 2 - HF is selected.
+ Allowed values are:
+ [list]
+ [*] 1'b0 - Disable,
+ [*] 1'b1 - Enable.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[2:2]</td>
+                    <td>read_seq_p2_mask_cmd_mod</td>
+                    <td>
+              Determines PROFILE 2 Command extension variant.
+ This bit influences bits [44:40] 
+ of Command/Address. If this bit is set to 1
+ bits [44:40] of Command/Address will be set to 1.
+ In DIRECT work mode if this bit is set to 0 bits [44:40] of Command/Address will be
+ set to (sARADDR[45:41] logically ANDed with dac_addr_mask[12:8]).
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="we_seq_cfg_0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>we_seq_cfg_0</td>
+                    <td>0x440</td>
+                    <td>
+            Register to configure Write Enable Latch (WEL) sequence for PROFILE 1 and SPI NAND in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[24:24]</td>
+                    <td>we_seq_p1_en</td>
+                    <td>
+              Enables sending WEL command.
+            </td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[23:16]</td>
+                    <td>we_seq_p1_cmd_ext_val</td>
+                    <td>
+              Command extension value.
+            </td>
+                    <td>rw</td>
+                    <td>0xf9</td>
+                </tr>
+                <tr>
+                    <td>[15:15]</td>
+                    <td>we_seq_p1_cmd_ext_en</td>
+                    <td>
+              Command extension enable.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[11:11]</td>
+                    <td>we_seq_p1_cmd_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for command phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[9:8]</td>
+                    <td>we_seq_p1_cmd_ios</td>
+                    <td>
+              Number of data lines used to send command phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>we_seq_p1_cmd_val</td>
+                    <td>
+              Command mnemonic value.
+            </td>
+                    <td>rw</td>
+                    <td>0x6</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_0</td>
+                    <td>0x450</td>
+                    <td>
+            Register to configure status checking sequence for PROFILE 1 and SPI NAND in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[22:22]</td>
+                    <td>stat_seq_p1_data_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for data phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[21:20]</td>
+                    <td>stat_seq_p1_data_ios</td>
+                    <td>
+              Number of data lines used to send data phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[12:12]</td>
+                    <td>stat_seq_p1_addr_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for address phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[11:10]</td>
+                    <td>stat_seq_p1_addr_ios</td>
+                    <td>
+              Number of data lines used to send address phase.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[9:8]</td>
+                    <td>stat_seq_p1_addr_cnt</td>
+                    <td>
+              Number of address bytes for all status sequences.
+ Field encoding is as following:
+ [list]
+ [*] 2'b00 - One address byte,
+ [*] 2'b01 - Two address bytes,
+ [*] 2'b10 - Three address bytes,
+ [*] 2'b11 - Four address bytes.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[5:5]</td>
+                    <td>stat_seq_p1_cmd_ext_en</td>
+                    <td>
+              Command extension enable.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[4:4]</td>
+                    <td>stat_seq_p1_cmd_edge</td>
+                    <td>
+              Selecting between SDR/DDR mode for command phase.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[1:0]</td>
+                    <td>stat_seq_p1_cmd_ios</td>
+                    <td>
+              Number of data lines used to send command.
+ [list]
+ [*] 2'b00 - One data line used (i.e. serial).
+ [*] 2'b01 - Two data lines used used.
+ [*] 2'b10 - Four data lines used used.
+ [*] 2'b11 - Eight data lines used used.
+ [/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_1</td>
+                    <td>0x454</td>
+                    <td>
+            Register to configure status checking sequence for PROFILE 1 and SPI NAND
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[22:22]</td>
+                    <td>stat_seq_p1_prog_fail_addr_en</td>
+                    <td>
+              Enables address phase for checking fail status
+ after PROGRAM operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[21:16]</td>
+                    <td>stat_seq_p1_prog_fail_dummy_cnt</td>
+                    <td>
+              Number of dummy clock cycles used to check fail status
+ after PROGRAM operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[6:6]</td>
+                    <td>stat_seq_p1_dev_rdy_addr_en</td>
+                    <td>
+              Enables address phase for checking ready/busy status
+ after PROGRAM and READ (only for SPI NAND) operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[5:0]</td>
+                    <td>stat_seq_p1_dev_rdy_dummy_cnt</td>
+                    <td>
+              This register defines the number of dummy clock cycles needed to check ready/busy status
+ after PROGRAM and READ (only for SPI NAND) operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_2</td>
+                    <td>0x458</td>
+                    <td>
+            Register to configure status checking sequence for PROFILE 1 and SPI NAND in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:24]</td>
+                    <td>stat_seq_p1_prog_fail_cmd_val</td>
+                    <td>
+              Command mnemonic value for command used to check fail status
+ after PROGRAM operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x5</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>stat_seq_p1_dev_rdy_cmd_val</td>
+                    <td>
+              Command mnemonic value for command used to
+ check ready/busy status
+ after PROGRAM and READ (only for SPI NAND) operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x5</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_3">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_3</td>
+                    <td>0x45c</td>
+                    <td>
+            Register to configure status checking sequence for PROFILE 1 and SPI NAND in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:24]</td>
+                    <td>stat_seq_p1_prog_fail_cmd_ext_val</td>
+                    <td>
+              Command extension value used to check fail status
+ after PROGRAM operation.
+            </td>
+                    <td>rw</td>
+                    <td>0xfa</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>stat_seq_p1_dev_rdy_cmd_ext_val</td>
+                    <td>
+              Command extension value used to check ready/busy status
+ after PROGRAM and READ (only for SPI NAND) operation.
+            </td>
+                    <td>rw</td>
+                    <td>0xfa</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_4</td>
+                    <td>0x460</td>
+                    <td>
+            Register to configure status checking sequence for PROFILE 2 - HF in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[13:8]</td>
+                    <td>stat_seq_p2_latency_cnt</td>
+                    <td>
+              Number of latency cycles between CA and STATUS reading.
+ This value should be set to 'N-1', where 'N' is the number
+ of latency clock cycles expected by the memory device.
+            </td>
+                    <td>rw</td>
+                    <td>0xf</td>
+                </tr>
+                <tr>
+                    <td>[2:2]</td>
+                    <td>stat_seq_p2_mask_cmd_mod</td>
+                    <td>
+              Determines PROFILE 2 Command extension variant.
+ Value of this bits influences the [44:40] bits
+ of Command/Address. If this bit is set to 1
+ bits [44:40] of Command/Address will be set to 1. Otherwise bits [44:40] of Command/Address will be set to 0.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_5</td>
+                    <td>0x464</td>
+                    <td>
+            Register to configure status checking sequence for PROFILE 1, SPI NAND and PROFILE 2 - HF in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[30:30]</td>
+                    <td>stat_seq_prog_fail_en</td>
+                    <td>
+              Enables checking of the fail status
+ after PROGRAM operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[28:28]</td>
+                    <td>stat_seq_prog_fail_val</td>
+                    <td>
+              Value which will be compared with selected status bit
+ in order to detect that the device is in fail state after
+ PROGRAM operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[27:24]</td>
+                    <td>stat_seq_prog_fail_idx</td>
+                    <td>
+              This field determines which bit of the status word contains
+ the fail information after the PROGRAM command.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[6:6]</td>
+                    <td>stat_seq_dev_rdy_en</td>
+                    <td>
+               Enables checking RDY/BUSY status
+ after PROGRAM operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[4:4]</td>
+                    <td>stat_seq_dev_rdy_val</td>
+                    <td>
+              Value which will be compared with selected status bit
+ in order to detect that the device is ready
+ after a PROGRAM or READ (only for SPI NAND) operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[3:0]</td>
+                    <td>stat_seq_dev_rdy_idx</td>
+                    <td>
+              This field determines which bit of the status word contains
+ the ready/busy information which will be polled after
+ a PROGRAM or READ (only for SPI NAND) operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_7">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_7</td>
+                    <td>0x46c</td>
+                    <td>
+            Register to configure status checking sequence for PROFILE 1, SPI NAND and PROFILE 2 - HF
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>stat_seq_dev_rdy_addr</td>
+                    <td>
+              Value of address used to check rdy/busy status
+ after PROGRAM and READ (only for SPI NAND) operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_8">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_8</td>
+                    <td>0x470</td>
+                    <td>
+            Register to configure status checking sequence for PROFILE 1, SPI NAND and PROFILE 2 in DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>stat_seq_prog_fail_addr</td>
+                    <td>
+              Value of address used to check fail status
+ after PROGRAM operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="stat_seq_cfg_10">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>stat_seq_cfg_10</td>
+                    <td>0x478</td>
+                    <td>
+            Register to configure status checking sequence for SPI NAND devices in
+ DIRECT work mode.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:31]</td>
+                    <td>stat_seq_ecc_fail_en</td>
+                    <td>
+              Enables checking ECC status
+ after READ PAGE operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[23:16]</td>
+                    <td>stat_seq_ecc_corr_val</td>
+                    <td>
+              Value which will be compared with status word
+ masked by the stat_seq_ecc_fail_mask field
+ in order to detect if the device returned a
+ correctable ECC error
+ during SPI NAND Page Read operation.
+ This can be used to detect a single range of correctable
+ errors returned by the XSPI device.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>stat_seq_ecc_fail_val</td>
+                    <td>
+              Value which will be compared with status word
+ masked by the stat_seq_ecc_fail_mask field
+ in order to detect if the device returned an
+ uncorrectable ECC error
+ during SPI NAND Page Read operation.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>stat_seq_ecc_fail_mask</td>
+                    <td>
+              Mask used to select which bits of status word carries
+ the ECC status.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="xspi_ctrl_version">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>xspi_ctrl_version</td>
+                    <td>0xf00</td>
+                    <td>Register contains release identification number.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:16]</td>
+                    <td>xspi_ctrl_magic_number</td>
+                    <td>
+              Controller's 'Magic Number'.
+ It is a unique number characteristic to the
+ Cadence's xSPI Controller.
+            </td>
+                    <td>ro</td>
+                    <td>0x6523</td>
+                </tr>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>xspi_ctrl_fix</td>
+                    <td>Fixed number (minor revision number).</td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>xspi_ctrl_rev</td>
+                    <td>Controller revision number.</td>
+                    <td>ro</td>
+                    <td>0x6</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="ctrl_features_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ctrl_features_reg</td>
+                    <td>0xf04</td>
+                    <td>Shows available hardware features of the controller</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[25:24]</td>
+                    <td>n_banks</td>
+                    <td>
+              Maximum number of banks supported by hardware. This is an encoded value.[list]
+ [*]0 - One bank,
+ [*]1 - Two banks,
+ [*]2 - Four banks,
+ [*]3 - Eight banks.[/list]
+            </td>
+                    <td>ro</td>
+                    <td>0x3</td>
+                </tr>
+                <tr>
+                    <td>[23:22]</td>
+                    <td>sfr_intf</td>
+                    <td>SFR interface type 1-APB, other values reserved.</td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[21:21]</td>
+                    <td>dma_data_width</td>
+                    <td>
+              Slave
+ DMA data width:
+ [list]
+ [*]0 - 32bit,
+ [*]1 - 64bit.
+ [/list]
+            </td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[20:20]</td>
+                    <td>dma_addr_width</td>
+                    <td>
+              Slave
+ DMA address width:
+ [list]
+ [*]0 - 32bit,
+ [*]1 - 64bit.
+ [/list]
+            </td>
+                    <td>ro</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[19:18]</td>
+                    <td>dma_intf</td>
+                    <td>DMA interface type (0-AXI4 other values reserved).</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>boot_available</td>
+                    <td>Boot feature present.</td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[12:12]</td>
+                    <td>asf_available</td>
+                    <td>
+              ASF features present.
+            </td>
+                    <td>ro</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="wp_settings">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>wp_settings</td>
+                    <td>0x1000</td>
+                    <td>Write Protect.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[1:1]</td>
+                    <td>wp_enable</td>
+                    <td>Enables passing Write protect signal to the device (by switching direction
+ of DQ2 pad).</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>wp</td>
+                    <td>Write protect signal for all devices. Value of this register is directly
+ routed to the DQ2 output signal. The value can be changed only when xSPI Flash interface is in
+ an idle state. Value of the write protection signal
+ is overwritten in case DQ2 is a valid transaction pin. The controller does not
+ check the write protect setup/hold timings - this must be ensured by the host.
+ Controller does not drive Write Protect value during read data phase of any active transfer.
+ Write Protect on DQ2 functionality is only supported by Flash Devices and if the controller is configured in single
+ and dual SPI Modes.</td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="reset_pin_settings">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>reset_pin_settings</td>
+                    <td>0x1004</td>
+                    <td>Software Controlled Hardware RESET.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[15:15]</td>
+                    <td>sw_ctrled_hw_rst_bank7</td>
+                    <td>Activates software controlled hardware reset signal on bank 7 (i.e. device connected to chip select bit 7).
+ Applicable only for devices that support #RESET pin :[list]
+ [*]0 - CS[7] device is disabled for Software Controlled Hardware Reset trigger.
+ [*]1 - CS[7] device is enabled for Software Controlled Hardware Reset trigger.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[14:14]</td>
+                    <td>sw_ctrled_hw_rst_bank6</td>
+                    <td>Activates software controlled hardware reset signal on bank 6 (i.e. device connected to chip select bit 6).
+ Applicable only for devices that support #RESET pin :[list]
+ [*]0 - CS[6] device is disabled for Software Controlled Hardware Reset trigger.
+ [*]1 - CS[6] device is enabled for Software Controlled Hardware Reset trigger.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[13:13]</td>
+                    <td>sw_ctrled_hw_rst_bank5</td>
+                    <td>Activates software controlled hardware reset signal on bank 5 (i.e. device connected to chip select bit 5).
+ Applicable only for devices that support #RESET pin :[list]
+ [*]0 - CS[5] device is disabled for Software Controlled Hardware Reset trigger.
+ [*]1 - CS[5] device is enabled for Software Controlled Hardware Reset trigger.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[12:12]</td>
+                    <td>sw_ctrled_hw_rst_bank4</td>
+                    <td>Activates software controlled hardware reset signal on bank 4 (i.e. device connected to chip select bit 4).
+ Applicable only for devices that support #RESET pin :[list]
+ [*]0 - CS[4] device is disabled for Software Controlled Hardware Reset trigger.
+ [*]1 - CS[4] device is enabled for Software Controlled Hardware Reset trigger.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[11:11]</td>
+                    <td>sw_ctrled_hw_rst_bank3</td>
+                    <td>Activates software controlled hardware reset signal on bank 3 (i.e. device connected to chip select bit 3).
+ Applicable only for devices that support #RESET pin :[list]
+ [*]0 - CS[3] device is disabled for Software Controlled Hardware Reset trigger.
+ [*]1 - CS[3] device is enabled for Software Controlled Hardware Reset trigger.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[10:10]</td>
+                    <td>sw_ctrled_hw_rst_bank2</td>
+                    <td>Activates software controlled hardware reset signal on bank 2 (i.e. device connected to chip select bit 2).
+ Applicable only for devices that support #RESET pin :[list]
+ [*]0 - CS[2] device is disabled for Software Controlled Hardware Reset trigger.
+ [*]1 - CS[2] device is enabled for Software Controlled Hardware Reset trigger.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[9:9]</td>
+                    <td>sw_ctrled_hw_rst_bank1</td>
+                    <td>Activates software controlled hardware reset signal on bank 1 (i.e. device connected to chip select bit 1).
+ Applicable only for devices that support #RESET pin :[list]
+ [*]0 - CS[1] device is disabled for Software Controlled Hardware Reset trigger.
+ [*]1 - CS[1] device is enabled for Software Controlled Hardware Reset trigger.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[8:8]</td>
+                    <td>sw_ctrled_hw_rst_bank0</td>
+                    <td>Activates software controlled hardware reset signal on bank 0 (i.e. device connected to chip select bit 0).
+ Applicable only for devices that support #RESET pin :[list]
+ [*]0 - CS[0] device is disabled for Software Controlled Hardware Reset trigger.
+ [*]1 - CS[0] device is enabled for Software Controlled Hardware Reset trigger.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[4:4]</td>
+                    <td>sw_ctrled_hw_rst_option</td>
+                    <td>Defines Hardware RESET options as follows:[list]
+ [*]0 - Device RESET# pin will be used for toggling Device Hardware Reset functionality.
+ [*]1 - Device DQ3 pin will be used for toggling Device Hardware Reset functionality.[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[1:1]</td>
+                    <td>rst_dq3_enable</td>
+                    <td>Enables passing RESET to the DQ3 port of the device (by switching direction of DQ3 pad).</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>sw_ctrled_hw_rst</td>
+                    <td>Software Controlled Hardware Reset Signal. Value of this field is
+ directly routed to the DQ3 or RESET# output signal (depending on sw_ctrled_hw_rst_option).
+ The value can be changed only when xSPI Flash interface is in an idle state. Value of the Software Controlled Hardware Reset Signal
+ is overwritten in case DQ3 is valid transaction pin. The controller does
+ not check the device hardware reset setup/hold timings - this must be ensured by the host.
+ The host is also responsible for triggering a suitable RESET method by selecting corresponding
+ Bank Number and RESET method (as defined in this register).
+ The controller does not drive RESET# value during read data phase of any active transfer
+ (as transfer direction switches in this transfer part).</td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="clock_mode_settings">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>clock_mode_settings</td>
+                    <td>0x1008</td>
+                    <td>This register defines the CPOL/CPHA settings for legacy SPI mode (defaulting to mode 0). 
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[0:0]</td>
+                    <td>spi_clock_mode</td>
+                    <td>Defines SPI Clock Mode.
+ For DDR transfers this bit should always be set low to meet
+ DDR Flash timings.
+ For SDR transfers, allowable values are as follows:[list]
+ [*]0 - SPI MODE 0 (clock is low when SPI bus is in idle),
+ [*]1 - SPI MODE 3 (clock is high when SPI bus is in idle).[/list]
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="jedec_rst_timing_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>jedec_rst_timing_reg</td>
+                    <td>0x100c</td>
+                    <td>This register is used to introduce relative device selection delays applicable for JEDEC Reset Instruction.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>tCSL_delay</td>
+                    <td>
+              Defines how many xspi_clk cycles constitute tCSL timing of JEDEC Reset Instruction.
+            </td>
+                    <td>rw</td>
+                    <td>0x80</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>tCSH_delay</td>
+                    <td>
+              Defines how many xspi_clk cycles constitute tCSH timing of JEDEC Reset Instruction.
+            </td>
+                    <td>rw</td>
+                    <td>0x80</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="dev_delay_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dev_delay_reg</td>
+                    <td>0x1010</td>
+                    <td>This register is used to introduce relative device selection delays with respect to generated xSPI Flash Interface.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:24]</td>
+                    <td>csda_min_delay</td>
+                    <td>
+              CSDA_MIN -Minimum Chip Select de-assertion timing.
+            </td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[15:8]</td>
+                    <td>cseot_delay</td>
+                    <td>
+              CSEOT - Chip Select End Of Transfer.
+ It allows to improve last active clock edge to CS de-assertion device timing.
+            </td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>cssot_delay</td>
+                    <td>
+              CSSOT - Chip Select Start Of Transfer.
+ It allows to improve CS de-assertion device timing to first active clock edge.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="dev_active_max_reg">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dev_active_max_reg</td>
+                    <td>0x1018</td>
+                    <td>This register is used to introduce a maximum number of xspi_clk cycles through which
+ CS# will be kept active (low) on Memory interface. It is sometimes referred to as tCMS or tCEM timing and is
+ generally only relevant for RAM devices that require to be periodically refreshed. The refresh is typically
+ handled internal to the device, but to fit this refesh operation in along with normal controller requests, it may require
+ that the controller limits its access time. The user can program this register to force the controller to obey that 
+ requirement.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>dev_active_max</td>
+                    <td>
+              The value in this field is only valid if bit 18 of the global_seq_cfg register at offset 0x390 is set. When 
+ using the STIG work mode, this is also only valid when the TCMS_EN bit of the STIG instruction is set.
+ This bit should also only be enabled only while working with RAM
+ devices that require timing constraint for Chip Select low
+ pulse width (the most common name is tCMS or tCEM in device
+ specification). 
+            </td>
+                    <td>rw</td>
+                    <td>0x80</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="dll_phy_update_cnt">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dll_phy_update_cnt</td>
+                    <td>0x1030</td>
+                    <td>Configuration of the resynchronization of slave DLL of PHY.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[31:0]</td>
+                    <td>resync_cnt</td>
+                    <td>
+              This field defines the time interval (in terms of
+ xspi_clk cycles) to send an update
+ (assert dfi_ctrlupd_req high) to the PHY to re-synchronize
+ the slave DLL values with that of the master DLL and to
+ also re-synchronize the read and write FIFO pointers in
+ the read path. If the value in this field is zero, the
+ controller will not further DLL update requests to the
+ PHY. dfi_ctrlupd_req signal can be controlled directly by
+ the host using the dfi_ctrlupd_req field in the
+ dll_phy_ctrl register.
+ NOTE: While this feature is enabled access to the PHY
+ registers shall not be performed.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="regs" id="dll_phy_ctrl">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dll_phy_ctrl</td>
+                    <td>0x1034</td>
+                    <td>
+            Configuration of the resynchronization of slave DLL of PHY.
+          </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="fields">
+            <thead>
+                <tr>
+                    <th>Bits</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Access</th>
+                    <th>Reset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[25:25]</td>
+                    <td>dfi_ctrlupd_req</td>
+                    <td>Signal to re-synchronize the DLLs and read and write FIFO pointers. To send the update request to the PHY, the host must first set this field high then wait until this bit will be set low. This signal should not be used when automatic resync is enabled that is:. 'dll_phy_update_cnt' is not zero.</td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[24:24]</td>
+                    <td>dll_rst_n</td>
+                    <td>Signal to reset the DLLs of the PHY and start searching for lock again.</td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[21:21]</td>
+                    <td>sdr_edge_active</td>
+                    <td>The PHY samples data on both edges of sampling clock.
+ In SDR Mode, only one sample is needed.
+ If this bit is low, the controller propagates data from positive edge of PHY sampling clock.
+ If this bit is high, the controller propagates data from negative edge of PHY sampling clock.
+ In DDR Mode, this bit should be set low.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[20:20]</td>
+                    <td>dqs_last_data_drop_en</td>
+                    <td>This bit should be set when the
+ Flash Device being used issues data on negative edge of
+ Flash clock and returns them with DQS and
+ the PHY is configured to sample data in DQS Mode.
+ In this case, number of DQS edges equals to number of
+ requested data + 1. If this bit is set, the controller
+ internally requests this redundant data at the end of the transfer
+ cleaning up the PHY fifo.
+            </td>
+                    <td>rw</td>
+                    <td>0x0</td>
+                </tr>
+                <tr>
+                    <td>[17:17]</td>
+                    <td>extended_wr_mode</td>
+                    <td>This PHY register field is not applicable for xSPI Flash Controller.</td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[16:16]</td>
+                    <td>extended_rd_mode</td>
+                    <td>This PHY register field is not applicable for xSPI Flash Controller.</td>
+                    <td>rw</td>
+                    <td>0x1</td>
+                </tr>
+                <tr>
+                    <td>[11:8]</td>
+                    <td>resync_high_wait_cnt</td>
+                    <td>This field defines the number of xspi_clk cycles for which the DLL update request (dfi_ctrlupd_req) has to be asserted to resynchronize the DLLs and read and write FIFO pointers. </td>
+                    <td>rw</td>
+                    <td>0x7</td>
+                </tr>
+                <tr>
+                    <td>[7:0]</td>
+                    <td>resync_idle_cnt</td>
+                    <td>
+              This field defines the wait time (in terms of
+ xspi_clk cycles) between the
+ de-assertion of the DLL update request (dfi_ctrlupd_req)
+ and resuming traffic to the PHY.
+            </td>
+                    <td>rw</td>
+                    <td>0x7</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

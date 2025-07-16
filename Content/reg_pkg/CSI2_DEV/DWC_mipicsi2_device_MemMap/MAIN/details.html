@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Register Details</title>
+        <link rel="home" href="#idp44686664" title="Register Details" />
+        <link rel="next" href="#DWC_mipicsi2_device_MemMap_MAIN-details" title="" />
+    </head>
+    <body>
+        <div class="article">
+            <h1><a name="idp44686664"></a>Register Details</h1>
+            <div class="sect1">
+                <div class="titlepage">
+                    <div>
+                        <div>
+                            <h2 style="clear: both;"><a name="H3-sect1-reg-DWC_mipicsi2_device_MemMap_MAIN"></a>MAIN Register Details</h2>
+                        </div>
+                    </div>
+                </div>
+                <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VERSION"></a>
+VERSION
+    
+                </p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li>Name: Controller Version identification.
+      </li>
+                        <li>Description: Controller Version identification represented in ASCII.
+      </li>
+                        <li>Size: 32 bits
+      </li>
+                        <li>Offset: 0x0
+      </li>
+                    </ul>
+                </div>
+                <div class="informaltable"><a name="fld-DWC_mipicsi2_device_MemMap_MAIN_VERSION"></a>
+                    <table class="TableStyle-table" cellspacing="0" style="mc-table-style: url('../../../../Resources/TableStyles/table.css');">
+                        <colgroup>
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr class="TableStyle-table-Body-Body1">
+                                <td class="TableStyle-table-BodyD-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VERSION_F_31_0">31:0</a>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-table-Body-Body1">
+                                <td class="TableStyle-table-BodyA-Column1-Body1">version</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                </div>
+                <div class="table"><a name="fieldtable-DWC_mipicsi2_device_MemMap_MAIN_VERSION"></a>
+                    <p class="tableTitle" MadCap:autonum="Table . ">
+Fields for Register: VERSION
+                    </p>
+                    <div class="table-contents">
+                        <table class="TableStyle-table" summary="Fields for Register: VERSION" width="100%" cellspacing="0" style="mc-table-style: url('../../../../Resources/TableStyles/table.css');">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr class="TableStyle-table-Head-Header1">
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Bits</th>
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Name</th>
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Memory Access</th>
+                                    <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VERSION_F_31_0"></a>31:0</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">version</td>
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1">
+                                        <p>This field indicates the version of the DWC_mipicsi2_device.</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (VERSION_version)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x3133322a</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&#160;</p>
+                    </div>
+                </div>
+                
+                <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN"></a>
+CSI2_RESETN
+    
+                </p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li>Name: Soft reset.
+      </li>
+                        <li>Description: Controls the DWC_mipicsi2_device logic reset state. When activated, the internal logic of the controller goes into the reset state. The configuration is not reset to default values with this register, instead, only the internal controller logic is affected.
+      </li>
+                        <li>Size: 32 bits
+      </li>
+                        <li>Offset: 0x4
+      </li>
+                    </ul>
+                </div>
+                <div class="informaltable"><a name="fld-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN"></a>
+                    <table class="TableStyle-table" cellspacing="0" style="mc-table-style: url('../../../../Resources/TableStyles/table.css');">
+                        <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr class="TableStyle-table-Body-Body1">
+                                <td class="TableStyle-table-BodyE-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN_F_31_2">31:2</a>
+                                </td>
+                                <td class="TableStyle-table-BodyE-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN_F_1">1</a>
+                                </td>
+                                <td class="TableStyle-table-BodyD-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN_F_0">0</a>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-table-Body-Body1">
+                                <td class="TableStyle-table-BodyB-Column1-Body1">reserved_31_2</td>
+                                <td class="TableStyle-table-BodyB-Column1-Body1">reserved_1</td>
+                                <td class="TableStyle-table-BodyA-Column1-Body1">csi2_resetn_rw</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                </div>
+                <div class="table"><a name="fieldtable-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN"></a>
+                    <p class="tableTitle" MadCap:autonum="Table . ">
+Fields for Register: CSI2_RESETN
+                    </p>
+                    <div class="table-contents">
+                        <table class="TableStyle-table" summary="Fields for Register: CSI2_RESETN" width="100%" cellspacing="0" style="mc-table-style: url('../../../../Resources/TableStyles/table.css');">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr class="TableStyle-table-Head-Header1">
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Bits</th>
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Name</th>
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Memory Access</th>
+                                    <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN_F_31_2"></a>31:2</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">reserved_31_2</td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">
+                                        <p>Reserved and read as zero.</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (CSI2_RESETN_reserved_31_2)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN_F_1"></a>1</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">reserved_1</td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">
+                                        <p>Reserved and read as zero</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (CSI2_RESETN_reserved_1)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_CSI2_RESETN_F_0"></a>0</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">csi2_resetn_rw</td>
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">R/W</td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1">
+                                        <p>CSI-2 device controller reset output. Active Low.
+Can reset all the logic module except APB.</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (CSI2_RESETN_csi2_resetn_rw)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&#160;</p>
+                    </div>
+                </div>
+                
+                <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING"></a>
+DATA_SCRAMBLING
+    
+                </p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li>Name: Data scrambling control.
+      </li>
+                        <li>Description: DWC_mipicsi2_device data scrambling control.
+      </li>
+                        <li>Size: 32 bits
+      </li>
+                        <li>Offset: 0x8
+      </li>
+                    </ul>
+                </div>
+                <div class="informaltable"><a name="fld-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING"></a>
+                    <table class="TableStyle-table" cellspacing="0" style="mc-table-style: url('../../../../Resources/TableStyles/table.css');">
+                        <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr class="TableStyle-table-Body-Body1">
+                                <td class="TableStyle-table-BodyE-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING_F_31_5">31:5</a>
+                                </td>
+                                <td class="TableStyle-table-BodyE-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING_F_4">4</a>
+                                </td>
+                                <td class="TableStyle-table-BodyE-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING_F_3_1">3:1</a>
+                                </td>
+                                <td class="TableStyle-table-BodyD-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING_F_0">0</a>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-table-Body-Body1">
+                                <td class="TableStyle-table-BodyB-Column1-Body1">reserved_31_5</td>
+                                <td class="TableStyle-table-BodyB-Column1-Body1">reserved_4</td>
+                                <td class="TableStyle-table-BodyB-Column1-Body1">reserved_3_1</td>
+                                <td class="TableStyle-table-BodyA-Column1-Body1">data_scrambling_en</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                </div>
+                <div class="table"><a name="fieldtable-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING"></a>
+                    <p class="tableTitle" MadCap:autonum="Table . ">
+Fields for Register: DATA_SCRAMBLING
+                    </p>
+                    <div class="table-contents">
+                        <table class="TableStyle-table" summary="Fields for Register: DATA_SCRAMBLING" width="100%" cellspacing="0" style="mc-table-style: url('../../../../Resources/TableStyles/table.css');">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr class="TableStyle-table-Head-Header1">
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Bits</th>
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Name</th>
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Memory Access</th>
+                                    <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING_F_31_5"></a>31:5</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">reserved_31_5</td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">
+                                        <p>Reserved and read as zero.</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (DATA_SCRAMBLING_reserved_31_5)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING_F_4"></a>4</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">reserved_4</td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">
+                                        <p>Reserved and read as zero</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (DATA_SCRAMBLING_reserved_4)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING_F_3_1"></a>3:1</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">reserved_3_1</td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">
+                                        <p>Reserved and read as zero.</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (DATA_SCRAMBLING_reserved_3_1)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_DATA_SCRAMBLING_F_0"></a>0</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">data_scrambling_en</td>
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">R/W</td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1">
+                                        <p>To enable CSI-2 device controller data scrambling, Active High.
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+1: Enable data scrambling.
+</li>
+                                                <li>
+0: Disable data scrambling.
+</li>
+                                            </ul>
+                                        </div>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (DATA_SCRAMBLING_data_scrambling_en)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&#160;</p>
+                    </div>
+                </div>
+                
+                <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE"></a>
+VER_TYPE
+    
+                </p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li>Name: Controller Version TYPE identification.
+      </li>
+                        <li>Description: Controller Version TYPE identification represented in ASCII.
+      </li>
+                        <li>Size: 32 bits
+      </li>
+                        <li>Offset: 0xc
+      </li>
+                    </ul>
+                </div>
+                <div class="informaltable"><a name="fld-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE"></a>
+                    <table class="TableStyle-table" cellspacing="0" style="mc-table-style: url('../../../../Resources/TableStyles/table.css');">
+                        <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr class="TableStyle-table-Body-Body1">
+                                <td class="TableStyle-table-BodyE-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE_F_31_28">31:28</a>
+                                </td>
+                                <td class="TableStyle-table-BodyE-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE_F_27_24">27:24</a>
+                                </td>
+                                <td class="TableStyle-table-BodyE-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE_F_23_16">23:16</a>
+                                </td>
+                                <td class="TableStyle-table-BodyD-Column1-Body1"><a  href="#H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE_F_15_0">15:0</a>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-table-Body-Body1">
+                                <td class="TableStyle-table-BodyB-Column1-Body1">type_enum</td>
+                                <td class="TableStyle-table-BodyB-Column1-Body1">pkg_num</td>
+                                <td class="TableStyle-table-BodyB-Column1-Body1">type_num</td>
+                                <td class="TableStyle-table-BodyA-Column1-Body1">ver_number</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                </div>
+                <div class="table"><a name="fieldtable-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE"></a>
+                    <p class="tableTitle" MadCap:autonum="Table . ">
+Fields for Register: VER_TYPE
+                    </p>
+                    <div class="table-contents">
+                        <table class="TableStyle-table" summary="Fields for Register: VER_TYPE" width="100%" cellspacing="0" style="mc-table-style: url('../../../../Resources/TableStyles/table.css');">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr class="TableStyle-table-Head-Header1">
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Bits</th>
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Name</th>
+                                    <th class="TableStyle-table-HeadE-Column1-Header1">Memory Access</th>
+                                    <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE_F_31_28"></a>31:28</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">type_enum</td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">
+                                        <p>coreKit release type:
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0: GA release
+</li>
+                                                <li>
+0x1: LCA release
+</li>
+                                                <li>
+0x2: EA release
+</li>
+                                                <li>
+0x3: LP release
+</li>
+                                                <li>
+0x4: Reserved
+</li>
+                                                <li>
+0x5: SOW release
+</li>
+                                                <li>
+0x6: EC release
+</li>
+                                                <li>
+Others: Reserved
+</li>
+                                            </ul>
+                                        </div>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (VER_TYPE_type_enum)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE_F_27_24"></a>27:24</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">pkg_num</td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">
+                                        <p>Alphabetical packaging number of the coreKit ID:
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+4'b1010: 'a'
+</li>
+                                                <li>
+4'b1011: 'b'
+</li>
+                                                <li>
+4'b1100: 'c'
+</li>
+                                                <li>
+4'b1101: 'd'
+</li>
+                                                <li>
+4'b1110: 'e'
+</li>
+                                                <li>
+4'b1111: 'f'
+</li>
+                                                <li>
+4'b0000: 'g'
+</li>
+                                                <li>
+...
+</li>
+                                                <li>
+4'b1000: 'o'
+</li>
+                                                <li>
+4'b1001: 'p'
+</li>
+                                            </ul>
+                                        </div>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (VER_TYPE_pkg_num)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0xa</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE_F_23_16"></a>23:16</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">type_num</td>
+                                    <td class="TableStyle-table-BodyE-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">
+                                        <p>coreKit release version in BCD format.
+For example, a release number 1.70a-lp04 contains 0x4.</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (VER_TYPE_type_num)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x0</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">
+                                        <p><a name="H4-reg-DWC_mipicsi2_device_MemMap_MAIN_VER_TYPE_F_15_0"></a>15:0</p>
+                                    </td>
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">ver_number</td>
+                                    <td class="TableStyle-table-BodyB-Column1-Body1">R</td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1">
+                                        <p>IP version number.
+Nibble-wise representation of BCD values containing the coreKit release version number.
+For example, 0x0100 means 1.00.</p>
+                                        <p class="BLANK" />
+                                        <p>Values: 
+</p>
+                                        <div class="itemizedlist">
+                                            <ul class="itemizedlist">
+                                                <li>
+0x0 (VER_TYPE_ver_number)
+</li>
+                                            </ul>
+                                        </div>
+                                        <p />
+                                        <p>Value After Reset: 0x132</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&#160;</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

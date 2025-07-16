@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Parameters for DWC_mipi_csi2_host - 1.54a</title>
+        <link rel="home" href="#idp39422728" title="Parameters for DWC_mipi_csi2_host - 1.54a" />
+        <link rel="next" href="#Parameter-Descriptions" title="" />
+    </head>
+    <body>
+        <div class="article">
+            <h1><a name="idp39422728"></a>Parameters for DWC_mipi_csi2_host - 1.54a</h1>
+            <div class="sect1">
+                <div class="titlepage">
+                </div>
+                <p>These tables define all of the user configuration options for this component. Entries which are grayed-out are disabled (read-only) in the current configuration.</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li><a  href="#paramtable-BasicConfiguration" title="Table&#160;1.&#160;Basic Configuration Parameters">Basic Configuration</a>
+                        </li>
+                        <li><a  href="#paramtable-MemoryConfiguration" title="Table&#160;2.&#160;Memory Configuration Parameters">Memory Configuration</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-BasicConfiguration"></a>Basic Configuration Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-BasicConfiguration"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Basic Configuration Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Basic Configuration Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Physical Layer Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Physical Layer</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">D-PHY</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Physical Interface.
+When Combo PHY is selected, the D-PHY has 4 lanes and C-PHY 3 lanes.</p>
+                                            <p class="BLANK" />
+                                            <p>
+License Dependencies: </p>
+                                            <p class="BLANK" />
+                                            <p>
+To generate a DWC_mipi_csi2_host with support for Combo C/D-PHY, you must have one of the associated licenses:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+DWC_mipi_csi-2_host_combo
+</li>
+                                                    <li>
+DWC_mipi_csi-2_hp_host_combo
+</li>
+                                                </ul>
+                                            </div>
+                                            <p />
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>D-PHY (1)</li>
+                                                    <li>Combo (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: D-PHY</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_HOST_PHY</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Synopsys D-PHY Automatic Integration</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Enables Synopsys D-PHY as an internal sub-module in the design.</p>
+                                            <p class="BLANK" />
+                                            <p>
+You need to have access to the Synopsys D-PHY package and setup the following variables:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+setenv CSI2_HOST_PHY_PATH &lt;path where D-PHY is installed&gt;
+</li>
+                                                    <li>
+setenv CSI2_HOST_PHY_LIBNAME &lt;path to the .lib or .db file&gt;
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>
+Furthermore, you may also need to set the variables for the PLL:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+setenv CSI2_HOST_PLL_PATH &lt;path where D-PHY PLL is installed&gt;
+</li>
+                                                    <li>
+setenv CSI2_HOST_PLL_LIBNAME &lt;path to the pllname.db file&gt;
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: CSI2_HOST_PHY==1</p>
+                                            <p>Parameter Name: CSI2_HOST_SNPS_PHY</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of PHY Test Control Interfaces</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the number of PHY Test Control Interfaces.</p>
+                                            <p class="BLANK" />
+                                            <p>Values: 0, 1, 2</p>
+                                            <p>DefaultValue: =[&lt;functionof&gt;]</p>
+                                            <p>Enabled: CSI2_HOST_CPHY==0 &amp;&amp; CSI2_HOST_SNPS_PHY==0</p>
+                                            <p>Parameter Name: CSI2_HOST_NR_PHY_TESTCTRL_IF</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Maximum Number of D-PHY Data Lanes</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">2</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the maximum number of data lanes supported by the D-PHY.</p>
+                                            <p class="BLANK" />
+                                            <p>Values: 1, 2, 3, 4, 5, 6, 7, 8</p>
+                                            <p>DefaultValue: 4</p>
+                                            <p>Enabled: CSI2_HOST_PHY==1</p>
+                                            <p>Parameter Name: CSI2_HOST_DPHY_NUMBER_OF_LANES</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">PHY Protocol Interface (PPI) Data-Processing</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">PIPELINE</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Select the type of data processing on the PPI interface:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+PIPELINE: Pipeline stage on the PPI interface
+</li>
+                                                    <li>
+DESKEW: Deskew stage on the PPI interface<p class="BLANK" /></li>
+                                                </ul>
+                                            </div>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>PIPELINE (1)</li>
+                                                    <li>DESKEW (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: PIPELINE</p>
+                                            <p>Enabled: ((CSI2_HOST_PHY==1) &amp;&amp; (CSI2_HOST_SNPS_PHY==0)) ? 1 : 0</p>
+                                            <p>Parameter Name: CSI2_HOST_DATA_PROCESSING</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Pipeline Stages</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">3</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Includes a pipeline of variable depth on the PPI interface between D-PHY and DWC_mipi_csi2_host. This provides flexibility in the placement of D-PHY with respect to DWC_mipi_csi2_host. </p>
+                                            <p class="BLANK" />
+                                            <p>
+This increases the latency through the system. Therefore, the overall control of the system parameters must work effectively so that the data gets through the controller to the application.</p>
+                                            <p class="BLANK" />
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>1 (1)</li>
+                                                    <li>2 (2)</li>
+                                                    <li>3 (3)</li>
+                                                    <li>4 (4)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: CSI2_HOST_DATA_PROCESSING == 1</p>
+                                            <p>Parameter Name: CSI2_HOST_PPI_PD</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Generic Configuration
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">System Interface(s)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+System interface(s):
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+IDI: Image Data Interface
+</li>
+                                                    <li>
+IPI: Image Pixel Interface
+</li>
+                                                    <li>
+IDI&amp;IPI: Both IDI and IPI interfaces
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>
+ When IPI interface is active, it increases the latency through the system. Therefore, the overall control of the system parameters must work effectively so that the data gets through the controller to the application.</p>
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>IDI (1)</li>
+                                                    <li>IPI (2)</li>
+                                                    <li>IDI&amp;IPI (3)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: IDI&amp;IPI</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_HOST_DATAINTERFACE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Data IDs to Monitor</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">8</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the number of Data IDs (virtual channel / data type) for which the design is able to detect errors related to line boundary packets.</p>
+                                            <p class="BLANK" />
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>None (0)</li>
+                                                    <li>4 (1)</li>
+                                                    <li>8 (2)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: None</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_HOST_N_DATA_IDS</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Free Running APB Clock</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Specifies if pclk is a free running or a gated clock. If not set, an additional input pin is created. </p>
+                                            <p class="BLANK" />
+                                            <p>
+This pin needs to receive a free running version of pclk.</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_HOST_PCLK_FREE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of Synchronization Stages</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">3</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Selects the number of synchronization stages used for clock domain crossing. </p>
+                                            <p class="BLANK" />
+                                            <p>
+All stages capture the data on the rising edge of the clock.</p>
+                                            <p class="BLANK" />
+                                            <p>Values:           </p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>2 (2)</li>
+                                                    <li>3 (3)</li>
+                                                    <li>4 (4)</li>
+                                                </ul>
+                                            </div>
+                                            <p>DefaultValue: 2</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_HOST_DFLT_F_SYNC_TYPE</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Internal PPI Pattern Generator</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Enables PPI Pattern Generator. </p>
+                                            <p class="BLANK" />
+                                            <p>
+This PPI level pattern generator enables Controller's functional behavior to be independently tested, and
+possible PHY and/or PHY-CTRL interface errors' cause(s) to be correctly identified.
+Mandatory for Automotive Package Support.</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: (CSI2_HOST_AP==0) ? 1 : 0</p>
+                                            <p>Parameter Name: CSI2_HOST_PPI_PG</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Image Pixel Interface (IPI)
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Advanced Pixel Interface Support</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Enable Advanced Pixel Interface. Extra useful pins is included on IPI.</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: ((CSI2_HOST_DATAINTERFACE == 2) || (CSI2_HOST_DATAINTERFACE == 3))</p>
+                                            <p>Parameter Name: CSI2_HOST_ADVANCED_IPI_IF</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of IPIs - up to 4</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Select the Number of IPI interfaces in the controller. For more IPIs, High-performance license is required.</p>
+                                            <p>Values: 1, 2, 3, 4</p>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: ((CSI2_HOST_IPI_IF) &amp;&amp; (CSI2_HOST_CSI_HP==0))</p>
+                                            <p>Parameter Name: CSI2_HOST_NR_IPI_NHP</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              Image Data Interface (IDI)
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">64-bit Mode</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Enables 64-bit data interface. This increases the latency through the system. Therefore, the overall control of the system parameters must work effectively so that the data gets through the controller to the application.</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: ((CSI2_HOST_RCV_40B==0) &amp;&amp; (CSI2_HOST_IPI_IF == 0) &amp;&amp; (CSI2_HOST_CPHY==0) &amp;&amp; (CSI2_HOST_AP==0))</p>
+                                            <p>Parameter Name: CSI2_HOST_IDI_64_DATA_IF</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              High-Performance features
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">CSI-2 High-Performance Features</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">0</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Enables High-Performance features.</p>
+                                            <p class="BLANK" />
+                                            <p>
+License Dependencies: </p>
+                                            <p class="BLANK" />
+                                            <p>
+To enable CSI-2 High-Performance features,you must have one of the associated licenses:
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+DWC_mipi_csi-2_hp_host
+</li>
+                                                    <li>
+DWC_mipi_csi-2_hp_host_combo
+</li>
+                                                </ul>
+                                            </div>
+                                            <p />
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: Always</p>
+                                            <p>Parameter Name: CSI2_HOST_CSI_HP</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">Number of IPIs - up to 8</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">1</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Select the Number of IPI interfaces in the controller</p>
+                                            <p class="BLANK" />
+                                            <p>
+ Dependencies: </p>
+                                            <p class="BLANK" />
+                                            <p>
+CSI-2 High-Performance features</p>
+                                            <p>Values: 1, 2, 3, 4, 5, 6, 7, 8</p>
+                                            <p>DefaultValue: 1</p>
+                                            <p>Enabled: ((CSI2_HOST_IPI_IF) &amp;&amp; (CSI2_HOST_CSI_HP==1))</p>
+                                            <p>Parameter Name: CSI2_HOST_NR_IPI_HP</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">D-PHY PPI-16 Support</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">0</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Enables support for 16 bit transmission using D-PHY.
+When PPI 16 is selected the D-PHY will operate using up to 4 lanes</p>
+                                            <p class="BLANK" />
+                                            <p>
+ Dependencies: </p>
+                                            <p class="BLANK" />
+                                            <p>
+CSI-2 High-Performance features</p>
+                                            <p>Values: 0, 1</p>
+                                            <p>DefaultValue: 0</p>
+                                            <p>Enabled: ((CSI2_HOST_PHY==1) | (CSI2_HOST_PHY==2)) &amp;&amp; (CSI2_HOST_DPHY_NUMBER_OF_LANES&lt;=4) &amp;&amp; (CSI2_HOST_CSI_HP==1) &amp;&amp; (CSI2_HOST_SNPS_PHY==0)</p>
+                                            <p>Parameter Name: CSI2_HOST_DPHY_16</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-paramtable-MemoryConfiguration"></a>Memory Configuration Parameters</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table"><a name="paramtable-MemoryConfiguration"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Memory Configuration Parameters
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Memory Configuration Parameters" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Label</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Value</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Memory
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI FIFO depth (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">382</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the IPI FIFO.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 720</p>
+                                            <p>Enabled: CSI2_HOST_IPI_IF</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI RAM depth required (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">384</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI FIFO.
+ If the value of CSI2_HOST_IPI_FIFO_DEPTH parameter is an odd value, then the value of CSI2_HOST_IPI_RAM_DEPTH is equal to (CSI2_HOST_IPI_FIFO_DEPTH + 1) to allow addresses that range from 32 to CSI2_HOST_IPI_FIFO_DEPTH.
+ If CSI2_HOST_IPI_FIFO_DEPTH is an even value but not an integer power of two, then the value of CSI2_HOST_IPI_RAM_DEPTH becomes (CSI2_HOST_IPI_FIFO_DEPTH+ 2) to allow addresses that range from 32 to CSI2_HOST_IPI_FIFO_DEPTH.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 384</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Memory 2
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 2 FIFO depth (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">720</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the IPI 2 FIFO.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 720</p>
+                                            <p>Enabled: CSI2_HOST_IPI_IF2</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF2_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 2 RAM depth required (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">722</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI 2 FIFO.
+ If the value of CSI2_HOST_IPI_IF2_FIFO_DEPTH parameter is an odd value, then the value of CSI2_HOST_IPI_IF2_RAM_DEPTH is equal to (CSI2_HOST_IPI_IF2_FIFO_DEPTH + 1) to allow addresses that range from 32 to CSI2_HOST_IPI_IF2_FIFO_DEPTH.
+ If CSI2_HOST_IPI_IF2_FIFO_DEPTH is an even value but not an integer power of two, then the value of CSI2_HOST_IPI_IF2_RAM_DEPTH becomes (CSI2_HOST_IPI_IF2_FIFO_DEPTH+ 2) to allow addresses that range from 32 to CSI2_HOST_IPI_IF2_FIFO_DEPTH.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 722</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF2_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Memory 3
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 2 FIFO depth (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">720</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the IPI 3 FIFO.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 720</p>
+                                            <p>Enabled: CSI2_HOST_IPI_IF3</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF3_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 3 RAM depth required (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">722</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI 3 FIFO.
+ If the value of CSI2_HOST_IPI_IF3_FIFO_DEPTH parameter is an odd value, then the value of CSI2_HOST_IPI_IF3_RAM_DEPTH is equal to (CSI2_HOST_IPI_IF3_FIFO_DEPTH + 1) to allow addresses that range from 32 to CSI2_HOST_IPI_IF3_FIFO_DEPTH.
+ If CSI2_HOST_IPI_IF3_FIFO_DEPTH is an even value but not an integer power of two, then the value of CSI2_HOST_IPI_IF3_RAM_DEPTH becomes (CSI2_HOST_IPI_IF3_FIFO_DEPTH+ 2) to allow addresses that range from 32 to CSI2_HOST_IPI_IF3_FIFO_DEPTH.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 722</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF3_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Memory 4
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 4 FIFO depth (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">720</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the IPI 4 FIFO.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 720</p>
+                                            <p>Enabled: CSI2_HOST_IPI_IF4</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF4_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 4 RAM depth required (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">722</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI 4 FIFO.
+ If the value of CSI2_HOST_IPI_IF4_FIFO_DEPTH parameter is an odd value, then the value of CSI2_HOST_IPI_IF4_RAM_DEPTH is equal to (CSI2_HOST_IPI_IF4_FIFO_DEPTH + 1) to allow addresses that range from 32 to CSI2_HOST_IPI_IF4_FIFO_DEPTH.
+ If CSI2_HOST_IPI_IF4_FIFO_DEPTH is an even value but not an integer power of two, then the value of CSI2_HOST_IPI_IF4_RAM_DEPTH becomes (CSI2_HOST_IPI_IF4_FIFO_DEPTH+ 2) to allow addresses that range from 32 to CSI2_HOST_IPI_IF4_FIFO_DEPTH.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 722</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF4_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Memory 5
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 5 FIFO depth (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">720</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the IPI 5 FIFO.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 720</p>
+                                            <p>Enabled: CSI2_HOST_IPI_IF5</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF5_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 5 RAM depth required (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">722</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI 5 FIFO.
+ If the value of CSI2_HOST_IPI_IF5_FIFO_DEPTH parameter is an odd value, then the value of CSI2_HOST_IPI_IF5_RAM_DEPTH is equal to (CSI2_HOST_IPI_IF5_FIFO_DEPTH + 1) to allow addresses that range from 32 to CSI2_HOST_IPI_IF5_FIFO_DEPTH.
+ If CSI2_HOST_IPI_IF5_FIFO_DEPTH is an even value but not an integer power of two, then the value of CSI2_HOST_IPI_IF5_RAM_DEPTH becomes (CSI2_HOST_IPI_IF5_FIFO_DEPTH+ 2) to allow addresses that range from 32 to CSI2_HOST_IPI_IF5_FIFO_DEPTH.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 722</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF5_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Memory 6
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 6 FIFO depth (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">720</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the IPI 6 FIFO.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 720</p>
+                                            <p>Enabled: CSI2_HOST_IPI_IF6</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF6_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 6 RAM depth required (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">722</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI 6 FIFO.
+ If the value of CSI2_HOST_IPI_IF6_FIFO_DEPTH parameter is an odd value, then the value of CSI2_HOST_IPI_IF6_RAM_DEPTH is equal to (CSI2_HOST_IPI_IF6_FIFO_DEPTH + 1) to allow addresses that range from 32 to CSI2_HOST_IPI_IF6_FIFO_DEPTH.
+ If CSI2_HOST_IPI_IF6_FIFO_DEPTH is an even value but not an integer power of two, then the value of CSI2_HOST_IPI_IF6_RAM_DEPTH becomes (CSI2_HOST_IPI_IF6_FIFO_DEPTH+ 2) to allow addresses that range from 32 to CSI2_HOST_IPI_IF6_FIFO_DEPTH.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 722</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF6_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Memory 7
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 7 FIFO depth (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">720</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the IPI 7 FIFO.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 720</p>
+                                            <p>Enabled: CSI2_HOST_IPI_IF7</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF7_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 7 RAM depth required (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">722</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI 7 FIFO.
+ If the value of CSI2_HOST_IPI_IF7_FIFO_DEPTH parameter is an odd value, then the value of CSI2_HOST_IPI_IF7_RAM_DEPTH is equal to (CSI2_HOST_IPI_IF7_FIFO_DEPTH + 1) to allow addresses that range from 32 to CSI2_HOST_IPI_IF7_FIFO_DEPTH.
+ If CSI2_HOST_IPI_IF7_FIFO_DEPTH is an even value but not an integer power of two, then the value of CSI2_HOST_IPI_IF7_RAM_DEPTH becomes (CSI2_HOST_IPI_IF7_FIFO_DEPTH+ 2) to allow addresses that range from 32 to CSI2_HOST_IPI_IF7_FIFO_DEPTH.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 722</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF7_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td colspan="3" align="center" class="TableStyle-table-BodyD-Column1-Body1">
+              IPI Memory 8
+            </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">IPI 8 FIFO depth (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">720</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>
+Depth of the IPI 8 FIFO.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 720</p>
+                                            <p>Enabled: CSI2_HOST_IPI_IF8</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF8_FIFO_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">IPI 8 RAM depth required (uses 2-port RAM)</td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">722</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>
+Depth of the RAM required for IPI 8 FIFO.
+ If the value of CSI2_HOST_IPI_IF8_FIFO_DEPTH parameter is an odd value, then the value of CSI2_HOST_IPI_IF8_RAM_DEPTH is equal to (CSI2_HOST_IPI_IF8_FIFO_DEPTH + 1) to allow addresses that range from 32 to CSI2_HOST_IPI_IF8_FIFO_DEPTH.
+ If CSI2_HOST_IPI_IF8_FIFO_DEPTH is an even value but not an integer power of two, then the value of CSI2_HOST_IPI_IF8_RAM_DEPTH becomes (CSI2_HOST_IPI_IF8_FIFO_DEPTH+ 2) to allow addresses that range from 32 to CSI2_HOST_IPI_IF8_FIFO_DEPTH.</p>
+                                            <p>Values: (CSI2_HOST_IPI_IF == 1? 32:0), ..., 4096</p>
+                                            <p>DefaultValue: 722</p>
+                                            <p>Enabled: 0</p>
+                                            <p>Parameter Name: CSI2_HOST_IPI_IF8_RAM_DEPTH</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

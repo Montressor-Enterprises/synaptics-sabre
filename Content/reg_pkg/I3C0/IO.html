@@ -1,0 +1,1939 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Signals for DWC_mipi_i3c</title>
+        <link rel="home" href="#idp29379672" title="Signals for DWC_mipi_i3c" />
+        <link rel="next" href="#Signal-Descriptions" title="" />
+    </head>
+    <body>
+        <div class="article">
+            <h1><a name="idp29379672"></a>Signals for DWC_mipi_i3c</h1>
+            <div class="sect1">
+                <div class="titlepage">
+                </div>
+                <p>Provides a description of the i3c_ms_DWC_mipi_i3c signals.</p>
+                <div class="itemizedlist">
+                    <ul class="itemizedlist">
+                        <li><a  href="#signaltable-APBInterface" title="Table&#160;1.&#160;APB Interface Signals">APB Interface</a>
+                        </li>
+                        <li><a  href="#signaltable-RAMInterface" title="Table&#160;2.&#160;RAM Interface Signals">RAM Interface</a>
+                        </li>
+                        <li><a  href="#signaltable-CoreInterface" title="Table&#160;3.&#160;Core Interface Signals">Core Interface</a>
+                        </li>
+                        <li><a  href="#signaltable-InterruptInterface" title="Table&#160;4.&#160;Interrupt Interface Signals">Interrupt Interface</a>
+                        </li>
+                        <li><a  href="#signaltable-SDMAInterface" title="Table&#160;5.&#160;SDMA Interface Signals">SDMA Interface</a>
+                        </li>
+                        <li><a  href="#signaltable-DebugInterface" title="Table&#160;6.&#160;Debug Interface Signals">Debug Interface</a>
+                        </li>
+                        <li><a  href="#signaltable-I3CInterface" title="Table&#160;7.&#160;I3C Interface Signals">I3C Interface</a>
+                        </li>
+                        <li><a  href="#signaltable-SlaveInterface" title="Table&#160;8.&#160;Slave Interface Signals">Slave Interface</a>
+                        </li>
+                        <li><a  href="#signaltable-ScanInterface" title="Table&#160;9.&#160;Scan Interface Signals">Scan Interface</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-APBInterface"></a>APB Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-APBInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#pclk">pclk</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#pready">pready</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#presetn">presetn</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#prdata">prdata</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#psel">psel</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#pslverr">pslverr</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#penable">penable</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#pwrite">pwrite</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#paddr">paddr</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#pwdata">pwdata</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-APBInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+APB Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="APB Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="pclk"></a>pclk</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Clock</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="presetn"></a>presetn</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Reset </p>
+                                            <p class="BLANK" />
+                                            <p>
+Active low input that asynchronously resets the APB interface to its default state. The reset must be synchronously de-asserted after rising edge of pclk.</p>
+                                            <p class="BLANK" />
+                                            <p>
+DWC_MIPI_I3C does not contain logic to perform this synchronization, so it must be provided externally.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: N/A</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: Low</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="psel"></a>psel</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Select Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+Selects the DWC_MIPI_I3C APB slave interface. Must be active for requests to be accepted.</p>
+                                            <p>Synchronous To: pclk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="penable"></a>penable</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Enable Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+Asserted for a single pclk cycle and used for timing read/write operations.</p>
+                                            <p>Synchronous To: pclk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="pwrite"></a>pwrite</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Write Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+Asserted for a single pclk cycle and used for timing read/write operations.</p>
+                                            <p>Synchronous To: pclk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="paddr"></a>paddr[31:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Address Bus </p>
+                                            <p class="BLANK" />
+                                            <p>
+Uses lower 12 bits of the address bus for register decode.</p>
+                                            <p>Synchronous To: pclk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="pwdata"></a>pwdata[31:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Write Data Bus </p>
+                                            <p class="BLANK" />
+                                            <p>
+Driven by the bus master (DW_ahb to DW_apb bridge or DW_axi to DW_axi_x2p bridge) during write cycles.</p>
+                                            <p>Synchronous To: pclk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="pready"></a>pready</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Ready Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+Indicates whether a request cycle is accepted or not.</p>
+                                            <p>Synchronous To: pclk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="prdata"></a>prdata[31:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>APB Interface Read Data Bus </p>
+                                            <p class="BLANK" />
+                                            <p>
+Driven by the DWC_mipi_i3c controller during read cycles.</p>
+                                            <p>Synchronous To: pclk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="pslverr"></a>pslverr</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>APB Interface Slave Error Response Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+DWC_mipi_i3c controller does not use this signal, and is kept for consistency purpose.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-RAMInterface"></a>RAM Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-RAMInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#ram_data_in">ram_data_in</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#ram_cs_n">ram_cs_n</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#ram_wr_n">ram_wr_n</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#ram_addr">ram_addr</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#ram_data_out">ram_data_out</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-RAMInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+RAM Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="RAM Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="ram_cs_n"></a>ram_cs_n</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SPRAM Chip Select
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+0 - SPRAM is selected
+</li>
+                                                    <li>
+1 - SPRAM is not selected
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: Low</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="ram_wr_n"></a>ram_wr_n</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SPRAM Read/Write Control
+</p>
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+0 - Write enable
+</li>
+                                                    <li>
+1 - Read enable
+</li>
+                                                </ul>
+                                            </div>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: Low</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="ram_addr"></a>ram_addr[6:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SPRAM Address</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="ram_data_in"></a>ram_data_in[31:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SPRAM Data Input</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="ram_data_out"></a>ram_data_out[31:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>SPRAM Data Output</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-CoreInterface"></a>Core Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-CoreInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#core_clk">core_clk</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#core_rst_n">core_rst_n</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-CoreInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Core Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Core Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="core_clk"></a>core_clk</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Core Interface Clock </p>
+                                            <p class="BLANK" />
+                                            <p>
+DWC_mipi_i3c controller interface clock</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="core_rst_n"></a>core_rst_n</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Core Interface Reset </p>
+                                            <p class="BLANK" />
+                                            <p>
+Active low input that asynchronously resets the Core interface to its default state. The reset must be synchronously de-asserted after the rising edge of the core_clk.</p>
+                                            <p class="BLANK" />
+                                            <p>
+DWC_mipi_i3c does not contain a logic to perform this synchronization, so it must be provided externally.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: N/A</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: Low</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-InterruptInterface"></a>Interrupt Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-InterruptInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#ic_intr">ic_intr</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-InterruptInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Interrupt Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Interrupt Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="ic_intr"></a>ic_intr</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Combined Active High interrupt</p>
+                                            <p>Synchronous To: pclk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-SDMAInterface"></a>SDMA Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-SDMAInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#dma_ack_tx">dma_ack_tx</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#dma_req_tx">dma_req_tx</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#dma_ack_rx">dma_ack_rx</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#dma_req_rx">dma_req_rx</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#dma_clk">dma_clk</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#dma_single_tx">dma_single_tx</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#dma_rst_n">dma_rst_n</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#dma_single_rx">dma_single_rx</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#dma_last_rx">dma_last_rx</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-SDMAInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+SDMA Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="SDMA Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="dma_ack_tx"></a>dma_ack_tx</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>DMA transmit acknowledgement sent by the DMA Controller to acknowledge the end of each DMA burst or single transaction to the transmit FIFO.</p>
+                                            <p>Synchronous To: dma_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="dma_ack_rx"></a>dma_ack_rx</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>DMA receive acknowledgement sent by the DMA controller to acknowledge the end of each DMA burst or single transaction from the receive FIFO.
+This should be asserted after the last data of the current transfer has been transferred to the destination indicating to the Target about the completion. 
+It forms a handshake loop with dma_req_rx (de-asserts one apb clk cycle later).</p>
+                                            <p>Synchronous To: dma_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="dma_req_tx"></a>dma_req_tx</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Transmit FIFO DMA Request.</p>
+                                            <p class="BLANK" />
+                                            <p>
+This signal is asserted when the transmit FIFO requires service from the DMA controller, that is, the transmit FIFO is at or below the threshold level.</p>
+                                            <p>Synchronous To: dma_clk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="dma_req_rx"></a>dma_req_rx</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Receive FIFO DMA Request</p>
+                                            <p class="BLANK" />
+                                            <p>
+Asserted when the receive FIFO requires service from the DMA Controller, that is, the receive FIFO is at or above the threshold level.
+An active level on dma_req_rx initiates a transaction request. The type of transaction, single or burst, is qualified by dma_single_rx. 
+Once dma_req_rx is asserted, it must remain asserted until dma_ack_rx is asserted. When the Target determines that dma_ack_rx is asserted, it de-asserts dma_req_rx.</p>
+                                            <p>Synchronous To: dma_clk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="dma_single_tx"></a>dma_single_tx</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>DMA Transmit FIFO Single Signal</p>
+                                            <p class="BLANK" />
+                                            <p>
+This DMA status output informs the DMA Controller that there is at least one free entry in the transmit FIFO.</p>
+                                            <p>Synchronous To: dma_clk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="dma_single_rx"></a>dma_single_rx</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>DMA Receive FIFO Single Signal</p>
+                                            <p class="BLANK" />
+                                            <p>
+This DMA status output informs the DMA Controller that there is at least one valid data entry in the receive FIFO.
+If dma_single_rx is de-asserted in the same clock cycle as a rising edge on dma_req_rx, a burst transaction is requested by the peripheral. 
+If asserted, the peripheral requests a single transaction. The dma_single_rx signal need only to be valid on the same clock cycle that dma_req_rx is generated.
+If this signal interfaces with AXI DMAC, extend it until dma_ack_rx is received. The controller also supports this extended dma_single_rx until dma_ack_rx is received
+where the parameter SDMA_RX_LAST_STROBE should be set. Thus, if the controller has be interfaced with AXI DMAC and the behavior of the dma_single_rx is required to be a
+pulse extended until dma_ack_rx is received, set the configuration parameter SDMA_RX_LAST_STROBE using set configuration parameter SDMA_RX_LAST_STROBE.</p>
+                                            <p>Synchronous To: dma_clk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="dma_last_rx"></a>dma_last_rx</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Indicates last data to the external dma for rx channel. Applicable in only Slave mode of operation.
+The Target asserts dma_last_rx on the same cycle as dma_req_rx is asserted to signal that this transaction request is the last in the block. The block transfer is
+complete after this transaction is complete. If dma_single_rx is high in the same cycle, then the last transaction is a single transaction. If dma_single_rx is low in the
+same cycle, then the last transaction is a burst transaction. The dma_last_rx signal need only to be valid on the same clock cycle that dma_req_rx is generated.
+If this signal interfaces with AXI DMAC, extend it until dma_ack_rx is received. The controller also supports this extended dma_single_rx until dma_ack_rx is received
+where the parameter SDMA_RX_LAST_STROBE should be set. Thus, if the controller has to be interfaced with AXI DMAC and the behavior of the dma_single_rx is required to be 
+a pulse extended until dma_ack_rx is received, set the configuration parameter SDMA_RX_LAST_STROBE using set configuration parameter SDMA_RX_LAST_STROBE.</p>
+                                            <p>Synchronous To: dma_clk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="dma_clk"></a>dma_clk</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SDMA Interface clock </p>
+                                            <p class="BLANK" />
+                                            <p>
+DWC_mipi_i3c SDMA interface clock</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="dma_rst_n"></a>dma_rst_n</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>SDMA Interface Reset </p>
+                                            <p class="BLANK" />
+                                            <p>
+Active low input that asynchronously resets the SDMA interface to its default state. The reset must be synchronously de-asserted after the rising edge of dma_clk.</p>
+                                            <p class="BLANK" />
+                                            <p>
+DWC_mipi_i3c does not contain a logic to perform this synchronization, so it must be provided externally.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: N/A</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: Low</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-DebugInterface"></a>Debug Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-DebugInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#debug_port">debug_port</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-DebugInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Debug Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Debug Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="debug_port"></a>debug_port[54:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Debug port </p>
+                                            <p class="BLANK" />
+                                            <p>
+On chip debug signal as follows:</p>
+                                            <p class="BLANK" />
+                                            <p class="BLANK" />
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+Master Mode Debug Signals <p class="BLANK" /></li>
+                                                </ul>
+                                            </div>
+                                            <p>
+debug[0] = Indicates if Master is the current master or not.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[1] = Indicates if SCL (scl_oe) is in Push-pull or Open-Drain Mode.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[2] = Indicates if SDA (sda_oe) is in Push-Pull or Open-Drain Mode.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[3] = Indicates SCL (scl_out) signal level.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[4] = Indicates SDA (sda_out) signal level.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[5] = Indicates if Command Queue is full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[6] = Indicates if Command Queue is empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[7] = Indicates if Response Queue is full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[8] = Indicates if Response Queue is empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[9] = Indicates if IBI Queue is full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[10] = Indicates if IBI Queue is empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[11] = Indicates if Transmit Buffer is full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[12] = Indicates if Transmit Buffer is empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[13] = Indicates Receive Buffer full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[14] = Indicates Receive Buffer empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[20:15] = Indicates Current Master Transfer command.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[26:21] = Indicates Current Master Transfer command state.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[30:27] = Indicates Current Master Transfer command TID.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[31] = Indicates if the Master controller is in Idle state. </p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[32] = Indicates the Enable status of the controller. </p>
+                                            <p class="BLANK" />
+                                            <p class="BLANK" />
+                                            <p>debug[52:33] = Reserved</p>
+                                            <p class="BLANK" />
+                                            <p class="BLANK" />
+                                            <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                    <li>
+Slave Mode Debug Signals <p class="BLANK" /></li>
+                                                </ul>
+                                            </div>
+                                            <p>
+debug[4:0] = Reserved</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[5] = Indicates if Command Queue is full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[6] = Indicates if Command Queue is empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[7] = Indicates if Response Queue is full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[8] = Indicates if Response Queue is empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[10:9] = Reserved</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[11] = Indicates if Transmit Buffer is full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[12] = Indicates if Transmit Buffer is empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[13] = Indicates if Receive Buffer is full.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[14] = Indicates if Receive Buffer is empty.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[31:15] = Reserved</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[32] = Indicates the Enable status of the controller. </p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[34:33] = Reserved</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[39:35] = Indicates Slave Transfer State.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[43:40] = Indicates Slave Command TID.</p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[44] = Indicates slave reset complete </p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[51:45] = Indicates slave dynamic address </p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[52] = Indicates slave dynamic address valid </p>
+                                            <p class="BLANK" />
+                                            <p>
+debug[53] = Indicates slave invalid transfer </p>
+                                            <p class="BLANK" />
+                                            <p class="BLANK" />
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-I3CInterface"></a>I3C Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-I3CInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#scl_in_a_n">scl_in_a_n</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#sda_oe">sda_oe</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#sda_in_a_n">sda_in_a_n</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#scl_out">scl_out</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#scl_in_a">scl_in_a</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#sda_out">sda_out</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#sda_in_a">sda_in_a</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#scl_pullup_en">scl_pullup_en</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#sda_pullup_en">sda_pullup_en</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#scl_oe">scl_oe</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1" />
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#legacy_i2c_xfer">legacy_i2c_xfer</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-I3CInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+I3C Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="I3C Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="scl_in_a_n"></a>scl_in_a_n</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Incoming inverted SCL </p>
+                                            <p class="BLANK" />
+                                            <p>
+The inverse of scl_in_a required for sampling of special conditions in slave and in DDR mode</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="sda_in_a_n"></a>sda_in_a_n</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Incoming Inverted SDA </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: scl_in_a,scl_in_a_n</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="sda_oe"></a>sda_oe</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Outgoing SDA Pad enable </p>
+                                            <p class="BLANK" />
+                                            <p>
+This signal is used to enable the pad to switch between OD(0) and PP(1) mode.</p>
+                                            <p>Synchronous To: core_clk,scl_in_a,scl_in_a_n</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="scl_out"></a>scl_out</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SCL output Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+This signal is an input to the SCL PAD Driver.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="sda_out"></a>sda_out</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SDA output Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+This signal is an input to the SDA PAD Driver.</p>
+                                            <p>Synchronous To: core_clk,scl_in_a,scl_in_a_n</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="scl_pullup_en"></a>scl_pullup_en</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SCL Open-Drain Pull-Up Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Master mode of operation. This signal enables the Pull-Up resistor or equivalent current source in Open-Drain mode when the controller requires to drive '1' on the SCL line.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="sda_pullup_en"></a>sda_pullup_en</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>SDA Open-Drain Pull-Up Signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable in only Master mode of operation. This signal enables the Pull-Up resistor or equivalent current source in Open-Drain mode when the controller requires to drive '1' on the SDA line.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="scl_oe"></a>scl_oe</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Outgoing SCL Pad enable</p>
+                                            <p class="BLANK" />
+                                            <p>
+This signal is used to enable the Pad to switch between OD(0) and PP(1). Please note in the present scope SCL is always in push-pull mode for I3C and scl_oe is meant for enabling the pad and not for switching from OD to PP.</p>
+                                            <p>Synchronous To: core_clk,pclk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="legacy_i2c_xfer"></a>legacy_i2c_xfer</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Legacy I2C transfer enable </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Master mode of operation. This signal indicates whether the DWC_mipi_i3c controller is currently transferring the Legacy I2C(1) transfer or I3C(0) transfer.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="scl_in_a"></a>scl_in_a</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Incoming SCL </p>
+                                            <p class="BLANK" />
+                                            <p>
+Input SCL Signal from the SCL Pad Driver.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="sda_in_a"></a>sda_in_a</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Incoming SDA </p>
+                                            <p class="BLANK" />
+                                            <p>
+Input SDA Signal from the SDA Pad Driver.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-SlaveInterface"></a>Slave Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-SlaveInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#mode_i2c">mode_i2c</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#i2c_glitch_filter_en">i2c_glitch_filter_en</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#act_mode">act_mode</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#ibi_payload_size">ibi_payload_size</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#pending_int">pending_int</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1">- <a  href="#wakeup">wakeup</a></td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#static_addr_en">static_addr_en</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#static_addr">static_addr</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#slv_max_rd_speed">slv_max_rd_speed</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#slv_max_wr_speed">slv_max_wr_speed</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#slv_clk_data_turn_time">slv_clk_data_turn_time</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#slv_pid">slv_pid</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#slv_dcr">slv_dcr</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-SlaveInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Slave Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Slave Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="mode_i2c"></a>mode_i2c</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>I2C or I3C mode select signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: Not applicable</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="act_mode"></a>act_mode[1:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave activity mode for GETSTATUS CCC </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="pending_int"></a>pending_int[3:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Pending interrupt information for GETSTATUS CCC </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="static_addr_en"></a>static_addr_en</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave static address valid </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="static_addr"></a>static_addr[6:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave static address </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="i2c_glitch_filter_en"></a>i2c_glitch_filter_en</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>I2C 50ns glitch filter enable</p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="ibi_payload_size"></a>ibi_payload_size[7:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave maximum IBI payload size </p>
+                                            <p class="BLANK" />
+                                            <p>Synchronous To: scl_in_a</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="wakeup"></a>wakeup</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">O</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave wakeup signal </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: scl_in_a</p>
+                                            <p>Registered: Yes</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="slv_max_rd_speed"></a>slv_max_rd_speed[2:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave maximum read data rate </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="slv_max_wr_speed"></a>slv_max_wr_speed[2:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave maximum write data rate </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="slv_clk_data_turn_time"></a>slv_clk_data_turn_time[2:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave maximum clock data turnaround time </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable only in Slave mode of operation.</p>
+                                            <p>Synchronous To: core_clk</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">
+                                            <p><a name="slv_pid"></a>slv_pid[47:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyE-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyD-Column1-Body1">
+                                            <p>Slave Device 48-bit Provisioned ID </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable in only Slave mode of operation.</p>
+                                            <p class="BLANK" />
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="slv_dcr"></a>slv_dcr[7:0]</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Device Characteristic Register value </p>
+                                            <p class="BLANK" />
+                                            <p>
+Applicable in only Slave mode of operation.</p>
+                                            <p class="BLANK" />
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: High</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sect2">
+                    <div class="titlepage">
+                        <div>
+                            <div>
+                                <h3><a name="H2-sect2-signaltable-ScanInterface"></a>Scan Interface Signals</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informaltable"><a name="interfacetable-ScanInterface"></a>
+                        <table class="TableStyle-table" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyE-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td align="right" class="TableStyle-table-BodyE-Column1-Body1"><a  href="#slv_test_mode">slv_test_mode</a> -</td>
+                                    <td align="center" class="TableStyle-table-BodyE-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyD-Column1-Body1"> </td>
+                                </tr>
+                                <tr class="TableStyle-table-Body-Body1">
+                                    <td class="TableStyle-table-BodyB-Column1-Body1"> </td>
+                                    <td align="center" class="TableStyle-table-BodyB-Column1-Body1">
+                                        <div class="literallayout">
+                                            <p />
+                                        </div>
+                                    </td>
+                                    <td class="TableStyle-table-BodyA-Column1-Body1"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table"><a name="signaltable-ScanInterface"></a>
+                        <p class="tableTitle" MadCap:autonum="Table . ">
+Scan Interface Signals
+                        </p>
+                        <div class="table-contents">
+                            <table class="TableStyle-table" summary="Scan Interface Signals" width="100%" style="mc-table-style: url('../../Resources/TableStyles/table.css');" cellspacing="0">
+                                <colgroup>
+                                    <col class="c1" />
+                                    <col class="c2" />
+                                    <col class="c3" />
+                                </colgroup>
+                                <thead>
+                                    <tr class="TableStyle-table-Head-Header1">
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">Port Name</th>
+                                        <th class="TableStyle-table-HeadE-Column1-Header1">I/O</th>
+                                        <th class="TableStyle-table-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-table-Body-Body1">
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">
+                                            <p><a name="slv_test_mode"></a>slv_test_mode</p>
+                                        </td>
+                                        <td class="TableStyle-table-BodyB-Column1-Body1">I</td>
+                                        <td class="TableStyle-table-BodyA-Column1-Body1">
+                                            <p>Test Mode </p>
+                                            <p class="BLANK" />
+                                            <p>
+Used to ensure that test automation tools can control all asynchronous filp-flop signals. During scan, set this signal high all the time. In normal operation, tie this signal low.</p>
+                                            <p>Synchronous To: None</p>
+                                            <p>Registered: No</p>
+                                            <p>Power Domain: SINGLE_DOMAIN</p>
+                                            <p>Active State: Low</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

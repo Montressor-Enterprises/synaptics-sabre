@@ -1,0 +1,3078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>I2S Reg</title>
+    </head>
+    <body>
+        <h1>I2S_REG</h1>
+      
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000000</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_clk_frames
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets the frame length of WS signal for receiver in terms of bit</p>
+                    <p>clock cycles.</p>
+                    <p>‘d0: 1 clock</p>
+                    <p>‘d1: 2 clocks</p>
+                    <p>etc.</p>
+                    <p>This field is effective only in master mode.</p>
+                    <p>This field is effective only after ‘rx_lrck_en’ is activated.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_sync_lng
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets the high phase width of WS signal for receiver in terms of</p>
+                    <p>bit clock cycles.</p>
+                    <p>‘d0: 1 clock</p>
+                    <p>‘d1: 2 clocks</p>
+                    <p>etc.</p>
+                    <p>This field is effective only in master mode.</p>
+                    <p>This field is effective only after ‘rx_lrck_en’ is activated.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[16:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_lrck_low_first
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>This field can determine if a high level pulse or low level</p>
+                    <p>pulse is generated firstly for receiver. This field provided a</p>
+                    <p>flexibility for the first frame.</p>
+                    <p>1’b0: a high level pulse come out firstly</p>
+                    <p>1’b1: a low level pulse come out firstly</p>
+                    <p>This field is effective only after ‘rx_lrck_en’ is activated.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[17:17]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_lrck_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Enables to generate WS signal for receiver in master mode.</p>
+                    <p>Active high.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG2
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000004</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_clk_frames
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets the frame length of WS signal for transmitter in terms of</p>
+                    <p>bit clock cycles.</p>
+                    <p>‘d0: 1 clock</p>
+                    <p>‘d1: 2 clocks</p>
+                    <p>etc.</p>
+                    <p>This field is effective only in master mode.</p>
+                    <p>This field is effective only after ‘tx_lrck_en’ is activated.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_sync_lng
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets the high phase width of WS signal for transmitter in terms</p>
+                    <p>of bit clock cycles.</p>
+                    <p>‘d0: 1 clock</p>
+                    <p>‘d1: 2 clocks</p>
+                    <p>etc.</p>
+                    <p>This field is effective only in master mode.</p>
+                    <p>This field is effective only after ‘tx_lrck_en’ is activated.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[16:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_lrck_low_first
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>This field can determine if a high level pulse or low level</p>
+                    <p>pulse is generated firstly for transmitter. This field provided</p>
+                    <p>a flexibility for the first frame.</p>
+                    <p>1’b0: a high level pulse come out firstly</p>
+                    <p>1’b1: a low level pulse come out firstly</p>
+                    <p>This field is effective only after ‘tx_lrck_en’ is activated.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[17:17]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_lrck_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Enables to generate WS signal for transmitter in master mode.</p>
+                    <p>Active high.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG3
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000008</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>clk_share_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If set, I2S/PCM will share clock</p>
+                    <p>Due to only one BCLK pad, this feature is not supported on</p>
+                    <p>Tahiti.</p>
+                    <p>1’b0: share clock disable</p>
+                    <p>1’b1: share clock enable</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>clk_share_with_rx
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>1’b0: use tx_clk to tx/rx data</p>
+                    <p>1’b1: use rx_clk to tx/rx data</p>
+                    <p>This bit is valid only when clk_share_en=1’b1.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>lrck_share_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If set, I2S/PCM will share lrck</p>
+                    <p>1’b0: share lrck disable</p>
+                    <p>1’b1: share lrck enable</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>lrck_share_with_rx
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>1’b0: use tx_lrck to tx/rx data</p>
+                    <p>1’b1: use rx_lrck to tx/rx data</p>
+                    <p>This bit is valid only when lrck_share_en=1’b1.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG4
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000000C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_mode
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S mode and PCM mode have different mechanism with WS signal.</p>
+                    <p>The I2S mode is based on the edge detect of WS signal, while</p>
+                    <p>the PCM mode is based on a slot number.</p>
+                    <p>1’b0: I2S mode</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_master
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets if running in master or slave mode for all the RX channels.</p>
+                    <p>1’b0: running as slave</p>
+                    <p>1’b1: running as master</p>
+                    <p>This field is applied to selection of BCLK and WS signal in</p>
+                    <p>clock generation block.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_dstart_dly
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets 1-bit delay for RX channels.</p>
+                    <p>1’b0: no delay</p>
+                    <p>1’b1: delays one clock cycle</p>
+                    <p>This field is only for standard I2S (Philips) mode.</p>
+                    <p>This field is effective only after ‘rxN_en’ is activated. (N=1,</p>
+                    <p>2, …, depending on which channel it is.)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_dshift_sel
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>1’b0: use tx_lrck to tx/rx data</p>
+                    <p>1’b1: use rx_lrck to tx/rx data</p>
+                    <p>This bit is valid only when lrck_share_en=1’b1.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_order
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets which channel is received firstly for the first frame.</p>
+                    <p>1’b0: ‘left then right’ order</p>
+                    <p>1’b1: ‘right then left’ order</p>
+                    <p>This field is effective only after ‘rxN_en’ is activated. (N=1,</p>
+                    <p>2, …, depending on which channel it is.)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[6:6]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_lrck_pol
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>The polarity of WS signal for receiver can be reversed or not</p>
+                    <p>based on different mode.</p>
+                    <p>1’b0: keep WS polarity</p>
+                    <p>1’b1: reverse WS polarity</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[11:7]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_sa_wdt
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets the sample data width of transmitter for all the RX</p>
+                    <p>channels.</p>
+                    <p>‘d0: 1 bit data</p>
+                    <p>‘d1: 2 bit data</p>
+                    <p>etc.</p>
+                    <p>This field is effective only after ‘rxN_en’ is activated. (N=1,</p>
+                    <p>2, …, depending on which channel it is.)</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG5
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000010</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_sd_sel
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Reserved.The value of the register must be 0 in Sicily.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG6
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000014</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_slot
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>When running in I2S mode, sets the delay cycles relative to the</p>
+                    <p>edge (positive or negative) of WS signal for RX channel.</p>
+                    <p>When running in PCM mode, sets the delay cycles relative to the</p>
+                    <p>positive edge of WS signal for RX channel.</p>
+                    <p>‘d0: start from the 1st cycle of rx_bclk</p>
+                    <p>‘d1: start from the 2nd cycle of rx_bclk</p>
+                    <p>etc.</p>
+                    <p>Every RX channel has its own rx_slot signal.</p>
+                    <p>Synchronous with reg_clk domain.</p>
+                    <p>rx_slot[7:0] is for channel #0</p>
+                    <p>rx_slot[15:8] is for channel #1</p>
+                    <p>rx_slot[23:16] is for channel #2</p>
+                    <p>rx_slot[31:24] is for channel #3</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG8
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000001C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Mute the I2S or PCM Receiver (all zeros will be send).</p>
+                    <p>Synchronous with reg_clk domain.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_mute
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Enables to receive data for RX channel. Active high. All the</p>
+                    <p>programmable signals must be stable before this signal is</p>
+                    <p>active. And rx_en must be inactive before reprogramming.</p>
+                    <p>Every RX channel has its own rx_en signal.</p>
+                    <p>Synchronous with reg_clk domain.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG9
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000020</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_mode
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S mode and PCM mode have different mechanism with WS signal.</p>
+                    <p>The I2S mode is based on the edge detect of WS signal, while</p>
+                    <p>the PCM mode is based on a slot number.</p>
+                    <p>1’b0: I2S mode</p>
+                    <p>1’b1: PCM mode</p>
+                    <p>This field is effective only after ‘txN_en’ is activated. (N=1,</p>
+                    <p>2, ..., depending on which channel it is.)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[1:1]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_master
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets if running in master or slave mode for all the TX channels.</p>
+                    <p>1’b0: running as slave</p>
+                    <p>1’b1: running as master</p>
+                    <p>This field is applied to selection of BCLK and WS signal in</p>
+                    <p>clock generation block.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[2:2]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_dstart_dly
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets 1-bit delay for TX channels.</p>
+                    <p>1’b0: no delay</p>
+                    <p>1’b1: delays one clock cycle</p>
+                    <p>This field is only for standard I2S (Philips) mode.</p>
+                    <p>This field is effective only after ‘txN_en’ is activated. (N=1,</p>
+                    <p>2, ..., depending on which channel it is.)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:3]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_dshift_sel
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets if little-endian or big-endian is active.</p>
+                    <p>1’b0: MSB first on TX</p>
+                    <p>1’b1: LSB first on TX</p>
+                    <p>This field is effective only after ‘txN_en’ is activated. (N=1,</p>
+                    <p>2, ..., depending on which channel it is.)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_order
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets which channel is transmitted firstly for the first frame.</p>
+                    <p>1’b0: ‘left then right’ order</p>
+                    <p>1’b1: ‘right then left’ order</p>
+                    <p>This field is effective only after ‘txN_en’ is activated. (N=1,</p>
+                    <p>2, ..., depending on which channel it is.)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>reserved</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[6:6]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_lrck_pol
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>The polarity of WS signal for transmitter can be reversed or not</p>
+                    <p>based on different mode.</p>
+                    <p>1’b0: keep WS polarity</p>
+                    <p>1’b1: reverse WS polarity</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:7]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_out_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>The data output signal will be tri-stated only under TDM mode.</p>
+                    <p>1’b0: the out data is not tristaed when not driven</p>
+                    <p>1’b1: the out data is tristated when not driven</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[8:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tdm_bi
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Enables to transmit and receive data on the same line under TDM</p>
+                    <p>mode.</p>
+                    <p>1’b0: the RX data and TX data is on the different line</p>
+                    <p>1’b1: the RX data and TX data is on the same line</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[13:9]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_sa_wdt
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets the sample data width of transmitter for TX channel1.</p>
+                    <p>‘d0: 1 bit data</p>
+                    <p>‘d1: 2 bit data</p>
+                    <p>etc…</p>
+                    <p>This field is effective only after ‘tx1_en’ is activated.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG10
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000024</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_slot
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>When running in I2S mode, sets the delay cycles relative to the</p>
+                    <p>edge (positive or negative) of WS signal for TX channel.</p>
+                    <p>When running in PCM mode, sets the delay cycles relative to the</p>
+                    <p>positive edge of WS signal for TX channel.</p>
+                    <p>‘d0: start from the 1st cycle of rx_bclk</p>
+                    <p>‘d1: start from the 2nd cycle of rx_bclk</p>
+                    <p>etc.</p>
+                    <p>Every RX channel has its own rx_slot signal.</p>
+                    <p>Synchronous with reg_clk domain.</p>
+                    <p>tx_slot[7:0] is for channel #0</p>
+                    <p>tx_slot[15:8] is for channel #1</p>
+                    <p>tx_slot[23:16] is for channel #2</p>
+                    <p>tx_slot[31:24] is for channel #3</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG12
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000002C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_sd_sel
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets which channels can transmit on this serial line.</p>
+                    <p>Bit[0]: channel1 is transmitting data on this line</p>
+                    <p>bit[1]: channel2 is transmitting data on this line</p>
+                    <p>bit[2]: channel3 is transmitting data on this line</p>
+                    <p>etc.</p>
+                    <p>Every TX SD signal has its own tx_sd_sel signal.</p>
+                    <p>Synchronous with reg_clk domain.</p>
+                    <p>For example:</p>
+                    <p>M wires transporting N channels, copy N channel’s data M times</p>
+                    <p>through tx_sd_sel to select.</p>
+                    <p>If M=3, N=6, register tx_sd_sel will be treated as [17:12],</p>
+                    <p>[11:6] and [5:0], each 6 bit indicates that whitch channels</p>
+                    <p>will be transports by current wire.</p>
+                    <p>Tx_sd_sel={[6’b000000],[ 6’b000000],[ 6’b111111]}, line #1 will</p>
+                    <p>transport all of these 6 channels.</p>
+                    <p>Tx_sd_sel={[6’b110000],[ 6’b001100],[ 6’b000011]}, line #1 will</p>
+                    <p>transport #2 and #1 channel, line #2 will transport #3 and #4</p>
+                    <p>channel, line #3 will transport #6 and #5 channel.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG13
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000030</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Enables to transmit data for TX channel*.</p>
+                    <p>Active high.</p>
+                    <p>[Notice] All of TX configuration fields related with TX channel*</p>
+                    <p>must be steady before tx_en* is active. And tx_en* must be</p>
+                    <p>inactive before reconfiguration</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[4:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_mute
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Sets to mute all the TX channels (all zeros will be send).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[5:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_disorder
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>When INCLUDE_I2S_TX_FIFO, sets the multi channel’s TX(TX FIFO’s</p>
+                    <p>pop signal) independent.</p>
+                    <p>0: all of the TX channel’s FIFO should be pop when all channel’s</p>
+                    <p>data ready.</p>
+                    <p>1:all of the TX channel’s independent, may cause phase shift.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG14
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000034</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[4:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan0_Txfifo_almost_empty_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If valid data entry &lt; = threshhold , then chan0 tx fifo almost</p>
+                    <p>empty trigered</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[12:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan1_Txfifo_almost_empty_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If valid data entry &lt; = threshhold , then chan1 tx fifo almost</p>
+                    <p>empty trigered</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:13]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[20:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan2_Txfifo_almost_empty_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If valid data entry &lt; = threshhold , then chan2 tx fifo almost</p>
+                    <p>empty trigered</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[23:21]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved2
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[28:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan3_Txfifo_almost_empty_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If valid data entry &lt; = threshhold , then chan3 tx fifo almost</p>
+                    <p>empty trigered</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG15
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000038</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[4:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan0_Txfifo_pop_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If valid data entry &gt;= threshhold , then tx datapath can pop</p>
+                    <p>data from chan0 tx fifo.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[12:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan1_Txfifo_pop_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then tx datapath can pop</p>
+                    <p>data from chan2 tx fifo.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:13]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[20:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan2_Txfifo_pop_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then tx datapath can pop</p>
+                    <p>data from chan3 tx fifo.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[23:21]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved2
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[28:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan3_Txfifo_pop_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then tx datapath can pop</p>
+                    <p>data from chan3 tx fifo.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG16
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000003C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[4:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan0_Rxfifo_almostfull_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If valid data entry &gt;= threshhold , then ‘almost full’ state</p>
+                    <p>reported</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[12:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan1_Rxfifo_almostfull_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then ‘almost full’ state</p>
+                    <p>reported</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:13]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[20:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan2_Rxfifo_almostfull_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then ‘almost full’ state</p>
+                    <p>reported</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[23:21]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved2
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1"> </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[28:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan3_Rxfifo_almostfull_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then ‘almost full’ state</p>
+                    <p>reported</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG17
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000040</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[4:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan0_Rxfifo_rdValid_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>If valid data entry &gt;= threshhold , then ‘ rd channel valid ’</p>
+                    <p>state reported</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:5]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved0
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[12:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan1_Rxfifo_rdValid_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then ‘ rd channel valid ’</p>
+                    <p>state reported</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:13]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved1
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[20:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan2_Rxfifo_rdValid_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then ‘ rd channel valid ’</p>
+                    <p>state reported</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[23:21]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Reserved2
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[28:24]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>Chan3_Rxfifo_rdValid_thld
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>if valid data entry &gt;= threshhold , then ‘ rd channel valid ’</p>
+                    <p>state reported</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(RW)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_IRQ_EN
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000044</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_full_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt enable of rx channels fifo is full, active high.</p>
+                    <p>bit0 : enable the interrupt of rx channel0 full</p>
+                    <p>bit1 : enable the interrupt of rx channel1 full</p>
+                    <p>bit2 : enable the interrupt of rx channel2 full</p>
+                    <p>bit3 : enable the interrupt of rx channel3 full</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_almost_full_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt enable of rx channels fifo is almost full, active</p>
+                    <p>high.</p>
+                    <p>bit0 : enable the interrupt of rx channel0 almost full</p>
+                    <p>bit1 : enable the interrupt of rx channel1 almost full</p>
+                    <p>bit2 : enable the interrupt of rx channel2 almost full</p>
+                    <p>bit3 : enable the interrupt of rx channel3 almost full</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[11:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_empty_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt enable of rx channels fifo is empty, active high.</p>
+                    <p>bit0 : enable the interrupt of rx channel0 empty</p>
+                    <p>bit1 : enable the interrupt of rx channel1 empty</p>
+                    <p>bit2 : enable the interrupt of rx channel2 empty</p>
+                    <p>bit3 : enable the interrupt of rx channel3 empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:12]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_empty_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt enable of tx channels fifo is empty, active high.</p>
+                    <p>bit0 : enable the interrupt of tx channel0 empty</p>
+                    <p>bit1 : enable the interrupt of tx channel1 empty</p>
+                    <p>bit2 : enable the interrupt of tx channel2 empty</p>
+                    <p>bit3 : enable the interrupt of tx channel3 empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[19:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_almost_empty_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt enable of tx channels fifo is almost empty, active</p>
+                    <p>high.</p>
+                    <p>bit0 : enable the interrupt of tx channel0 almost empty</p>
+                    <p>bit1 : enable the interrupt of tx channel1 almost empty</p>
+                    <p>bit2 : enable the interrupt of tx channel2 almost empty</p>
+                    <p>bit3 : enable the interrupt of tx channel3 almost empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[23:20]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_full_en
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt enable of tx channels fifo is full ,active high.</p>
+                    <p>bit0 : enable the interrupt of tx channel0 is full</p>
+                    <p>bit1 : enable the interrupt of tx channel1 is full</p>
+                    <p>bit2 : enable the interrupt of tx channel2 is full</p>
+                    <p>bit3 : enable the interrupt of tx channel3 is full</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_IRQ_STATE
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000048</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_full
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of rx channels fifo is full, after masked. Active</p>
+                    <p>high.</p>
+                    <p>bit0 : the interrupt of rx channel0 full</p>
+                    <p>bit1 : the interrupt of rx channel1 full</p>
+                    <p>bit2 : the interrupt of rx channel2 full</p>
+                    <p>bit3 : the interrupt of rx channel3 full</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_almost_full
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of rx channels fifo is almost full, after masked.</p>
+                    <p>Active high.</p>
+                    <p>bit0 : the interrupt of rx channel0 almost full</p>
+                    <p>bit1 : the interrupt of rx channel1 almost full</p>
+                    <p>bit2 : the interrupt of rx channel2 almost full</p>
+                    <p>bit3 : the interrupt of rx channel3 almost full</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[11:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_empty
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of rx channels fifo is empty, after masked. Active</p>
+                    <p>high.</p>
+                    <p>bit0 : the interrupt of rx channel0 empty</p>
+                    <p>bit1 : the interrupt of rx channel1 empty</p>
+                    <p>bit2 : the interrupt of rx channel2 empty</p>
+                    <p>bit3 : the interrupt of rx channel3 empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:12]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_empty
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of tx channels fifo is empty, after masked. Active</p>
+                    <p>high.</p>
+                    <p>bit0 : the interrupt of tx channel0 empty</p>
+                    <p>bit1 : the interrupt of tx channel1 empty</p>
+                    <p>bit2 : the interrupt of tx channel2 empty</p>
+                    <p>bit3 : the interrupt of tx channel3 empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[19:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_almost_empty
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of tx channels fifo is almost empty, after masked.</p>
+                    <p>Active high.</p>
+                    <p>bit0 : the interrupt of tx channel0 almost empty</p>
+                    <p>bit1 : the interrupt of tx channel1 almost empty</p>
+                    <p>bit2 : the interrupt of tx channel2 almost empty</p>
+                    <p>bit3 : the interrupt of tx channel3 almost empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[23:20]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_full
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of tx channels fifo is full , after masked. Active</p>
+                    <p>high.</p>
+                    <p>bit0 : the interrupt of tx channel0 is full</p>
+                    <p>bit1 : the interrupt of tx channel1 is full</p>
+                    <p>bit2 : the interrupt of tx channel2 is full</p>
+                    <p>bit3 : the interrupt of tx channel3 is full</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_IRQ_STATE_RAW
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h0000004C</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[3:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_full
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of rx channels fifo is full, before masked. Active</p>
+                    <p>high.</p>
+                    <p>bit0 : the interrupt of rx channel0 full</p>
+                    <p>bit1 : the interrupt of rx channel1 full</p>
+                    <p>bit2 : the interrupt of rx channel2 full</p>
+                    <p>bit3 : the interrupt of rx channel3 full</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[7:4]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_almost_full
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of rx channels fifo is almost full, before masked.</p>
+                    <p>Active high.</p>
+                    <p>bit0 : the interrupt of rx channel0 almost full</p>
+                    <p>bit1 : the interrupt of rx channel1 almost full</p>
+                    <p>bit2 : the interrupt of rx channel2 almost full</p>
+                    <p>bit3 : the interrupt of rx channel3 almost full</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[11:8]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_rx_chan_empty
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of rx channels fifo is empty, before masked. Active</p>
+                    <p>high.</p>
+                    <p>bit0 : the interrupt of rx channel0 empty</p>
+                    <p>bit1 : the interrupt of rx channel1 empty</p>
+                    <p>bit2 : the interrupt of rx channel2 empty</p>
+                    <p>bit3 : the interrupt of rx channel3 empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[15:12]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_empty
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of tx channels fifo is empty, before masked. Active</p>
+                    <p>high.</p>
+                    <p>bit0 : the interrupt of tx channel0 empty</p>
+                    <p>bit1 : the interrupt of tx channel1 empty</p>
+                    <p>bit2 : the interrupt of tx channel2 empty</p>
+                    <p>bit3 : the interrupt of tx channel3 empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[19:16]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_almost_empty
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of tx channels fifo is almost empty, before masked.</p>
+                    <p>Active high.</p>
+                    <p>bit0 : the interrupt of tx channel0 almost empty</p>
+                    <p>bit1 : the interrupt of tx channel1 almost empty</p>
+                    <p>bit2 : the interrupt of tx channel2 almost empty</p>
+                    <p>bit3 : the interrupt of tx channel3 almost empty</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[23:20]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>irq_tx_chan_full
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Interrupt of tx channels fifo is full , before masked. Active</p>
+                    <p>high.</p>
+                    <p>bit0 : the interrupt of tx channel0 is full</p>
+                    <p>bit1 : the interrupt of tx channel1 is full</p>
+                    <p>bit2 : the interrupt of tx channel2 is full</p>
+                    <p>bit3 : the interrupt of tx channel3 is full</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(P)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_audio_data_source
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000050</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[0:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>audio_source_sel
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>Control the audio data source</p>
+                    <p>0 : the data from DMA</p>
+                    <p>1 : the data from lp sense</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(W-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG19
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000100</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_chan0_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S Tx channel0 data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(W-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG20
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000200</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_chan1_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S Tx channel1 data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(W-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG21
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000300</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_chan2_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S Tx channel2 data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(W-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG22
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000400</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_chan3_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S Tx channel3 data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(W-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG23
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000500</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>tx_chan_interleave_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S tx channel0-3 interleave data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG24
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000600</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_chan0_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S rx channel0 data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG25
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000700</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_chan1_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S rx channel1 data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG26
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000800</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_chan2_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S rx channel2 data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG27
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000900</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_chan3_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S rx channel3 data register</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table width="100%" class="TableStyle-register_table" style="mc-table-style: url('../../Resources/TableStyles/register_table.css');" cellspacing="0">
+            <col class="TableStyle-register_table-Column-Column1" />
+            <col class="TableStyle-register_table-Column-Column2" />
+            <col class="TableStyle-register_table-Column-Column3" />
+            <col class="TableStyle-register_table-Column-Column4" />
+            <tr class="TableStyle-register_table-Body-head1">
+                <td class="TableStyle-register_table-BodyE-Column1-head1">
+                    <p>Access</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head1">
+                    <p>Register</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head1">
+                    <p>Address</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head1">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head2">
+                <td class="TableStyle-register_table-BodyE-Column1-head2">
+                    <p>(R-)</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head2">
+                    <p>I2S_REG_I2S_PCM_REG28
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head2">
+                    <p>32'h00000A00</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head2"> </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-head3">
+                <td class="TableStyle-register_table-BodyE-Column1-head3">
+                    <p>Range</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column2-head3">
+                    <p>Field</p>
+                </td>
+                <td class="TableStyle-register_table-BodyE-Column3-head3">
+                    <p>Reset</p>
+                </td>
+                <td class="TableStyle-register_table-BodyD-Column4-head3">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-register_table-Body-Body1">
+                <td class="TableStyle-register_table-BodyH-Column1-Body1">
+                    <p>[31:0]</p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column2-Body1">
+                    <p>rx_chan_interleave_data_reg
+                    </p>
+                </td>
+                <td class="TableStyle-register_table-BodyH-Column3-Body1">
+                    <p>0x0</p>
+                </td>
+                <td class="TableStyle-register_table-BodyG-Column4-Body1">
+                    <p>I2S Rx channel0-3 interleave data register</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

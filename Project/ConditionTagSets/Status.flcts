@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Comment=""
+    Name="Broken"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Complete"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="In TOC"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Multi"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="Register"
+    Comment="" />
+</CatapultConditionTagSet>
