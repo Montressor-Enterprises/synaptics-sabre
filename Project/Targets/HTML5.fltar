@@ -17,7 +17,8 @@
   MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
   OutputFile="index"
   SearchBarSkin="/Project/Skins/Search-Bar.flskn"
-  TopicToolbarSkin="/Project/Skins/Toolbar.flskn">
+  TopicToolbarSkin="/Project/Skins/Toolbar.flskn"
+  OutputFolder="C:\Users\katem\OneDrive\Documents\FlareOutput">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
