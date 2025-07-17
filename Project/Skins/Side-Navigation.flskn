@@ -117,6 +117,8 @@
             Name="BorderBottom">solid 1px var(--Light)</Property>
           <Property
             Name="Color">var(--Dark)</Property>
+          <Property
+            Name="FontFamily">Century Gothic</Property>
         </Properties>
       </Style>
       <Style

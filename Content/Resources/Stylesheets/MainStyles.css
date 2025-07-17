@@ -355,3 +355,16 @@ hr
 	border: none 0px #000000;
 	height: 1px;
 }
+
+/***** SEARH RESULTS *******/
+#resultList .url cite {
+    color: var(--Link);
+    font-size: 10pt;
+    font-style: normal;
+}
+#resultList .description {
+    font-size: 10pt;
+}
+#resultList h3.title a {
+    color: var(--Blue);
+    font-size: 14pt;
