@@ -441,64 +441,6 @@
             Name="Color">var(--Dark)</Property>
         </Properties>
       </Style>
-      <Medium
-        Name="Tablet">
-        <Style
-          Name="Navigation Panel">
-          <Properties>
-            <Property
-              Name="BackgroundColor">var(--Dark)</Property>
-          </Properties>
-        </Style>
-        <Style
-          Name="Navigation Panel Item">
-          <Properties>
-            <Property
-              Name="BorderBottom">solid 1px var(--Dark)</Property>
-            <Property
-              Name="Color">var(--Lightest)</Property>
-          </Properties>
-          <Classes>
-            <StyleClass
-              Name="Expander Icon">
-              <Properties>
-                <Property
-                  Name="ExpanderBorderColor">var(--Lightest)</Property>
-              </Properties>
-            </StyleClass>
-          </Classes>
-        </Style>
-        <Style
-          Name="Navigation Panel Item (hover)">
-          <Properties>
-            <Property
-              Name="BackgroundColor">var(--Dark)</Property>
-            <Property
-              Name="Color">var(--Medium)</Property>
-          </Properties>
-        </Style>
-        <Style
-          Name="Skip to Content">
-          <Properties>
-            <Property
-              Name="BackgroundColor">var(--Lightest)</Property>
-            <Property
-              Name="Color">var(--Dark)</Property>
-          </Properties>
-        </Style>
-      </Medium>
-      <Medium
-        Name="Mobile">
-        <Style
-          Name="Skip to Content">
-          <Properties>
-            <Property
-              Name="BackgroundColor">var(--Lightest)</Property>
-            <Property
-              Name="Color">var(--Dark)</Property>
-          </Properties>
-        </Style>
-      </Medium>
       <Style
         Name="Search Bar">
         <Properties>
@@ -522,6 +464,90 @@
             Name="Width">60%</Property>
         </Properties>
       </Style>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="Navigation Panel">
+          <Properties>
+            <Property
+              Name="BackgroundColor">#ffffff</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Navigation Panel Item">
+          <Properties>
+            <Property
+              Name="BorderBottom">solid 1px var(--Dark)</Property>
+            <Property
+              Name="Color">var(--Lightest)</Property>
+          </Properties>
+          <Classes>
+            <StyleClass
+              Name="Expander Icon">
+              <Properties>
+                <Property
+                  Name="ExpanderBorderColor">var(--Lightest)</Property>
+              </Properties>
+            </StyleClass>
+            <StyleClass
+              Name="1st Level">
+              <Properties>
+                <Property
+                  Name="Color">#696969</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+        <Style
+          Name="Navigation Panel Item (hover)">
+          <Properties>
+            <Property
+              Name="Color">var(--Medium)</Property>
+            <Property
+              Name="BackgroundColor">#c0c0c0</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Skip to Content">
+          <Properties>
+            <Property
+              Name="BackgroundColor">var(--Lightest)</Property>
+            <Property
+              Name="Color">var(--Dark)</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Navigation Slide Out Button">
+          <Properties>
+            <Property
+              Name="BackgroundGradient">vertical #000000 #ff0000</Property>
+          </Properties>
+        </Style>
+      </Medium>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="Skip to Content">
+          <Properties>
+            <Property
+              Name="BackgroundColor">var(--Lightest)</Property>
+            <Property
+              Name="Color">var(--Dark)</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Navigation Panel Item">
+          <Classes>
+            <StyleClass
+              Name="1st Level">
+              <Properties>
+                <Property
+                  Name="BackgroundColor">#d3d3d3</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+      </Medium>
     </Styles>
     <Stylesheet></Stylesheet>
     <Resources>
